@@ -1079,4 +1079,5 @@ OVERLAY_TRUCOS = [
     ("Linterna amplia", "cheats.wide_flashlight"),
     ("Teletransporte (boton Ir)", "cheats.teleport"),
     ("Sentir el dano de otros", "cheats.reflexive_damage_effects"),
+    ("Sin dano por caida", "cheats.no_fall_damage"),
 ]

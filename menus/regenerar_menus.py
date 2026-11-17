@@ -171,6 +171,11 @@ if overlay_c.exists():
                 % (m.group(1), ajuste, ajuste, ajuste))
     fuente_c = re.sub(r'OVERLAY_GLOBAL\("([^"]+)", "cheat_(deathless_player|omnipotent|infinite_ammo|bottomless_clip|'
                       r'super_jump|jetpack|medusa|bump_possession)"\)', _truco, fuente_c)
+    fuente_c, cambios = re.subn(r'OVERLAY_TOGGLE\("Easy Rider", _overlay_state_global_inverted, "rider_ejection false", '
+                                r'"rider_ejection true",\s*"rider_ejection", 0\.0f, FALSE\)',
+                                'OVERLAY_TOGGLE("Easy Rider", _overlay_state_config, "config cheats.easy_rider true", '
+                                '"config cheats.easy_rider false", "cheats.easy_rider", 0.0f, FALSE)', fuente_c)
+    sincronizados += cambios
     ultimo = 'OVERLAY_COMMAND("Spawn All Vehicles", "cheat_all_vehicles"),\n'
     if ultimo in fuente_c:
         fuente_c = fuente_c.replace(ultimo, ultimo + "".join(
