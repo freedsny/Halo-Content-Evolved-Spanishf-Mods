@@ -1,0 +1,39 @@
+name: Vigilar versiones nuevas de Content Evolved
+
+# Cada dia revisa si Halo Content Evolved publico una version nueva. Si la hay y
+# todavia no esta compilada, lanza la compilacion de Halo C.E Evolved con esa version.
+# (GitHub pausa las tareas programadas si el repositorio pasa 60 dias sin cambios.)
+
+on:
+  schedule:
+    - cron: "43 11 * * *" # todos los dias a las 6:43 a. m. de Colombia (11:43 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+  issues: read
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Comparar la ultima version de Content Evolved con la ultima compilada
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ultima=$(git ls-remote --tags --refs https://github.com/Watanoge/halo-content-evolved.git 'build-*' | sed 's#.*refs/tags/##' | sort -V | tail -1)
+          compilada=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json name,isDraft \
+            --jq '[.[] | select((.isDraft | not) and (.name | startswith("Halo C.E Evolved")))][0].name' | grep -o 'build-[0-9]*' | head -1)
+          echo "Ultima version de Content Evolved: $ultima"
+          echo "Ultima version compilada: ${compilada:-ninguna}"
+          if [ -n "$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search '"Fallo la compilacion de Evolved" in:title' --json number --jq '.[].number')" ]; then
+            echo "Hay un aviso de error abierto: no se compila hasta que se resuelva."
+          elif [ -z "$compilada" ]; then
+            echo "Todavia no hay una version oficial de Evolved (se esta probando en la rama pruebas). Nada que hacer."
+          elif [ -n "$ultima" ] && [ "$ultima" != "$compilada" ]; then
+            gh workflow run compilar.yml --repo "$GITHUB_REPOSITORY" --ref main -f version="$ultima"
+            echo "Compilacion lanzada con $ultima"
+          else
+            echo "Ya esta compilada la ultima version. Nada que hacer."
+          fi
