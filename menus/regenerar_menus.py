@@ -155,6 +155,41 @@ for archivo in sorted(glob.glob(str(ce / "*.xml"))):
         if re.search(r"[a-z]{3}", t) and t not in pares.values():
             pendientes.add(t)
 
+# 7) el menu de los tres dedos (overlay_menu.c): sus textos al espanol, sus
+# trucos con el mismo ajuste que TRUCOS (lo que se cambia en uno se ve en el
+# otro; si no, el de TRUCOS en ON lo vuelve a prender) y los trucos de TRUCOS
+# que no tenia
+overlay_c = pathlib.Path("port/linux/game/overlay_menu.c")
+if overlay_c.exists():
+    fuente_c = overlay_c.read_text(encoding="utf-8")
+    sincronizados = 0
+    def _truco(m):
+        global sincronizados
+        sincronizados += 1
+        ajuste = "cheats." + m.group(2)
+        return ('OVERLAY_TOGGLE("%s", _overlay_state_config, "config %s true", "config %s false", "%s", 0.0f, FALSE)'
+                % (m.group(1), ajuste, ajuste, ajuste))
+    fuente_c = re.sub(r'OVERLAY_GLOBAL\("([^"]+)", "cheat_(deathless_player|omnipotent|infinite_ammo|bottomless_clip|'
+                      r'super_jump|jetpack|medusa|bump_possession)"\)', _truco, fuente_c)
+    ultimo = 'OVERLAY_COMMAND("Spawn All Vehicles", "cheat_all_vehicles"),\n'
+    if ultimo in fuente_c:
+        fuente_c = fuente_c.replace(ultimo, ultimo + "".join(
+            '\tOVERLAY_TOGGLE("%s", _overlay_state_config, "config %s true", "config %s false", "%s", 0.0f, FALSE),\n'
+            % (texto, ajuste, ajuste, ajuste) for texto, ajuste in textos_evolved.OVERLAY_TRUCOS))
+    else:
+        print("AVISO: no se encontro donde poner los trucos en el menu de los tres dedos")
+    traducidos = 0
+    for ingles, espanol in textos_evolved.OVERLAY.items():
+        literal = '"%s"' % ingles.replace("\\", "\\\\")
+        if literal in fuente_c:
+            traducidos += 1
+            fuente_c = fuente_c.replace(literal, '"%s"' % espanol)
+    overlay_c.write_text(fuente_c, encoding="utf-8", newline="")
+    print("menu de los tres dedos: %d trucos con TRUCOS, %d de %d textos en espanol"
+          % (sincronizados, traducidos, len(textos_evolved.OVERLAY)))
+else:
+    print("AVISO: no esta overlay_menu.c (menu de los tres dedos)")
+
 # 6) las palabras del menu principal y los titulos, dibujados en espanol
 # (si faltan pillow, numpy o scipy, quedan en ingles y solo se avisa)
 try:
