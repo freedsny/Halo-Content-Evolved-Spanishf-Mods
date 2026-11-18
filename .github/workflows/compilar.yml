@@ -86,14 +86,18 @@ jobs:
         run: |
           patch -p1 -l < ../repo/parche/trucos.patch
           /usr/bin/python3 ../repo/menus/regenerar_menus.py
-          # El nombre de la app en el celular, y su propio paquete
-          # (com.halo.decomp.evolved, HALO_APPLICATION_ID_SUFFIX de build.gradle):
-          # se instala al lado de Halo C.E, con su propia carpeta y partidas. Las
-          # pruebas son otra app mas (com.halo.decomp.evolved.pruebas).
+          # El nombre de la app en el celular, y su propio paquete: el de Content
+          # Evolved desde la build 142 (com.halo.contentevolved) con .trucos
+          # (HALO_APPLICATION_ID_SUFFIX de build.gradle): com.halo.contentevolved.trucos.
+          # No choca con la app de Content Evolved ni con Halo C.E; y la "app vieja"
+          # de la que la nueva pasaria los archivos (com.halo.decomp.trucos) no
+          # existe, asi que no pregunta nada. Las pruebas son otra app mas
+          # (com.halo.contentevolved.trucos.pruebas). Hasta la build 141 era
+          # com.halo.decomp.evolved: esa se borra a mano.
           if [ "$GITHUB_REF_NAME" = "main" ]; then
-            nombre="Halo C.E Evolved"; sufijo=".evolved"
+            nombre="Halo C.E Evolved"; sufijo=".trucos"
           else
-            nombre="Evolved PRUEBA"; sufijo=".evolved.pruebas"
+            nombre="Evolved PRUEBA"; sufijo=".trucos.pruebas"
           fi
           sed -i "s#<string name=\"app_name\">Halo</string>#<string name=\"app_name\">$nombre</string>#" port/android/app/src/main/res/values/strings.xml
           echo "HALO_APPLICATION_ID_SUFFIX=$sufijo" >> "$GITHUB_ENV"
@@ -146,7 +150,7 @@ jobs:
       # Desde la build 142 Content Evolved deja el juego en
       # dist/halo-contentevolved-release, y en dist/halo-android-release su
       # "puente" para pasar de la app vieja a la nueva (aqui no se usa: la app
-      # conserva su nombre, com.halo.decomp.evolved, ver parche/trucos.patch)
+      # vieja, com.halo.decomp.evolved, se borra a mano)
       - name: Ubicar el APK del juego
         run: |
           for d in src/dist/halo-contentevolved-release src/dist/halo-android-release; do
