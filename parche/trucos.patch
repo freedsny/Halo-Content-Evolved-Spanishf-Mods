@@ -12,50 +12,6 @@
  # the phone's GPU family, for the GL ES renderer's fixes (host_render_policy.c; guest_render_policy.c)
  host_android_chip_family
  # the Theater's EXPORT and IMPORT (port/android/host/host_main.c; port/linux/game/menu_functions.c)
---- a/port/android/app/src/main/java/com/halo/decomp/LauncherActivity.java
-+++ b/port/android/app/src/main/java/com/halo/decomp/LauncherActivity.java
-@@ -72,6 +72,7 @@
-         if (dataRoot != null) {
-             new File(dataRoot, "maps").mkdirs();
-             new File(dataRoot, "custom_maps").mkdirs();
-+            rescueMapsExtractedToRoot();
-         }
-         passOnHardwareId();
-         passOnInvite(getIntent());
-@@ -135,6 +136,24 @@
-             partial.delete();
-     }
- 
-+    /**
-+     * port (trucos): maps an older build extracted straight into the data
-+     * folder (extractMaps was given the data folder for the maps folder) are
-+     * moved into maps/, where the game looks for them.
-+     */
-+    private void rescueMapsExtractedToRoot() {
-+        File maps = new File(dataRoot, "maps");
-+        if (new File(maps, "ui.map").isFile() || !new File(dataRoot, "ui.map").isFile())
-+            return;
-+        File[] files = dataRoot.listFiles();
-+        if (files == null)
-+            return;
-+        for (File file : files) {
-+            if (file.isFile() && file.getName().toLowerCase(java.util.Locale.ROOT).endsWith(".map"))
-+                file.renameTo(new File(maps, file.getName()));
-+        }
-+    }
-+
-     private boolean haveData() {
-         return dataRoot != null && new File(dataRoot, "maps/ui.map").isFile();
-     }
-@@ -419,7 +438,7 @@
-             try (FileInputStream in = new FileInputStream(descriptor.getFileDescriptor())) {
-                 FileChannel channel = in.getChannel();
- 
--                XisoExtractor.extractMaps(channel, dataRoot, (file, done, total) ->
-+                XisoExtractor.extractMaps(channel, new File(dataRoot, "maps"), (file, done, total) ->
-                     report("Extracting maps/" + file + " (" + (done >> 20) + " of " + (total >> 20) + " MB)",
-                         total > 0 ? (int) (done * 1000 / total) : 0));
-             }
 --- a/port/android/app/src/main/java/com/halo/decomp/TouchControls.java
 +++ b/port/android/app/src/main/java/com/halo/decomp/TouchControls.java
 @@ -64,6 +64,19 @@
@@ -609,6 +565,21 @@
 +	memcpy(touch_hud_preview, copy, sizeof(copy));
 +	pthread_mutex_unlock(&touch_lock);
 +}
+--- a/port/linux/game/menu_functions.c
++++ b/port/linux/game/menu_functions.c
+@@ -20325,8 +20325,11 @@
+ 	struct widget_instance *widget;
+ 
+ 	list->horizontal_offset = shift;
++	/* port (trucos): FORGE in the list (main_menu.xml) moves with it
++	already; shifted again it stood off to the right, with no internet (the
++	social column off) */
+ 	if ((widget = named(screen, "main_menu_item_forge", 0)) != NULL)
+-		widget->horizontal_offset = (short)(30 + shift);
++		widget->horizontal_offset = (short)(30 + (widget->parent == list ? 0 : shift));
+ 	if ((widget = named(screen, "social_hint", 0)) != NULL)
+ 		widget->horizontal_offset = (short)(167 + shift);
+ 	if ((widget = named(screen, "y_butn_social", 0)) != NULL)
 --- a/port/linux/src/port_config.c
 +++ b/port/linux/src/port_config.c
 @@ -1221,6 +1221,188 @@

@@ -9,25 +9,78 @@ import sys
 AQUI = pathlib.Path(__file__).resolve().parent
 
 # "a" "b" (literales seguidos de C) quedan en "ab", con el mismo sentido, para
-# que una frase partida en varias comillas se traduzca entera
-_SEGUIDOS = re.compile(r'(L?)"((?:[^"\\\n]|\\.)*)"(\s+)(L?)"((?:[^"\\\n]|\\.)*)"')
+# que una frase partida en varias comillas se traduzca entera. El codigo se lee
+# pieza por pieza (comentarios, caracteres '"', literales): solo se juntan dos
+# literales de verdad con nada mas que espacios entre ellos. (Una expresion
+# regular sola tomaba lo de entre dos literales, ") ? " de c ? " " : "", por
+# otro literal, y se comia unas comillas: el juego se cerraba)
+def _literal(fuente, i):
+    """el literal que empieza en i (su prefijo L incluido): (fin, prefijo,
+    contenido), o None si ahi no empieza uno"""
+    prefijo = ""
+    if fuente.startswith('L"', i) and (i == 0 or not (fuente[i - 1].isalnum() or fuente[i - 1] == "_")):
+        prefijo, i = "L", i + 1
+    if i >= len(fuente) or fuente[i] != '"':
+        return None
+    j = i + 1
+    while j < len(fuente) and fuente[j] != '"':
+        if fuente[j] == "\\":
+            j += 1
+        elif fuente[j] == "\n":
+            return None
+        j += 1
+    if j >= len(fuente):
+        return None
+    return j + 1, prefijo, fuente[i + 1:j]
 
 
 def unir(fuente):
-    def juntar(m):
-        izquierda = m.group(2)
-        # (un \x o un \ octal al final se comeria lo que sigue)
-        if re.search(r'\\x[0-9A-Fa-f]+$|\\[0-7]{1,2}$', izquierda):
-            return m.group(0)
-        if m.group(1) != m.group(4) and m.group(4) != "":
-            return m.group(0)
-        return f'{m.group(1)}"{izquierda}{m.group(5)}"'
-
-    antes = None
-    while antes != fuente:
-        antes = fuente
-        fuente = _SEGUIDOS.sub(juntar, fuente)
-    return fuente
+    salida = []
+    i, n = 0, len(fuente)
+    while i < n:
+        c = fuente[i]
+        if fuente.startswith("//", i):
+            fin = fuente.find("\n", i)
+            fin = n if fin < 0 else fin
+            salida.append(fuente[i:fin])
+            i = fin
+        elif fuente.startswith("/*", i):
+            fin = fuente.find("*/", i + 2)
+            fin = n if fin < 0 else fin + 2
+            salida.append(fuente[i:fin])
+            i = fin
+        elif c == "'":
+            j = i + 1
+            while j < n and fuente[j] != "'" and fuente[j] != "\n":
+                j += 2 if fuente[j] == "\\" else 1
+            salida.append(fuente[i:j + 1])
+            i = j + 1
+        elif (c == '"' or (c == "L" and fuente.startswith('L"', i))) and _literal(fuente, i):
+            fin, prefijo, contenido = _literal(fuente, i)
+            # (los que le siguen con solo espacios en medio)
+            while True:
+                k = fin
+                while k < n and fuente[k] in " \t\r\n":
+                    k += 1
+                siguiente = _literal(fuente, k) if k > fin else None
+                if not siguiente:
+                    break
+                # (un \x o un \ octal al final se comeria lo que sigue; otro
+                # prefijo no se junta)
+                if re.search(r'\\x[0-9A-Fa-f]+$|\\[0-7]{1,2}$', contenido):
+                    break
+                if siguiente[1] != prefijo and siguiente[1] != "":
+                    break
+                fin, contenido = siguiente[0], contenido + siguiente[2]
+            salida.append(f'{prefijo}"{contenido}"')
+            i = fin
+        else:
+            j = i + 1
+            while j < n and fuente[j] not in "/'\"L":
+                j += 1
+            salida.append(fuente[i:j])
+            i = j
+    return "".join(salida)
 
 
 def leer_tabla(ruta=AQUI / "textos_codigo.txt"):

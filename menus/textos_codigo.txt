@@ -130,8 +130,10 @@ Extracting maps/
 = Sacando maps/
  MB)
 =  MB)
-The extraction finished but maps/ui.map is missing.
-= Se termino de sacar, pero falta maps/ui.map. Esa imagen no parece ser de Halo: Combat Evolved.
+The extraction finished but ¶
+= Se termino de sacar, pero falta ¶
+ is missing.
+= . Esa imagen no parece ser de Halo: Combat Evolved.
 Extracting failed: ¶
 = No se pudo sacar: ¶
 
