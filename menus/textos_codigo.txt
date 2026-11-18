@@ -1114,3 +1114,459 @@ Multiplayer: %ld matches, %ld won.\nKills %ld, deaths %ld, KDA %s.\n
 = Multijugador: %ld partidas, %ld ganadas.\nBajas %ld, muertes %ld, KDA %s.\n
 Campaign: %ld levels won.\nMedals: %ld.\n
 = Campana: %ld niveles ganados.\nMedallas: %ld.\n
+
+## port/linux/game/firefight_hud.c
+ALPHA GEN
+= GEN ALFA
+BETA GEN
+= GEN BETA
+GAMMA GEN
+= GEN GAMMA
+DESTROYED
+= DESTRUIDO
+LOCK %ds
+= BLOQUEO %ds
+IRON
+= HIERRO
+TEAM WIPE ENDS THE SET
+= SI CAE EL EQUIPO, TERMINA LA SERIE
+BLACK EYE
+= OJO MORADO
+SHIELDS ONLY RECHARGE ON MELEE
+= EL ESCUDO SOLO SE RECARGA A GOLPES
+TOUGH LUCK
+= MALA SUERTE
+ENEMIES DODGE GRENADES & ROCKETS
+= LOS ENEMIGOS ESQUIVAN GRANADAS Y COHETES
+CATCH
+= ATRAPA
+ENEMIES THROW MORE GRENADES
+= LOS ENEMIGOS TIRAN MAS GRANADAS
+CLOUD
+= NUBE
+MOTION TRACKER DISABLED
+= SIN RADAR
+FAMINE
+= HAMBRUNA
+DROPPED WEAPONS HAVE LESS AMMO
+= LAS ARMAS TIRADAS TIENEN MENOS BALAS
+TILT
+= INCLINACION
+ENEMY SHIELD & ARMOR RESISTANCE UP
+= MAS RESISTENCIA DE ESCUDO Y ARMADURA ENEMIGA
+MYTHIC
+= MITICO
+ENEMIES HAVE 2X HEALTH & SHIELDS
+= ENEMIGOS CON EL DOBLE DE SALUD Y ESCUDO
+THUNDERSTORM
+= TORMENTA
+ENEMIES PROMOTED TO HIGHER RANKS
+= ENEMIGOS DE RANGO MAS ALTO
+BLIND
+= CIEGO
+HUD & FIRST-PERSON WEAPON HIDDEN
+= SIN HUD NI ARMA EN PANTALLA
+BOOM
+= BUM
+2X EXPLOSION RADIUS & DAMAGE
+= EXPLOSIONES CON EL DOBLE DE RADIO Y DANO
+COWBELL
+= CENCERRO
+ACCELERATED EXPLOSIVE KNOCKBACK
+= LAS EXPLOSIONES EMPUJAN MAS
+GRUNT BIRTHDAY
+= CUMPLEANOS GRUNT
+HEADSHOTS DETONATE IN CONFETTI
+= LOS TIROS A LA CABEZA SUELTAN CONFETI
+SET %d START
+= EMPIEZA LA SERIE %d
+PREPARE FOR COMBAT
+= PREPARATE PARA EL COMBATE
+ROUND %d
+= RONDA %d
+HOLD YOUR GROUND
+= MANTEN TU POSICION
+WAVE %d
+= OLEADA %d
+HOSTILES INBOUND
+= LLEGAN ENEMIGOS
+BOSS WAVE %d
+= OLEADA DE JEFES %d
+ELIMINATE HIGH-VALUE TARGETS
+= ELIMINA LOS OBJETIVOS IMPORTANTES
+REINFORCEMENTS
+= REFUERZOS
+ENEMY SQUADS DEPLOYING
+= LLEGAN ESCUADRONES ENEMIGOS
+BONUS ROUND
+= RONDA DE BONO
+60s GRUNT BIRTHDAY PARTY — EXTRA LIVES!
+= 60s DE CUMPLEANOS GRUNT: VIDAS EXTRA!
+SET %d COMPLETE
+= SERIE %d COMPLETA
+BONUS LIVES AWARDED
+= VIDAS EXTRA GANADAS
+SKULL ACTIVE: %s
+= CALAVERA ACTIVA: %s
+SKULL ACTIVATED
+= CALAVERA ACTIVADA
+ENEMY MODIFIER ENGAGED
+= MODIFICADOR ENEMIGO ACTIVO
+LAST MAN STANDING
+= EL ULTIMO EN PIE
+SURVIVE TO KEEP THE TEAM ALIVE
+= SOBREVIVE PARA MANTENER VIVO AL EQUIPO
+GENERATOR %c UNDER ATTACK
+= ATACAN EL GENERADOR %c
+DEFEND THE GENERATOR
+= DEFIENDE EL GENERADOR
+GENERATOR %c LOCKED DOWN
+= GENERADOR %c BLOQUEADO
+BLAST SHIELDS ACTIVE FOR 30s
+= ESCUDOS ANTIEXPLOSION ACTIVOS 30s
+GENERATOR %c DESTROYED
+= GENERADOR %c DESTRUIDO
+DEFENSIVE PERIMETER BREACHED
+= ROMPIERON EL PERIMETRO
+WEAPON & AMMO DROP INBOUND
+= LLEGA UN ENVIO DE ARMAS Y BALAS
+RESUPPLY CACHE DEPLOYED AT BASE
+= SUMINISTROS EN LA BASE
+HEAVY ANTI-ARMOR DROP
+= ENVIO PESADO ANTIBLINDAJE
+ROCKETS, SNIPER & OVERSHIELD DEPLOYED
+= COHETES, FRANCOTIRADOR Y SOBRESCUDO
+DROPSHIP INBOUND
+= LLEGA UNA NAVE
+PHANTOM / PELICAN INSERTION DETECTED
+= SE DETECTA UN PHANTOM / PELICAN
+VEHICLE DEPLOYED
+= VEHICULO ENVIADO
+ARMORED SUPPORT AT PLAYER BASE
+= APOYO BLINDADO EN LA BASE
++%d BONUS LIFE
+= +%d VIDA EXTRA
+TEAM REINFORCEMENT EARNED
+= REFUERZO PARA EL EQUIPO
+FIREFIGHT VICTORY
+= VICTORIA EN TIROTEO
+ALL SETS CLEARED
+= TODAS LAS SERIES SUPERADAS
+FIREFIGHT OVER
+= FIN DEL TIROTEO
+TEAM ELIMINATED
+= EQUIPO ELIMINADO
+ROUND %d STARTS IN %lds
+= LA RONDA %d EMPIEZA EN %lds
+RESUPPLY & BOARD VEHICLES
+= TOMA SUMINISTROS Y SUBE A LOS VEHICULOS
+ENEMY MODIFIERS ENGAGED
+= MODIFICADORES ENEMIGOS ACTIVOS
+SKULL ACTIVE
+= CALAVERA ACTIVA
+SKULLS ACTIVE
+= CALAVERAS ACTIVAS
+
+## port/linux/game/campaign_score.c
+EASY
+= FACIL
+NORMAL
+= NORMAL
+HEROIC
+= HEROICO
+LEGENDARY
+= LEGENDARIO
+PLAYER %d
+= JUGADOR %d
+ (a new best time)
+=  (nuevo mejor tiempo)
+killed an ally
+= mato a un aliado
+Player %d
+= Jugador %d
+WINNING
+= GANANDO
+LOSING
+= PERDIENDO
+TIED
+= EMPATE
+SCORE MULTIPLIER:
+= MULTIPLICADOR:
+LIVES: INF
+= VIDAS: INF
+LIVES: %d
+= VIDAS: %d
+HOSTILES: %d
+= ENEMIGOS: %d
+SET %d BONUS ROUND
+= SERIE %d RONDA DE BONO
+SET %d RND %d WAVE %d
+= SERIE %d RONDA %d OLEADA %d
+TEAM
+= EQUIPO
+LEVEL COMPLETE
+= NIVEL COMPLETO
+%s  (PLAYER %d OF %d)
+= %s  (JUGADOR %d DE %d)
+%s %s   SKULLS %s
+= %s %s   CALAVERAS %s
+TIME (BEST!)
+= TIEMPO (MEJOR!)
+TIME
+= TIEMPO
+PAR
+= OBJETIVO
+KILLS
+= BAJAS
+HEADSHOTS
+= TIROS A LA CABEZA
+MELEE KILLS
+= BAJAS A GOLPES
+MEDALS
+= MEDALLAS
+DEATHS
+= MUERTES
+BETRAYALS
+= TRAICIONES
+ALLIES KILLED
+= ALIADOS MUERTOS
+TIME BONUS
+= BONO DE TIEMPO
+POINTS %s  x  TIME BONUS %s
+= PUNTOS %s  x  BONO DE TIEMPO %s
+SCORE
+= PUNTAJE
+NEW RECORD!
+= NUEVO RECORD!
+%ld   KILLS %ld
+= %ld   BAJAS %ld
+FIREFIGHT VICTORY
+= VICTORIA EN TIROTEO
+FIREFIGHT OVER
+= FIN DEL TIROTEO
+FIREFIGHT COMPLETE
+= TIROTEO COMPLETO
+SET %d BONUS
+= SERIE %d BONO
+REACHED
+= ALCANZADO
+LIVES LEFT
+= VIDAS RESTANTES
+PLAYER
+= JUGADOR
++%d MORE
+= +%d MAS
+TEAM SCORE
+= PUNTAJE DEL EQUIPO
+BEST %ld (SET %d RND %d WAVE %d)
+= MEJOR %ld (SERIE %d RONDA %d OLEADA %d)
+PRESS A OR B FOR THE NEXT PLAYER
+= TOCA A O B PARA EL SIGUIENTE JUGADOR
+PRESS A OR B TO CONTINUE
+= TOCA A O B PARA SEGUIR
+
+## port/linux/game/service_rank.c
+Tour 1 (Tier 11)
+= Gira 1 (Nivel 11)
+Tour 2 (Tier 10)
+= Gira 2 (Nivel 10)
+Tour 3 (Tier 9)
+= Gira 3 (Nivel 9)
+Tour 4 (Tier 8)
+= Gira 4 (Nivel 8)
+Tour 5 (Tier 7)
+= Gira 5 (Nivel 7)
+Tour 6 (Tier 6)
+= Gira 6 (Nivel 6)
+Tour 7 (Tier 5)
+= Gira 7 (Nivel 5)
+Tour 8 (Tier 4)
+= Gira 8 (Nivel 4)
+Tour 9 (Tier 3)
+= Gira 9 (Nivel 3)
+Tour 10 (Tier 2)
+= Gira 10 (Nivel 2)
+Tour 11 (Tier 1)
+= Gira 11 (Nivel 1)
+Recruit
+= Recluta
+Apprentice
+= Aprendiz
+Apprentice (Grade 2)
+= Aprendiz (Grado 2)
+Private
+= Soldado
+Private (Grade 2)
+= Soldado (Grado 2)
+Corporal
+= Cabo
+Corporal (Grade 2)
+= Cabo (Grado 2)
+Sergeant
+= Sargento
+Sergeant (Grade 2)
+= Sargento (Grado 2)
+Sergeant (Grade 3)
+= Sargento (Grado 3)
+Gunnery Sergeant
+= Sargento de artilleria
+Gunnery Sergeant (Grade 2)
+= Sargento de artilleria (Grado 2)
+Gunnery Sergeant (Grade 3)
+= Sargento de artilleria (Grado 3)
+Master Gunnery Sergeant
+= Sargento mayor de artilleria
+Lieutenant
+= Teniente
+Lieutenant (Grade 2)
+= Teniente (Grado 2)
+Lieutenant (Grade 3)
+= Teniente (Grado 3)
+First Lieutenant
+= Primer teniente
+Captain
+= Capitan
+Captain (Grade 2)
+= Capitan (Grado 2)
+Captain (Grade 3)
+= Capitan (Grado 3)
+Staff Captain
+= Capitan de estado mayor
+Major
+= Mayor
+Major (Grade 2)
+= Mayor (Grado 2)
+Major (Grade 3)
+= Mayor (Grado 3)
+Field Major
+= Mayor de campo
+Commander
+= Comandante
+Commander (Grade 2)
+= Comandante (Grado 2)
+Commander (Grade 3)
+= Comandante (Grado 3)
+Strike Commander
+= Comandante de ataque
+Colonel
+= Coronel
+Colonel (Grade 2)
+= Coronel (Grado 2)
+Colonel (Grade 3)
+= Coronel (Grado 3)
+Force Colonel
+= Coronel de fuerza
+Brigadier
+= Brigadier
+Brigadier (Grade 2)
+= Brigadier (Grado 2)
+Brigadier (Grade 3)
+= Brigadier (Grado 3)
+Brigadier General
+= General de brigada
+General
+= General
+General (Grade 2)
+= General (Grado 2)
+General (Grade 3)
+= General (Grado 3)
+5 Star General
+= General de 5 estrellas
+TOUR PROMOTION! %s - %s!
+= ASCENSO DE GIRA! %s - %s!
+RANK UP: %s (Rank %d - %s)
+= SUBES DE RANGO: %s (Rango %d - %s)
+DAILY CHALLENGE COMPLETE (+%ld XP)
+= RETO DIARIO COMPLETO (+%ld XP)
+Daily Challenge Complete
+= Reto diario completo
+
+## port/linux/game/firefight_stats.c
+Recruit
+= Recluta
+Apprentice
+= Aprendiz
+Apprentice (Grade 2)
+= Aprendiz (Grado 2)
+Private
+= Soldado
+Private (Grade 2)
+= Soldado (Grado 2)
+Corporal
+= Cabo
+Corporal (Grade 2)
+= Cabo (Grado 2)
+Sergeant
+= Sargento
+Sergeant (Grade 2)
+= Sargento (Grado 2)
+Sergeant (Grade 3)
+= Sargento (Grado 3)
+Gunnery Sergeant
+= Sargento de artilleria
+Gunnery Sergeant (Grade 2)
+= Sargento de artilleria (Grado 2)
+Gunnery Sergeant (Grade 3)
+= Sargento de artilleria (Grado 3)
+Master Sergeant
+= Sargento mayor
+Lieutenant
+= Teniente
+Lieutenant (Grade 2)
+= Teniente (Grado 2)
+Lieutenant (Grade 3)
+= Teniente (Grado 3)
+First Lieutenant
+= Primer teniente
+Captain
+= Capitan
+Captain (Grade 2)
+= Capitan (Grado 2)
+Captain (Grade 3)
+= Capitan (Grado 3)
+Staff Captain
+= Capitan de estado mayor
+Major
+= Mayor
+Major (Grade 2)
+= Mayor (Grado 2)
+Major (Grade 3)
+= Mayor (Grado 3)
+Field Major
+= Mayor de campo
+Commander
+= Comandante
+Commander (Grade 2)
+= Comandante (Grado 2)
+Commander (Grade 3)
+= Comandante (Grado 3)
+Strike Commander
+= Comandante de ataque
+Colonel
+= Coronel
+Colonel (Grade 2)
+= Coronel (Grado 2)
+Colonel (Grade 3)
+= Coronel (Grado 3)
+Force Colonel
+= Coronel de fuerza
+Brigadier
+= Brigadier
+Brigadier (Grade 2)
+= Brigadier (Grado 2)
+Brigadier (Grade 3)
+= Brigadier (Grado 3)
+Brigadier General
+= General de brigada
+General
+= General
+General (Grade 2)
+= General (Grado 2)
+General (Grade 3)
+= General (Grado 3)
+General (Grade 4)
+= General (Grado 4)
+
+## port/linux/game/social_extensions.c
+RANK: %s
+= RANGO: %s

@@ -199,6 +199,41 @@ if overlay_c.exists():
 else:
     print("AVISO: no esta overlay_menu.c (menu de los tres dedos)")
 
+# 9) los textos del juego (strings.xml) por bloque y numero (textos_juego.txt),
+# sin guardar el ingles
+juego = {}
+_bloque = None
+for _linea in (aqui / "textos_juego.txt").read_text(encoding="utf-8").split("\n"):
+    if _linea.startswith("## "):
+        _nombre, _cuantos = _linea[3:].rsplit("|", 1)
+        _bloque = (_nombre.strip(), int(_cuantos))
+        juego[_bloque] = {}
+    elif _linea[:1].isdigit() and _bloque:
+        _numero, _texto = _linea.split("=", 1)
+        juego[_bloque][int(_numero)] = _texto
+strings_xml = ce / "strings.xml"
+contenido = strings_xml.read_text(encoding="utf-8")
+cambiados, distintos = 0, []
+for (nombre, cuantos), textos in juego.items():
+    patron = re.compile(r'(<strings name="' + re.escape(nombre) + r'"[^>]*>)(.*?)(</strings>)', re.S)
+    m = patron.search(contenido)
+    if not m:
+        distintos.append(nombre + " (no esta)")
+        continue
+    partes = re.split(r'(<string text=")([^"]*)(")', m.group(2))
+    # (partes: texto, '<string text="', el texto, '"', ...)
+    if (len(partes) - 1) // 4 != cuantos:
+        distintos.append(f"{nombre} ({(len(partes) - 1) // 4} textos, no {cuantos})")
+        continue
+    for numero, texto in textos.items():
+        partes[2 + 4 * numero] = texto
+        cambiados += 1
+    contenido = contenido[:m.start(2)] + "".join(partes) + contenido[m.end(2):]
+strings_xml.write_text(contenido, encoding="utf-8", newline="")
+print(f"textos del juego en espanol: {cambiados}; bloques distintos: {len(distintos)}")
+for nombre in distintos:
+    print("  AVISO: bloque distinto, se deja en ingles:", nombre)
+
 # 8) los textos que el codigo escribe en pantalla (textos_codigo.txt)
 import codigo_es
 hechos, faltan = codigo_es.aplicar()
