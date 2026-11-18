@@ -1,0 +1,1572 @@
+# Los textos que el codigo de Content Evolved escribe en pantalla, al espanol.
+#
+# Formato: "## archivo" dice en que archivo; luego cada texto en ingles en una
+# linea, tal como esta entre comillas en el codigo (con sus \n), y en la linea
+# siguiente "= " y su traduccion. Se cambia cada "texto" (entre comillas) del
+# archivo. "= " sin nada deja el texto vacio (para las partes de una frase que
+# el codigo escribe en varias comillas seguidas: la frase entera va en la
+# primera). Con "~ " y "~= " se cambia un pedazo de codigo tal cual. Un ¶
+# al final marca donde termina un texto que acaba en espacio.
+# Sin tildes ni enie: la fuente del juego no las tiene.
+
+## port/linux/game/tag_pack.c
+Generating data from your maps...
+= Creando datos a partir de tus mapas...
+Some data could not be generated.
+= Algunos datos no se pudieron crear.
+Your data is ready.
+= Tus datos estan listos.
+Done once: nothing to do but wait.
+= Se hace una sola vez: solo hay que esperar.
+WAITING
+= EN ESPERA
+DONE
+= LISTO
+FAILED
+= FALLO
+~ !strncmp(words, "Building ", 9))
+~= !strncmp(words, "Creando ", 8))
+~ 		words += 9;
+~= 		words += 8;
+
+## port/assets/tag_packs/watanoge_forge.toml
+Forge needs to build its tags\nfrom the maps: a few minutes,\nonce. It starts when this closes.
+= La Forja tiene que crear sus tags\na partir de los mapas: unos minutos,\nuna vez. Empieza al cerrar esto.
+Building Forge's tags\nfrom the maps:\n
+= Creando los tags de la Forja\na partir de los mapas:\n
+Forge's tags are ready.
+= Los tags de la Forja estan listos.
+Forge's tags could not be\nbuilt (is the card full?).\nForge cannot start until they are.
+= Los tags de la Forja no se\npudieron crear (memoria llena?).\nLa Forja no abre hasta tenerlos.
+
+## port/assets/tag_packs/watanoge_gamemodes.toml
+The multiplayer game modes\nneed some data from other\nmaps. It takes a moment.
+= Los modos de multijugador\nnecesitan datos de otros\nmapas. Tarda un momento.
+Building game mode data:\n
+= Creando los datos de los modos de juego:\n
+The game mode data is ready.
+= Los datos de los modos de juego estan listos.
+The game mode data could not\nbe built. Is the card full?
+= Los datos de los modos de juego\nno se pudieron crear. Memoria llena?
+
+## port/assets/tag_packs/watanoge_randomizer.toml
+The randomizer needs to build\nits data from the campaign maps:\na few minutes and about 500 MB,\nonce. It starts when this closes.
+= El modo aleatorio tiene que crear\nsus datos con los mapas de la campana:\nunos minutos y unos 500 MB,\nuna vez. Empieza al cerrar esto.
+Building the randomizer's\ndata from the maps:\n
+= Creando los datos del modo\naleatorio con los mapas:\n
+The randomizer's data is ready.
+= Los datos del modo aleatorio estan listos.
+The randomizer's data could not\nbe built (is the card full?).\nRandomized levels cannot load\nits tags until it is.
+= Los datos del modo aleatorio no\nse pudieron crear (memoria llena?).\nLos niveles aleatorios no cargan\nsus tags hasta tenerlos.
+
+## port/assets/tag_packs/watanoge_skulls.toml
+The skulls need some data\nfrom other maps.\nIt takes a moment.
+= Las calaveras necesitan datos\nde otros mapas.\nTarda un momento.
+Building skull data:\n
+= Creando los datos de las calaveras:\n
+The skull data is ready.
+= Los datos de las calaveras estan listos.
+The skull data could not\nbe built. Is the card full?
+= Los datos de las calaveras no\nse pudieron crear. Memoria llena?
+
+## port/assets/tag_packs/watanoge_stock_huds.toml
+The Tag Injector needs the\ncampaign's weapon HUDs\nfrom the maps.\nIt takes a moment.
+= El inyector de tags necesita los\nHUD de las armas de la campana,\nsacados de los mapas.\nTarda un momento.
+Building the weapon HUDs:\n
+= Creando los HUD de las armas:\n
+The weapon HUDs are ready.
+= Los HUD de las armas estan listos.
+The weapon HUDs could not\nbe built. Is the card full?
+= Los HUD de las armas no se\npudieron crear. Memoria llena?
+
+## port/android/app/src/main/java/com/halo/decomp/LauncherActivity.java
+Downloading the driver... (
+= Descargando el driver... (
+ of ¶
+=  de ¶
+The driver could not be downloaded: ¶
+= No se pudo descargar el driver: ¶
+\nStarting the game. The download is tried again at the next start.
+= \nEmpieza el juego. La descarga se intenta otra vez la proxima vez que lo abras.
+Downloading the Vulkan driver
+= Descargando el driver de Vulkan
+This phone's GPU (
+= La GPU de este telefono (
+) can run the game's Vulkan renderer on Turnip, the ¶
+= ) puede usar el modo Vulkan del juego con Turnip, el ¶
+open-source Vulkan driver for Adreno GPUs. It is downloaded once into the freedreno_drivers folder of ¶
+= driver Vulkan libre para GPU Adreno. Se descarga una vez en la carpeta freedreno_drivers de ¶
+the game's data folder (about ¶
+= la carpeta de datos del juego (unos ¶
+ MB), and is not used ¶
+=  MB), y no se usa ¶
+until you choose it: in the game's Video Setup, VULKAN DRIVER lists it as ¶
+= hasta que lo elijas: en VIDEO del juego, DRIVER VULKAN lo muestra como ¶
+. Other driver archives put in that folder, or ¶
+= . Otros drivers que pongas en esa carpeta, o ¶
+added with IMPORT DRIVER, are listed there too.
+= que agregues con IMPORTAR DRIVER, tambien salen ahi.
+Halo needs its game data
+= Halo necesita los datos del juego
+Choose an Xbox disc image of Halo: Combat Evolved (an .iso or .xiso file, any ¶
+= Elige una imagen de disco de Xbox de Halo: Combat Evolved (un archivo .iso o .xiso, de cualquier ¶
+version) on this device. Its maps folder is copied into the app's storage (about 1.8 GB), ¶
+= version) en este telefono. Su carpeta maps se copia a la memoria de la app (unos 1.8 GB), ¶
+and you can delete the image afterwards.\n\n
+= y despues puedes borrar la imagen.\n\n
+You can also copy a maps folder from a computer:\n
+= Tambien puedes copiar una carpeta maps desde una computadora:\n
+adb push <folder with maps>/. ¶
+= adb push <carpeta con los maps>/. ¶
+Import MCC maps
+= Importar mapas de MCC
+Choose disc image
+= Elegir imagen de disco
+Reading the disc image...
+= Leyendo la imagen de disco...
+the file could not be opened
+= no se pudo abrir el archivo
+Extracting maps/
+= Sacando maps/
+ MB)
+=  MB)
+The extraction finished but maps/ui.map is missing.
+= Se termino de sacar, pero falta maps/ui.map. Esa imagen no parece ser de Halo: Combat Evolved.
+Extracting failed: ¶
+= No se pudo sacar: ¶
+
+## port/linux/game/social_chat.c
+MATCH
+= PARTIDA
+TEAM
+= EQUIPO
+PRIVATE
+= PRIVADO
+GLOBAL
+= GLOBAL
+[TEAM] ¶
+= [EQUIPO] ¶
+[PM] ¶
+= [PRIVADO] ¶
+The fork's chat could not be reached
+= No se pudo llegar al chat
+Too many lines at once: wait a moment
+= Demasiados mensajes seguidos: espera un momento
+That player's account was not found
+= No se encontro la cuenta de ese jugador
+That player takes no private lines
+= Ese jugador no recibe mensajes privados
+You take private lines from friends alone, so you write to friends alone
+= Solo recibes privados de amigos, asi que solo puedes escribirles a amigos
+That player takes private lines from friends alone
+= Ese jugador solo recibe privados de sus amigos
+You blocked that player: unblock them in Social to write to them
+= Bloqueaste a ese jugador: desbloquealo en Social para escribirle
+That player cannot be written to
+= No se le puede escribir a ese jugador
+The fork's chat refused the line
+= El chat rechazo el mensaje
+Still sending the last line: try again
+= Todavia se esta enviando el ultimo mensaje: intenta otra vez
+No one to write to: pick a player with Up and Down
+= No hay a quien escribir: elige un jugador con arriba y abajo
+No one can hear that channel here
+= Aqui nadie escucha ese canal
+The fork's chat is offline: ONLINE is off (community.enabled)
+= El chat esta desconectado: EN LINEA esta apagado (community.enabled)
+The fork's chat is off (social.enabled, social.chat)
+= El chat esta apagado (social.enabled, social.chat)
+The fork's chat has not signed in yet: the server did not answer
+= El chat todavia no entra: el servidor no respondio
+The fork's chat is busy: try again
+= El chat esta ocupado: intenta otra vez
+Could not kick that player
+= No se pudo expulsar a ese jugador
+[REPORTED] ¶
+= [DENUNCIADO] ¶
+[NOT SENT] ¶
+= [NO ENVIADO] ¶
+SHIFT
+= MAYUS
+SPACE
+= ESPACIO
+DEL
+= BORRAR
+SEND
+= ENVIAR
+TO: ¶
+= PARA: ¶
+no one yet
+= nadie todavia
+A or click: write
+= A o toca: escribir
+Tap to write
+= Toca para escribir
+(fork chat offline)
+= (chat desconectado)
+SEND PRIVATE MESSAGE
+= MENSAJE PRIVADO
+ADD FRIEND
+= AGREGAR AMIGO
+VIEW PROFILE
+= VER PERFIL
+MUTE
+= SILENCIAR
+UNMUTE
+= QUITAR SILENCIO
+REPORT
+= DENUNCIAR
+MUTE IN THIS MATCH
+= SILENCIAR EN ESTA PARTIDA
+KICK FROM GAME
+= EXPULSAR DE LA PARTIDA
+REMOVE BOT
+= QUITAR BOT
+CLICK, B OR ESCAPE: BACK
+= TOCA, B O ESCAPE: VOLVER
+Asking the server...
+= Preguntando al servidor...
+< BACK
+= < VOLVER
+KICK: AGAIN TO KICK
+= EXPULSAR: OTRA VEZ PARA EXPULSAR
+REPORT: AGAIN TO SEND
+= DENUNCIAR: OTRA VEZ PARA ENVIAR
+
+## port/linux/game/community.c
+The community server can't be reached right now.\rCheck your connection, or try again later.
+= No se puede llegar al servidor de la comunidad ahora.\rRevisa tu conexion o intenta mas tarde.
+There is no challenge for that day.
+= No hay reto para ese dia.
+That address is not a community server.
+= Esa direccion no es un servidor de la comunidad.
+The community server is up, but its database is not.
+= El servidor de la comunidad funciona, pero su base de datos no.
+The community server is having trouble.\rTry again later.
+= El servidor de la comunidad tiene problemas.\rIntenta mas tarde.
+The community server refused the request.
+= El servidor de la comunidad rechazo el pedido.
+ALL KINDS
+= DE TODO TIPO
+COVENANT ONLY
+= SOLO COVENANT
+FLOOD ONLY
+= SOLO FLOOD
+MARINES ONLY
+= SOLO MARINES
+COMBAT FORMS
+= FORMAS DE COMBATE
+SENTINELS
+= CENTINELAS
+ANY
+= CUALQUIERA
+HUMAN
+= HUMANAS
+PRECISION
+= DE PRECISION
+AUTOMATIC
+= AUTOMATICAS
+POWER
+= PODEROSAS
+PISTOL
+= PISTOLA
+ASSAULT RIFLE
+= RIFLE DE ASALTO
+SHOTGUN
+= ESCOPETA
+SNIPER RIFLE
+= FRANCOTIRADOR
+ROCKET LAUNCHER
+= LANZACOHETES
+PLASMA PISTOL
+= PISTOLA DE PLASMA
+PLASMA RIFLE
+= RIFLE DE PLASMA
+FUEL ROD
+= CANON DE COMBUSTIBLE
+ENERGY SWORD
+= ESPADA DE ENERGIA
+%s ONLY
+= SOLO %s
+%s%s%s ONLY
+= SOLO %s%s%s
+ENEMIES: %s%s
+= ENEMIGOS: %s%s
+, ALLIES TOO
+= , Y ALIADOS
+ENEMY WEAPONS: %s
+= ARMAS ENEMIGAS: %s
+NOT RANDOMIZED
+= SIN CAMBIOS
+PICKUPS: %s
+= ARMAS DEL SUELO: %s
+GO CRAZY: ON
+= LOCURA: ON
+The community server can't be reached right now.
+= No se puede llegar al servidor de la comunidad ahora.
+THURSDAY
+= JUEVES
+FRIDAY
+= VIERNES
+SATURDAY
+= SABADO
+SUNDAY
+= DOMINGO
+MONDAY
+= LUNES
+TUESDAY
+= MARTES
+WEDNESDAY
+= MIERCOLES
+JANUARY
+= ENERO
+FEBRUARY
+= FEBRERO
+MARCH
+= MARZO
+APRIL
+= ABRIL
+MAY
+= MAYO
+JUNE
+= JUNIO
+JULY
+= JULIO
+AUGUST
+= AGOSTO
+SEPTEMBER
+= SEPTIEMBRE
+OCTOBER
+= OCTUBRE
+NOVEMBER
+= NOVIEMBRE
+DECEMBER
+= DICIEMBRE
+This challenge needs a newer version of the game.
+= Este reto necesita una version mas nueva del juego.
+This challenge's level is not one this game has.
+= El nivel de este reto no esta en este juego.
+Scoring is off (Settings > Gameplay > Scoring).
+= El puntaje esta apagado (Ajustes > Juego > Puntaje).
+Online leaderboards are off (community.enabled in config.toml).
+= Las clasificaciones en linea estan apagadas (community.enabled en config.toml).
+ONLINE: NOT SENT (NO CONNECTION)
+= EN LINEA: NO ENVIADO (SIN CONEXION)
+ONLINE: SENDING...
+= EN LINEA: ENVIANDO...
+RANDOM RUN: NOT RANKED
+= AL AZAR: NO CLASIFICA
+THIS MACHINE: #%ld%s
+= ESTE EQUIPO: #%ld%s
+  NEW BEST
+=   NUEVO RECORD
+OFFLINE: NOT SENT
+= SIN CONEXION: NO ENVIADO
+ONLINE: SERVER UNAVAILABLE, NOT SENT
+= EN LINEA: SERVIDOR NO DISPONIBLE, NO ENVIADO
+ONLINE: #%ld OF %ld%s
+= EN LINEA: #%ld DE %ld%s
+ONLINE: SENT
+= EN LINEA: ENVIADO
+ONLINE: THE CHALLENGE ENDED WHILE YOU PLAYED
+= EN LINEA: EL RETO TERMINO MIENTRAS JUGABAS
+ONLINE: SETTINGS CHANGED, NOT COUNTED
+= EN LINEA: CAMBIASTE AJUSTES, NO CUENTA
+ONLINE: NOT ACCEPTED (%hs)
+= EN LINEA: NO ACEPTADO (%hs)
+
+## port/linux/game/menu_functions.c
+Loading the online leaderboard...
+= Cargando la clasificacion en linea...
+No one has finished this challenge yet.
+= Nadie ha terminado este reto todavia.
+No online scores yet. Win this level with scoring on\r(Settings > Gameplay > Scoring) to set one.
+= Todavia no hay puntajes en linea. Gana este nivel con el puntaje\rencendido (Ajustes > Juego > Puntaje) para poner uno.
+No scores yet. Win this level with scoring on\r(Settings > Gameplay > Scoring) to set one.
+= Todavia no hay puntajes. Gana este nivel con el puntaje\rencendido (Ajustes > Juego > Puntaje) para poner uno.
+RETRY
+= REINTENTAR
+PLAY
+= JUGAR
+CONNECTING...
+= CONECTANDO...
+Connecting to the community server...
+= Conectando al servidor de la comunidad...
+%s   -   ENDS IN %ldH %02ldM
+= %s   -   TERMINA EN %ldH %02ldM
+%s   -   ENDED
+= %s   -   TERMINADO
+MISSION %d
+= MISION %d
+A LEVEL THIS GAME HAS NOT
+= UN NIVEL QUE ESTE JUEGO NO TIENE
+SKULLS (%d)
+= CALAVERAS (%d)
+NO SKULLS
+= SIN CALAVERAS
+YOUR BEST: %ld   IN %ld:%02ld:%02ld   (%ld TR%hs)
+= TU MEJOR: %ld   EN %ld:%02ld:%02ld   (%ld INTENTO%hs)
+~ challenge->mine_attempts == 1 ? "Y" : "IES");
+~= challenge->mine_attempts == 1 ? "" : "S");
+NOT PLAYED YET
+= TODAVIA NO LO JUEGAS
+Scoring is off (Settings > Gameplay > Scoring): no scores are kept.
+= El puntaje esta apagado (Ajustes > Juego > Puntaje): no se guardan puntajes.
+This day is over: runs still count, its day's top three stay on top.
+= Este dia ya paso: las partidas cuentan, y los tres mejores de ese dia siguen arriba.
+Offline: the leaderboard is this machine's profiles'.
+= Sin conexion: la clasificacion es la de los perfiles de este equipo.
+The same enemies, skulls and difficulty for everyone.
+= Los mismos enemigos, calaveras y dificultad para todos.
+Make a profile first (Profiles),\r\nthen play the challenge.
+= Primero crea un perfil (Perfiles),\r\ny luego juega el reto.
+Make a profile first (Profiles),\r\nthen play a random run.
+= Primero crea un perfil (Perfiles),\r\ny luego juega una partida al azar.
+DAILY CHALLENGE
+= RETO DIARIO
+DAILY CHALLENGE, %s
+= RETO DIARIO, %s
+Loading the past challenges...
+= Cargando los retos anteriores...
+No challenges yet.
+= Todavia no hay retos.
+%ld replay%s, %llu.%llu MB
+= %ld video%s, %llu.%llu MB
+No replays yet
+= Todavia no hay videos
+The network games you play are recorded, from the next one on.
+= Las partidas en red que juegues se graban, desde la proxima.
+RECORD: OFF. Turn it on to record the network games you play, from the next one on.
+= GRABAR: OFF. Prendelo para grabar las partidas en red que juegues, desde la proxima.
+IMPORT adds replays you choose. EXPORT copies them all to a folder you choose, with the Tag Injector tags they played.
+= IMPORTAR agrega los videos que elijas. EXPORTAR los copia todos a una carpeta que elijas, con los tags del inyector que usaron.
+To download them or put others here, open on this network:
+= Para bajarlos o poner otros aqui, abre en esta red:
+They are in:
+= Estan en:
+Press Y again to delete it.
+= Toca Y otra vez para borrarlo.
+Press SQUARE again to delete it.
+= Toca CUADRADO otra vez para borrarlo.
+Press DELETE (or X) again to delete it.
+= Toca SUPRIMIR (o X) otra vez para borrarlo.
+Deleted.
+= Borrado.
+It could not be deleted.
+= No se pudo borrar.
+
+## port/linux/game/social_menu.c
+DEFAULT
+= NORMAL
+RED
+= ROJO
+ORANGE
+= NARANJA
+YELLOW
+= AMARILLO
+GREEN
+= VERDE
+CYAN
+= CIAN
+BLUE
+= AZUL
+PURPLE
+= MORADO
+PINK
+= ROSADO
+SPAM
+= SPAM
+ABUSIVE LANGUAGE
+= LENGUAJE OFENSIVO
+CHEATING
+= TRAMPAS
+OFFENSIVE NAME
+= NOMBRE OFENSIVO
+OTHER
+= OTRO
+EASY
+= FACIL
+NORMAL
+= NORMAL
+HEROIC
+= HEROICO
+LEGENDARY
+= LEGENDARIO
+JUST NOW
+= AHORA MISMO
+%ldM AGO
+= HACE %ldM
+%ldH AGO
+= HACE %ldH
+%ldD AGO
+= HACE %ldD
+HIDDEN
+= OCULTO
+%s sent you a friend request.
+= %s te envio una solicitud de amistad.
+%s accepted your friend request.
+= %s acepto tu solicitud de amistad.
+%s declined your friend request.
+= %s rechazo tu solicitud de amistad.
+No player has the code %s.
+= Ningun jugador tiene el codigo %s.
+The community server has no player pages yet:\nit needs updating.
+= El servidor de la comunidad todavia no tiene paginas de jugador:\nnecesita actualizarse.
+The community server is not reached: Settings > Gameplay > Community's ONLINE.
+= No se llega al servidor de la comunidad: Ajustes > Juego > Comunidad, EN LINEA.
+Still waiting for the server: try again.
+= Todavia esperando al servidor: intenta otra vez.
+The server could not be asked: try again.
+= No se pudo preguntar al servidor: intenta otra vez.
+Asking the server...
+= Preguntando al servidor...
+Type your name first.
+= Primero escribe tu nombre.
+Your profile could not be made: try again.
+= No se pudo crear tu perfil: intenta otra vez.
+Saving...
+= Guardando...
+Your rank is cleared.
+= Tu rango se borro.
+The server did not answer: try again.
+= El servidor no respondio: intenta otra vez.
+The server could not clear your rank (%d).
+= El servidor no pudo borrar tu rango (%d).
+That code is not good: it expired, or its screen was closed.
+= Ese codigo no sirve: vencio, o se cerro su pantalla.
+This device is already synced, or its account already has devices.
+= Este telefono ya esta sincronizado, o su cuenta ya tiene otros.
+That code is this account's own.
+= Ese codigo es de esta misma cuenta.
+That is not a sync code (XXXX-XXXX).
+= Ese no es un codigo de sincronizacion (XXXX-XXXX).
+Too many wrong codes: wait a minute.
+= Demasiados codigos malos: espera un minuto.
+The server refused it (%d).
+= El servidor lo rechazo (%d).
+The community server cannot set a chat name yet: it needs updating.
+= El servidor de la comunidad todavia no puede poner nombres de chat: necesita actualizarse.
+You changed your name a moment ago: wait a few seconds.
+= Cambiaste tu nombre hace un momento: espera unos segundos.
+That name or colour is not allowed.
+= Ese nombre o color no esta permitido.
+The community server cannot draw a new code yet: it needs updating.
+= El servidor de la comunidad todavia no puede sacar codigos nuevos: necesita actualizarse.
+A new code was drawn a moment ago: wait a minute.
+= Se saco un codigo nuevo hace un momento: espera un minuto.
+The community server has no friends yet: it needs updating.
+= El servidor de la comunidad todavia no tiene amigos: necesita actualizarse.
+That request is gone.
+= Esa solicitud ya no esta.
+No player has that code.
+= Ningun jugador tiene ese codigo.
+%s takes friend requests by their code alone.
+= %s solo acepta solicitudes por su codigo.
+Your friend list is off: SETTINGS > FRIENDS on this screen.
+= Tu lista de amigos esta apagada: AJUSTES > AMIGOS en esta pantalla.
+You blocked %s: unblock them first.
+= Bloqueaste a %s: desbloquealo primero.
+%s cannot be added.
+= No se puede agregar a %s.
+That is your own code.
+= Ese es tu propio codigo.
+Your list is full.
+= Tu lista esta llena.
+That is not a player's code (XXXX-XXXX).
+= Ese no es el codigo de un jugador (XXXX-XXXX).
+Too many at once: wait a moment.
+= Demasiados a la vez: espera un momento.
+%s is now your friend.
+= %s ahora es tu amigo.
+Asked %s to be your friend.
+= Le pediste a %s que sea tu amigo.
+Declined %s's request.
+= Rechazaste la solicitud de %s.
+Took back the request to %s.
+= Retiraste la solicitud a %s.
+%s is no longer your friend.
+= %s ya no es tu amigo.
+Synced: this device is now part of account %s.
+= Sincronizado: este telefono ahora es parte de la cuenta %s.
+Your chat name is %s.
+= Tu nombre de chat es %s.
+Your name's colour is %s.
+= El color de tu nombre es %s.
+Your rank is cleared. The main menu counts your records again.
+= Tu rango se borro. El menu principal vuelve a contar tus records.
+The server did not say the new code: try again.
+= El servidor no dio el codigo nuevo: intenta otra vez.
+You have a new code (hidden: YOUR CODE shows it). The old one no longer works.
+= Tienes un codigo nuevo (oculto: TU CODIGO lo muestra). El viejo ya no sirve.
+Your new code is %s. The old one no longer works.
+= Tu codigo nuevo es %s. El viejo ya no sirve.
+Muted %s: their lines are hidden.
+= Silenciaste a %s: sus mensajes no se ven.
+%s is no longer muted.
+= %s ya no esta silenciado.
+Blocked %s.
+= Bloqueaste a %s.
+%s is no longer blocked.
+= %s ya no esta bloqueado.
+You reported %s already (and muted them).
+= Ya denunciaste a %s (y lo silenciaste).
+Reported %s, and muted them. Thank you.
+= Denunciaste a %s y lo silenciaste. Gracias.
+The keyboard did not open.
+= No se abrio el teclado.
+OFFLINE
+= DESCONECTADO
+PRIVATE MATCH
+= PARTIDA PRIVADA
+LOBBY
+= SALA
+PLAYING
+= JUGANDO
+CO-OP
+= COOPERATIVO
+SOLO
+= SOLO
+THEATER
+= CINE
+IN MENUS
+= EN MENUS
+ONLINE
+= EN LINEA
+Offline, last seen %s.\n
+= Desconectado, visto por ultima vez %s.\n
+Offline.\n
+= Desconectado.\n
+Playing %s%s%s
+= Jugando %s%s%s
+, hosting %s.\n
+= , anfitrion de %s.\n
+JOIN GAME joins it.\n
+= UNIRSE entra a la partida.\n
+A public match with a password.\n
+= Una partida publica con contrasena.\n
+A private match.\n
+= Una partida privada.\n
+In the lobby of %s, hosting it
+= En la sala de %s, de anfitrion
+In the lobby of %s
+= En la sala de %s
+a match
+= una partida
+Playing the campaign%s%s.\n
+= Jugando la campana%s%s.\n
+Watching a replay.\n
+= Viendo un video.\n
+Online, in the menus.\n
+= En linea, en los menus.\n
+Online.\n
+= En linea.\n
+PASSWORD
+= CONTRASENA
+PRIVATE
+= PRIVADA
+\nA: joins their game: it shows in\nDirect Link, where A joins it.
+= \nA: entra a su partida: sale en\nEnlace directo, donde A entra.
+\nA: finds their game in the server\nbrowser, which asks for its password.
+= \nA: busca su partida en Buscar\npartidas, que pide su contrasena.
+\nTheir match is private: it is joined\nby its host's invite alone.
+= \nSu partida es privada: solo se entra\ncon invitacion del anfitrion.
+%s is in a private match: it cannot be joined.
+= %s esta en una partida privada: no se puede entrar.
+MATCH
+= PARTIDA
+Campaign level %s won on %s.\n
+= Nivel de campana %s ganado en %s.\n
+Score %ld. Kills %ld, deaths %ld.\n
+= Puntaje %ld. Bajas %ld, muertes %ld.\n
+%s on %s%s, %ld players.\n
+= %s en %s%s, %ld jugadores.\n
+A match
+= Una partida
+ (teams)
+=  (equipos)
+Quit before its end.\n
+= Se salio antes del final.\n
+Left before its end: the connection was lost.\n
+= Se fue antes del final: se perdio la conexion.\n
+Ended by its host before its end.\n
+= El anfitrion la termino antes del final.\n
+Result: %s.\n
+= Resultado: %s.\n
+Place: %ld.\n
+= Puesto: %ld.\n
+Score %ld. K %ld, D %ld, A %ld (KDA %s).\n
+= Puntaje %ld. B %ld, M %ld, A %ld (KDA %s).\n
+Suicides %ld, betrayals %ld.\n
+= Suicidios %ld, traiciones %ld.\n
+Medals: %ld.\n
+= Medallas: %ld.\n
+Time: %s.\n
+= Tiempo: %s.\n
+Played %s.\n
+= Jugada %s.\n
+SERVICE RECORD
+= HISTORIAL DE SERVICIO
+CREATOR PROFILE
+= PERFIL DE CREADOR
+TIME
+= TIEMPO
+MAPS MADE
+= MAPAS HECHOS
+FORGE
+= FORJA
+TAG PROFILES
+= PERFILES DE TAGS
+CAMPAIGN PROFILES
+= PERFILES DE CAMPANA
+MULTIPLAYER PROFILES
+= PERFILES DE MULTIJUGADOR
+FIRING RANGE
+= CAMPO DE TIRO
+TAG INJECTOR
+= INYECTOR DE TAGS
+CREATIONS
+= CREACIONES
+TIME CREATING
+= TIEMPO CREANDO
+COUNTED SINCE
+= CONTADO DESDE
+NOT YET
+= TODAVIA NO
+TOTAL
+= TOTAL
+FILE SHARE
+= COMPARTIR ARCHIVOS
+COMING SOON
+= PROXIMAMENTE
+CODE ¶
+= CODIGO ¶
+THIS IS YOU
+= ESTE ERES TU
+YOUR FRIEND
+= TU AMIGO
+WANTS TO BE YOUR FRIEND
+= QUIERE SER TU AMIGO
+FRIEND REQUEST SENT
+= SOLICITUD ENVIADA
+PLAYER
+= JUGADOR
+ - MUTED
+=  - SILENCIADO
+ - BLOCKED
+=  - BLOQUEADO
+ASKING THE SERVER...
+= PREGUNTANDO AL SERVIDOR...
+THE SERVER DID NOT ANSWER
+= EL SERVIDOR NO RESPONDIO
+MATCHES
+= PARTIDAS
+WON
+= GANADAS
+LOST
+= PERDIDAS
+TIED
+= EMPATADAS
+QUIT
+= ABANDONADAS
+KILLS
+= BAJAS
+DEATHS
+= MUERTES
+ASSISTS
+= ASISTENCIAS
+SUICIDES
+= SUICIDIOS
+BETRAYALS
+= TRAICIONES
+MULTIPLAYER
+= MULTIJUGADOR
+LEVELS WON
+= NIVELES GANADOS
+SCORE
+= PUNTAJE
+MEDALS
+= MEDALLAS
+JOINED
+= DESDE
+CAMPAIGN
+= CAMPANA
+SETS
+= SERIES
+WAVES
+= OLEADAS
+BOSSES
+= JEFES
+BEST SPREE
+= MEJOR RACHA
+FIREFIGHT
+= TIROTEO
+%d OF %d
+= %d DE %d
+%d REQUEST%s
+= %d PEDIDO%s
+%ld ONLINE
+= %ld EN LINEA
+SOCIAL IS OFF
+= SOCIAL ESTA APAGADO
+SIGNING IN...
+= ENTRANDO...
+YOUR FRIEND LIST IS OFF
+= TU LISTA DE AMIGOS ESTA APAGADA
+NO FRIENDS YET
+= TODAVIA NO TIENES AMIGOS
+Y: Social, then SETTINGS
+= Y: Social, luego AJUSTES
+Y: Social, then ADD FRIEND
+= Y: Social, luego AGREGAR AMIGO
+NOT ANSWERED
+= SIN RESPUESTA
+NONE YET
+= NINGUNO TODAVIA
+MY ACCOUNT
+= MI CUENTA
+FRIENDLIST
+= AMIGOS
+ACTIVITY
+= ACTIVIDAD
+SETTINGS
+= AJUSTES
+ACCOUNT SUMMARY
+= RESUMEN DE LA CUENTA
+CHAT NAME
+= NOMBRE EN EL CHAT
+CHAT COLOR
+= COLOR EN EL CHAT
+NAME
+= NOMBRE
+A: TYPE IT
+= A: ESCRIBIR
+DONE
+= LISTO
+SYNC ACCOUNT
+= SINCRONIZAR CUENTA
+INPUT CODE
+= ESCRIBIR CODIGO
+CLEAR RANK
+= BORRAR RANGO
+TESTING
+= PRUEBAS
+YOUR CODE
+= TU CODIGO
+SYNCED
+= SINCRONIZADA
+CREATE CODE
+= CREAR CODIGO
+SYNC CODE
+= CODIGO DE SINCRONIZACION
+NOT GIVEN
+= SIN DAR
+ASKING...
+= PREGUNTANDO...
+SOCIAL OFF
+= SOCIAL APAGADO
+FRIENDS
+= AMIGOS
+FRIEND REQUESTS
+= SOLICITUDES DE AMISTAD
+%ld NEW
+= %ld NUEVAS
+MATCH HISTORY
+= HISTORIAL DE PARTIDAS
+RECENT PLAYERS
+= JUGADORES RECIENTES
+ADD FRIEND
+= AGREGAR AMIGO
+BLOCKED & MUTED
+= BLOQUEADOS Y SILENCIADOS
+   JOIN GAME
+=    UNIRSE
+ASKED YOU
+= TE PIDIO
+SENT
+= ENVIADA
+LATEST MATCHES
+= ULTIMAS PARTIDAS
+JOIN GAME
+= UNIRSE
+SEND MESSAGE
+= ENVIAR MENSAJE
+CODE ONLY
+= SOLO CON CODIGO
+ACCEPT REQUEST
+= ACEPTAR SOLICITUD
+DECLINE REQUEST
+= RECHAZAR SOLICITUD
+TAKE BACK REQUEST
+= RETIRAR SOLICITUD
+REMOVE FRIEND
+= QUITAR AMIGO
+MUTE
+= SILENCIAR
+UNMUTE
+= QUITAR SILENCIO
+MUTED
+= SILENCIADO
+BLOCK
+= BLOQUEAR
+UNBLOCK
+= DESBLOQUEAR
+BLOCKED
+= BLOQUEADO
+REPORT
+= DENUNCIAR
+%ld PTS
+= %ld PTS
+BLOCKED, MUTED
+= BLOQUEADO, SILENCIADO
+A AGAIN
+= A OTRA VEZ
+Code: %s\n
+= Codigo: %s\n
+The server did not answer.\n
+= El servidor no respondio.\n
+Asking the server...\n
+= Preguntando al servidor...\n
+This is you: give your code to\nfriends to be added.\n
+= Este eres tu: dale tu codigo a tus\namigos para que te agreguen.\n
+Your friend.\n
+= Tu amigo.\n
+Wants to be your friend.\n
+= Quiere ser tu amigo.\n
+You asked to be friends.\n
+= Le pediste ser amigos.\n
+Muted
+= Silenciado
+Blocked
+= Bloqueado
+Your account summary, emblem\ncustomisation, and device sync.
+= El resumen de tu cuenta, tu emblema\ny la sincronizacion con otro telefono.
+SOCIAL
+= SOCIAL
+Offline. Turn on Settings > Gameplay >\nCommunity's ONLINE, then SOCIAL\nin SETTINGS here, to see your\nfriends.
+= Sin conexion. Prende Ajustes > Juego >\nComunidad, EN LINEA, y luego SOCIAL\nen AJUSTES aqui, para ver a tus\namigos.
+Social is off. Turn on SOCIAL in\nSETTINGS to see your friends and\nthe fork's chat.
+= Social esta apagado. Prende SOCIAL en\nAJUSTES para ver a tus amigos y\nel chat.
+Signing in to the community server...
+= Entrando al servidor de la comunidad...
+The server did not answer: it is\nasked again in a while.
+= El servidor no respondio: se le\npregunta otra vez en un rato.
+The community server is not reached.
+= No se llega al servidor de la comunidad.
+Your friends' matches and levels\nshow here (those who show\ntheir activity).
+= Las partidas y niveles de tus amigos\nsalen aqui (los que muestran\nsu actividad).
+The players you meet in the chat\n(in a game, or who wrote to you)\nshow here.
+= Los jugadores que conoces en el chat\n(en una partida, o que te escribieron)\nsalen aqui.
+No one is muted or blocked.\nA player's MUTE and BLOCK are\nin their page.
+= No hay nadie silenciado ni bloqueado.\nSILENCIAR y BLOQUEAR estan en\nla pagina de cada jugador.
+None yet.
+= Ninguno todavia.
+Your account summary and the code\nto sync it to another device.
+= El resumen de tu cuenta y el codigo\npara sincronizarla con otro telefono.
+Your code, friend requests, friends,\nand the players you muted or\nblocked.
+= Tu codigo, solicitudes, amigos,\ny los jugadores que silenciaste o\nbloqueaste.
+Players you recently met and your\nfriends' match history.
+= Jugadores que conociste hace poco y\nel historial de partidas de tus amigos.
+Social, Record Matches, Chat, and\nFriends settings.
+= Ajustes de Social, Grabar partidas,\nChat y Amigos.
+YOU
+= TU
+Your code: %s\n\nFriends add you by it. A shows\nyour records: totals, matches\nand medals.
+= Tu codigo: %s\n\nTus amigos te agregan con el. A muestra\ntus records: totales, partidas\ny medallas.
+The name the chat shows for you,\nthe same on every device and\nplatform of this account. A types\na new one (up to 20 characters);\nuntil you do, your profile's name is\nused.
+= El nombre que el chat muestra de ti,\nel mismo en todos los telefonos y\nequipos de esta cuenta. A escribe\nuno nuevo (hasta 20 letras);\nmientras tanto se usa el nombre\nde tu perfil.
+The colour of your name in the\nchat, for everyone who sees it.\nA picks the next one.
+= El color de tu nombre en el\nchat, para todos los que lo ven.\nA elige el siguiente.
+WELCOME
+= BIENVENIDO
+Choose how other players see you.\n\nYour name, up to 11 characters,\nis your profile's and the chat's.\nA types it.
+= Elige como te ven los demas jugadores.\n\nTu nombre, de hasta 11 letras,\nes el de tu perfil y el del chat.\nA lo escribe.
+The colour of your name in the\nchat, for everyone who sees it.\nA or Left and Right change it.
+= El color de tu nombre en el\nchat, para todos los que lo ven.\nA, o izquierda y derecha, lo cambian.
+Already playing on another device?\nOn it, SOCIAL > MY ACCOUNT > SYNC\nACCOUNT > CREATE CODE; then A here\ntypes that code. This device joins\nthat account: its name, emblem,\nrank and friends.
+= Ya juegas en otro telefono o equipo?\nAlla, SOCIAL > MI CUENTA > SINCRONIZAR\nCUENTA > CREAR CODIGO; luego A aqui\nescribe ese codigo. Este telefono se une\na esa cuenta: su nombre, emblema,\nrango y amigos.
+Saves these on your account.
+= Guarda esto en tu cuenta.
+Saves these on your account and\nmakes your profile, ready to\nplay.
+= Guarda esto en tu cuenta y\ncrea tu perfil, listo para\njugar.
+For testing: A twice takes your\nrank back to nothing, here and on\nthe server. Your records are then\ncounted again at the main menu,\nas a new account's are.
+= Para pruebas: A dos veces deja tu\nrango en nada, aqui y en\nel servidor. Tus records se\ncuentan otra vez en el menu principal,\ncomo los de una cuenta nueva.
+%s\n\nGive it to friends: they add you\nby it. ¶
+= %s\n\nDaselo a tus amigos: te agregan\ncon el. ¶
+Friend invites are open to\nanyone, so it is shown. A twice draws a new\ncode; the old one stops working.
+= Cualquiera puede invitarte,\nasi que se muestra. A dos veces saca un\ncodigo nuevo; el viejo deja de servir.
+Hidden: A shows it. A twice draws\na new code; the old one stops\nworking.
+= Oculto: A lo muestra. A dos veces saca\nun codigo nuevo; el viejo deja\nde servir.
+Only those with it can ask to\nbe your friend. A twice draws a\nnew code; the old one stops\nworking.
+= Solo quien lo tenga puede pedir\nser tu amigo. A dos veces saca un\ncodigo nuevo; el viejo deja\nde servir.
+Use this account on another\ndevice: its friends, records,\nmedals, leaderboard scores and\nskulls. Profiles, controls and\ncampaign progress stay on each\ndevice.%s
+= Usa esta cuenta en otro telefono\no equipo: sus amigos, records,\nmedallas, puntajes y\ncalaveras. Los perfiles, controles y\nel avance de la campana quedan en\ncada uno.%s
+\n\nThis account is synced.
+= \n\nEsta cuenta esta sincronizada.
+A code for your other device's\nINPUT CODE. It works while its\nscreen is open and you are online.
+= Un codigo para ESCRIBIR CODIGO de\ntu otro telefono. Sirve mientras\nesta pantalla este abierta y estes en linea.
+Type the code another device\nshows, to bring this device into\nthat account. This device's own\nfriends and records are added to\nit. It cannot be undone.
+= Escribe el codigo que muestra otro\ntelefono, para unir este a\nesa cuenta. Los amigos y records\nde este se suman a\nella. No se puede deshacer.
+A device joined this account.\nYour skulls are shared now.
+= Otro telefono se unio a esta cuenta.\nAhora comparten las calaveras.
+%s\n\nType it on the other device (SYNC\nACCOUNT, INPUT CODE). It stops working when you leave this screen or go offline.
+= %s\n\nEscribelo en el otro telefono (SINCRONIZAR\nCUENTA, ESCRIBIR CODIGO). Deja de servir si sales de esta pantalla o te desconectas.
+Social on or off, your records,\nthe fork's chat, and your friend\nlist: what others see of you,\nand who you hear.
+= Social prendido o apagado, tus records,\nel chat y tu lista de\namigos: que ven los demas de ti\ny a quien escuchas.
+Your friend list is off: SETTINGS >\nFRIENDS here.\n\n
+= Tu lista de amigos esta apagada: AJUSTES >\nAMIGOS aqui.\n\n
+%d friends.\nWho is online, what they play,\nand joining their games.
+= %d amigos.\nQuien esta en linea, que juega,\ny entrar a sus partidas.
+Your friends: who is online, what\nthey play, and joining their games.
+= Tus amigos: quien esta en linea, que\njuegan, y entrar a sus partidas.
+Players who asked to be your\nfriend (%d), and those you asked (%d).
+= Jugadores que te pidieron ser tus\namigos (%d), y a los que les pediste (%d).
+Your friends' latest matches and\nlevels.
+= Las ultimas partidas y niveles\nde tus amigos.
+The players of the chat: those in\nyour game, and those who wrote to\nyou or you wrote to.
+= Los jugadores del chat: los de\ntu partida, y los que te escribieron\no a los que les escribiste.
+Type a player's code (XXXX-XXXX,\nthe dash can be left out): they\nbecome your friend once they\naccept.\n\nYours is %s.
+= Escribe el codigo de un jugador (XXXX-XXXX,\nel guion es opcional): sera\ntu amigo cuando\nacepte.\n\nEl tuyo es %s.
+The players you muted (their lines\nhidden) and blocked (neither of you\nhears the other, no requests).
+= Los jugadores que silenciaste (sus mensajes\nno se ven) y bloqueaste (ninguno\nescucha al otro, sin solicitudes).
+Asked to be your friend %s.\n
+= Te pidio ser tu amigo %s.\n
+You asked %s.\n
+= Le pediste %s.\n
+\nA: their page.
+= \nA: su pagina.
+A: their page.
+= A: su pagina.
+\nTheir matches are not shown\n(their activity is hidden), or they\nhave none yet.
+= \nSus partidas no se muestran\n(su actividad esta oculta), o todavia\nno tiene.
+\nOpens the chat to write to them\nalone.
+= \nAbre el chat para escribirle solo\na el.
+\nAsks them to be your friend.
+= \nLe pide ser tu amigo.
+\nThey take friend requests by their\ncode alone: ask them for it.
+= \nSolo acepta solicitudes por su\ncodigo: pideselo.
+\nA muted player's lines are hidden\nfrom you, in the fork's chat and\n(by their name) the game's.
+= \nNo ves los mensajes de un jugador\nsilenciado, en el chat y\n(por su nombre) en el del juego.
+\nBlocked, neither of you hears the\nother, no private lines or friend\nrequests either way; no longer\nfriends.
+= \nBloqueado, ninguno escucha al\notro, sin privados ni\nsolicitudes; ya no son\namigos.
+\nReports them, and mutes them.\nPlayers reported by many are\nhidden from everyone's chat.
+= \nLo denuncia y lo silencia.\nLos jugadores con muchas denuncias\nse ocultan del chat de todos.
+REPORT %s
+= DENUNCIAR A %s
+Why: %s.\n\nPress A twice to report them.\nThey are muted for you too.
+= Motivo: %s.\n\nToca A dos veces para denunciarlo.\nTambien queda silenciado para ti.
+Press A again to %s.
+= Toca A otra vez para %s.
+clear your rank
+= borrar tu rango
+draw a new code
+= sacar un codigo nuevo
+remove %s from your friends
+= quitar a %s de tus amigos
+block %s
+= bloquear a %s
+report %s (%s)
+= denunciar a %s (%s)
+Choose DONE to start playing.
+= Elige LISTO para empezar a jugar.
+That game could not be joined: internet play\n(network.online) is off, or the invite is old.
+= No se pudo entrar a esa partida: el juego por internet\n(network.online) esta apagado, o la invitacion es vieja.
+The host did not answer.
+= El anfitrion no respondio.
+No connection to the host could be made.
+= No se pudo conectar con el anfitrion.
+The game is full.
+= La partida esta llena.
+The game is closed to new players.
+= La partida no acepta jugadores nuevos.
+The host banned you from the game.
+= El anfitrion te prohibio la entrada.
+The game asks for a password.
+= La partida pide contrasena.
+The game is of another version.
+= La partida es de otra version.
+The invite is no longer valid.
+= La invitacion ya no sirve.
+The game could not be joined.
+= No se pudo entrar a la partida.
+your friend
+= tu amigo
+Their game did not show up in time.
+= Su partida no aparecio a tiempo.
+JOINING %s
+= ENTRANDO A %s
+Their game could not be joined.
+= No se pudo entrar a su partida.
+Finding their game in the server browser
+= Buscando su partida en Buscar partidas
+Joining their game
+= Entrando a su partida
+Connected. Waiting for their game
+= Conectado. Esperando su partida
+Connecting to the host
+= Conectando con el anfitrion
+Asking for the host
+= Preguntando por el anfitrion
+B: CANCEL
+= B: CANCELAR
+The server did not answer.
+= El servidor no respondio.
+Multiplayer: %ld matches, %ld won.\nKills %ld, deaths %ld, KDA %s.\n
+= Multijugador: %ld partidas, %ld ganadas.\nBajas %ld, muertes %ld, KDA %s.\n
+Campaign: %ld levels won.\nMedals: %ld.\n
+= Campana: %ld niveles ganados.\nMedallas: %ld.\n
+
+## port/linux/game/firefight_hud.c
+ALPHA GEN
+= GEN ALFA
+BETA GEN
+= GEN BETA
+GAMMA GEN
+= GEN GAMMA
+DESTROYED
+= DESTRUIDO
+LOCK %ds
+= BLOQUEO %ds
+IRON
+= HIERRO
+TEAM WIPE ENDS THE SET
+= SI CAE EL EQUIPO, TERMINA LA SERIE
+BLACK EYE
+= OJO MORADO
+SHIELDS ONLY RECHARGE ON MELEE
+= EL ESCUDO SOLO SE RECARGA A GOLPES
+TOUGH LUCK
+= MALA SUERTE
+ENEMIES DODGE GRENADES & ROCKETS
+= LOS ENEMIGOS ESQUIVAN GRANADAS Y COHETES
+CATCH
+= ATRAPA
+ENEMIES THROW MORE GRENADES
+= LOS ENEMIGOS TIRAN MAS GRANADAS
+CLOUD
+= NUBE
+MOTION TRACKER DISABLED
+= SIN RADAR
+FAMINE
+= HAMBRUNA
+DROPPED WEAPONS HAVE LESS AMMO
+= LAS ARMAS TIRADAS TIENEN MENOS BALAS
+TILT
+= INCLINACION
+ENEMY SHIELD & ARMOR RESISTANCE UP
+= MAS RESISTENCIA DE ESCUDO Y ARMADURA ENEMIGA
+MYTHIC
+= MITICO
+ENEMIES HAVE 2X HEALTH & SHIELDS
+= ENEMIGOS CON EL DOBLE DE SALUD Y ESCUDO
+THUNDERSTORM
+= TORMENTA
+ENEMIES PROMOTED TO HIGHER RANKS
+= ENEMIGOS DE RANGO MAS ALTO
+BLIND
+= CIEGO
+HUD & FIRST-PERSON WEAPON HIDDEN
+= SIN HUD NI ARMA EN PANTALLA
+BOOM
+= BUM
+2X EXPLOSION RADIUS & DAMAGE
+= EXPLOSIONES CON EL DOBLE DE RADIO Y DANO
+COWBELL
+= CENCERRO
+ACCELERATED EXPLOSIVE KNOCKBACK
+= LAS EXPLOSIONES EMPUJAN MAS
+GRUNT BIRTHDAY
+= CUMPLEANOS GRUNT
+HEADSHOTS DETONATE IN CONFETTI
+= LOS TIROS A LA CABEZA SUELTAN CONFETI
+SET %d START
+= EMPIEZA LA SERIE %d
+PREPARE FOR COMBAT
+= PREPARATE PARA EL COMBATE
+ROUND %d
+= RONDA %d
+HOLD YOUR GROUND
+= MANTEN TU POSICION
+WAVE %d
+= OLEADA %d
+HOSTILES INBOUND
+= LLEGAN ENEMIGOS
+BOSS WAVE %d
+= OLEADA DE JEFES %d
+ELIMINATE HIGH-VALUE TARGETS
+= ELIMINA LOS OBJETIVOS IMPORTANTES
+REINFORCEMENTS
+= REFUERZOS
+ENEMY SQUADS DEPLOYING
+= LLEGAN ESCUADRONES ENEMIGOS
+BONUS ROUND
+= RONDA DE BONO
+60s GRUNT BIRTHDAY PARTY — EXTRA LIVES!
+= 60s DE CUMPLEANOS GRUNT: VIDAS EXTRA!
+SET %d COMPLETE
+= SERIE %d COMPLETA
+BONUS LIVES AWARDED
+= VIDAS EXTRA GANADAS
+SKULL ACTIVE: %s
+= CALAVERA ACTIVA: %s
+SKULL ACTIVATED
+= CALAVERA ACTIVADA
+ENEMY MODIFIER ENGAGED
+= MODIFICADOR ENEMIGO ACTIVO
+LAST MAN STANDING
+= EL ULTIMO EN PIE
+SURVIVE TO KEEP THE TEAM ALIVE
+= SOBREVIVE PARA MANTENER VIVO AL EQUIPO
+GENERATOR %c UNDER ATTACK
+= ATACAN EL GENERADOR %c
+DEFEND THE GENERATOR
+= DEFIENDE EL GENERADOR
+GENERATOR %c LOCKED DOWN
+= GENERADOR %c BLOQUEADO
+BLAST SHIELDS ACTIVE FOR 30s
+= ESCUDOS ANTIEXPLOSION ACTIVOS 30s
+GENERATOR %c DESTROYED
+= GENERADOR %c DESTRUIDO
+DEFENSIVE PERIMETER BREACHED
+= ROMPIERON EL PERIMETRO
+WEAPON & AMMO DROP INBOUND
+= LLEGA UN ENVIO DE ARMAS Y BALAS
+RESUPPLY CACHE DEPLOYED AT BASE
+= SUMINISTROS EN LA BASE
+HEAVY ANTI-ARMOR DROP
+= ENVIO PESADO ANTIBLINDAJE
+ROCKETS, SNIPER & OVERSHIELD DEPLOYED
+= COHETES, FRANCOTIRADOR Y SOBRESCUDO
+DROPSHIP INBOUND
+= LLEGA UNA NAVE
+PHANTOM / PELICAN INSERTION DETECTED
+= SE DETECTA UN PHANTOM / PELICAN
+VEHICLE DEPLOYED
+= VEHICULO ENVIADO
+ARMORED SUPPORT AT PLAYER BASE
+= APOYO BLINDADO EN LA BASE
++%d BONUS LIFE
+= +%d VIDA EXTRA
+TEAM REINFORCEMENT EARNED
+= REFUERZO PARA EL EQUIPO
+FIREFIGHT VICTORY
+= VICTORIA EN TIROTEO
+ALL SETS CLEARED
+= TODAS LAS SERIES SUPERADAS
+FIREFIGHT OVER
+= FIN DEL TIROTEO
+TEAM ELIMINATED
+= EQUIPO ELIMINADO
+ROUND %d STARTS IN %lds
+= LA RONDA %d EMPIEZA EN %lds
+RESUPPLY & BOARD VEHICLES
+= TOMA SUMINISTROS Y SUBE A LOS VEHICULOS
+ENEMY MODIFIERS ENGAGED
+= MODIFICADORES ENEMIGOS ACTIVOS
+SKULL ACTIVE
+= CALAVERA ACTIVA
+SKULLS ACTIVE
+= CALAVERAS ACTIVAS
+
+## port/linux/game/campaign_score.c
+EASY
+= FACIL
+NORMAL
+= NORMAL
+HEROIC
+= HEROICO
+LEGENDARY
+= LEGENDARIO
+PLAYER %d
+= JUGADOR %d
+ (a new best time)
+=  (nuevo mejor tiempo)
+killed an ally
+= mato a un aliado
+Player %d
+= Jugador %d
+WINNING
+= GANANDO
+LOSING
+= PERDIENDO
+TIED
+= EMPATE
+SCORE MULTIPLIER:
+= MULTIPLICADOR:
+LIVES: INF
+= VIDAS: INF
+LIVES: %d
+= VIDAS: %d
+HOSTILES: %d
+= ENEMIGOS: %d
+SET %d BONUS ROUND
+= SERIE %d RONDA DE BONO
+SET %d RND %d WAVE %d
+= SERIE %d RONDA %d OLEADA %d
+TEAM
+= EQUIPO
+LEVEL COMPLETE
+= NIVEL COMPLETO
+%s  (PLAYER %d OF %d)
+= %s  (JUGADOR %d DE %d)
+%s %s   SKULLS %s
+= %s %s   CALAVERAS %s
+TIME (BEST!)
+= TIEMPO (MEJOR!)
+TIME
+= TIEMPO
+PAR
+= OBJETIVO
+KILLS
+= BAJAS
+HEADSHOTS
+= TIROS A LA CABEZA
+MELEE KILLS
+= BAJAS A GOLPES
+MEDALS
+= MEDALLAS
+DEATHS
+= MUERTES
+BETRAYALS
+= TRAICIONES
+ALLIES KILLED
+= ALIADOS MUERTOS
+TIME BONUS
+= BONO DE TIEMPO
+POINTS %s  x  TIME BONUS %s
+= PUNTOS %s  x  BONO DE TIEMPO %s
+SCORE
+= PUNTAJE
+NEW RECORD!
+= NUEVO RECORD!
+%ld   KILLS %ld
+= %ld   BAJAS %ld
+FIREFIGHT VICTORY
+= VICTORIA EN TIROTEO
+FIREFIGHT OVER
+= FIN DEL TIROTEO
+FIREFIGHT COMPLETE
+= TIROTEO COMPLETO
+SET %d BONUS
+= SERIE %d BONO
+REACHED
+= ALCANZADO
+LIVES LEFT
+= VIDAS RESTANTES
+PLAYER
+= JUGADOR
++%d MORE
+= +%d MAS
+TEAM SCORE
+= PUNTAJE DEL EQUIPO
+BEST %ld (SET %d RND %d WAVE %d)
+= MEJOR %ld (SERIE %d RONDA %d OLEADA %d)
+PRESS A OR B FOR THE NEXT PLAYER
+= TOCA A O B PARA EL SIGUIENTE JUGADOR
+PRESS A OR B TO CONTINUE
+= TOCA A O B PARA SEGUIR
+
+## port/linux/game/service_rank.c
+Tour 1 (Tier 11)
+= Gira 1 (Nivel 11)
+Tour 2 (Tier 10)
+= Gira 2 (Nivel 10)
+Tour 3 (Tier 9)
+= Gira 3 (Nivel 9)
+Tour 4 (Tier 8)
+= Gira 4 (Nivel 8)
+Tour 5 (Tier 7)
+= Gira 5 (Nivel 7)
+Tour 6 (Tier 6)
+= Gira 6 (Nivel 6)
+Tour 7 (Tier 5)
+= Gira 7 (Nivel 5)
+Tour 8 (Tier 4)
+= Gira 8 (Nivel 4)
+Tour 9 (Tier 3)
+= Gira 9 (Nivel 3)
+Tour 10 (Tier 2)
+= Gira 10 (Nivel 2)
+Tour 11 (Tier 1)
+= Gira 11 (Nivel 1)
+Recruit
+= Recluta
+Apprentice
+= Aprendiz
+Apprentice (Grade 2)
+= Aprendiz (Grado 2)
+Private
+= Soldado
+Private (Grade 2)
+= Soldado (Grado 2)
+Corporal
+= Cabo
+Corporal (Grade 2)
+= Cabo (Grado 2)
+Sergeant
+= Sargento
+Sergeant (Grade 2)
+= Sargento (Grado 2)
+Sergeant (Grade 3)
+= Sargento (Grado 3)
+Gunnery Sergeant
+= Sargento de artilleria
+Gunnery Sergeant (Grade 2)
+= Sargento de artilleria (Grado 2)
+Gunnery Sergeant (Grade 3)
+= Sargento de artilleria (Grado 3)
+Master Gunnery Sergeant
+= Sargento mayor de artilleria
+Lieutenant
+= Teniente
+Lieutenant (Grade 2)
+= Teniente (Grado 2)
+Lieutenant (Grade 3)
+= Teniente (Grado 3)
+First Lieutenant
+= Primer teniente
+Captain
+= Capitan
+Captain (Grade 2)
+= Capitan (Grado 2)
+Captain (Grade 3)
+= Capitan (Grado 3)
+Staff Captain
+= Capitan de estado mayor
+Major
+= Mayor
+Major (Grade 2)
+= Mayor (Grado 2)
+Major (Grade 3)
+= Mayor (Grado 3)
+Field Major
+= Mayor de campo
+Commander
+= Comandante
+Commander (Grade 2)
+= Comandante (Grado 2)
+Commander (Grade 3)
+= Comandante (Grado 3)
+Strike Commander
+= Comandante de ataque
+Colonel
+= Coronel
+Colonel (Grade 2)
+= Coronel (Grado 2)
+Colonel (Grade 3)
+= Coronel (Grado 3)
+Force Colonel
+= Coronel de fuerza
+Brigadier
+= Brigadier
+Brigadier (Grade 2)
+= Brigadier (Grado 2)
+Brigadier (Grade 3)
+= Brigadier (Grado 3)
+Brigadier General
+= General de brigada
+General
+= General
+General (Grade 2)
+= General (Grado 2)
+General (Grade 3)
+= General (Grado 3)
+5 Star General
+= General de 5 estrellas
+TOUR PROMOTION! %s - %s!
+= ASCENSO DE GIRA! %s - %s!
+RANK UP: %s (Rank %d - %s)
+= SUBES DE RANGO: %s (Rango %d - %s)
+DAILY CHALLENGE COMPLETE (+%ld XP)
+= RETO DIARIO COMPLETO (+%ld XP)
+Daily Challenge Complete
+= Reto diario completo
+
+## port/linux/game/firefight_stats.c
+Recruit
+= Recluta
+Apprentice
+= Aprendiz
+Apprentice (Grade 2)
+= Aprendiz (Grado 2)
+Private
+= Soldado
+Private (Grade 2)
+= Soldado (Grado 2)
+Corporal
+= Cabo
+Corporal (Grade 2)
+= Cabo (Grado 2)
+Sergeant
+= Sargento
+Sergeant (Grade 2)
+= Sargento (Grado 2)
+Sergeant (Grade 3)
+= Sargento (Grado 3)
+Gunnery Sergeant
+= Sargento de artilleria
+Gunnery Sergeant (Grade 2)
+= Sargento de artilleria (Grado 2)
+Gunnery Sergeant (Grade 3)
+= Sargento de artilleria (Grado 3)
+Master Sergeant
+= Sargento mayor
+Lieutenant
+= Teniente
+Lieutenant (Grade 2)
+= Teniente (Grado 2)
+Lieutenant (Grade 3)
+= Teniente (Grado 3)
+First Lieutenant
+= Primer teniente
+Captain
+= Capitan
+Captain (Grade 2)
+= Capitan (Grado 2)
+Captain (Grade 3)
+= Capitan (Grado 3)
+Staff Captain
+= Capitan de estado mayor
+Major
+= Mayor
+Major (Grade 2)
+= Mayor (Grado 2)
+Major (Grade 3)
+= Mayor (Grado 3)
+Field Major
+= Mayor de campo
+Commander
+= Comandante
+Commander (Grade 2)
+= Comandante (Grado 2)
+Commander (Grade 3)
+= Comandante (Grado 3)
+Strike Commander
+= Comandante de ataque
+Colonel
+= Coronel
+Colonel (Grade 2)
+= Coronel (Grado 2)
+Colonel (Grade 3)
+= Coronel (Grado 3)
+Force Colonel
+= Coronel de fuerza
+Brigadier
+= Brigadier
+Brigadier (Grade 2)
+= Brigadier (Grado 2)
+Brigadier (Grade 3)
+= Brigadier (Grado 3)
+Brigadier General
+= General de brigada
+General
+= General
+General (Grade 2)
+= General (Grado 2)
+General (Grade 3)
+= General (Grado 3)
+General (Grade 4)
+= General (Grado 4)
+
+## port/linux/game/social_extensions.c
+RANK: %s
+= RANGO: %s

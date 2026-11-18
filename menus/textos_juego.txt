@@ -1,0 +1,1096 @@
+# Los textos del juego (ce/strings.xml de Content Evolved) en espanol, por bloque
+# y por numero de texto, sin el ingles: "## <bloque> | <cuantos textos tiene>" y
+# "<numero>=<traduccion>". Un bloque que ya no tiene esa cantidad (Content Evolved
+# lo cambio) se deja como esta y regenerar_menus.py lo avisa. Sin tildes ni enie:
+# la fuente del juego no las tiene. \n es un salto de linea, &#9; un tabulador.
+
+## multiplayer_game_text | 191
+0=Buscando partidas disponibles...
+2=Un jugador
+3=Captura la bandera
+4=Asesino
+5=La bola
+6=Rey de la colina
+7=Carrera
+8=Desconocido
+9=Juego:
+10=Mapa:
+11=No. de jugadores:
+12=Por equipos
+13=Todos contra todos
+14=Limite de puntos:
+15=Limite de tiempo, minutos:
+16=Inicio automatico
+17=Equipo rojo
+18=Equipo azul
+19=(cerrada)
+20=Aceptando jugadores
+21=Partida en curso
+22=Capturas
+23=Minutos
+24=Bajas
+25=Vueltas
+26=Elige equipos con la cruceta
+27=Tienen que formar 2 equipos
+28=Asalto de una bandera
+29=Asalto
+30=Bandera unica
+31=Persecucion inversa
+32=Juggernaut
+33=Rally
+34=Esperando otra consola Xbox
+35=Esperando otro jugador
+36=1ro
+37=2do
+38=3ro
+39=4to
+40=5to
+41=6to
+42=7mo
+43=8vo
+44=9no
+45=10mo
+46=11ro
+47=12do
+48=13ro
+49=14to
+50=15to
+51=16to
+52=(sin vidas)
+53=(1 vida)
+54=(%d vidas)
+55=La partida termina en empate
+56=Tu equipo perdio
+57=Perdiste
+58=Tu equipo gano
+59=Ganaste
+60=Rojo le gana a Azul %s a %s %s
+61=Azul le gana a Rojo %s a %s %s
+62=Equipos empatados a %s %s
+63=Empatado en %s lugar con %s %s
+64=En %s lugar con %s %s
+65=&#9;Equipo rojo&#9;%s
+66=&#9;Equipo azul&#9;%s
+67=Puesto
+68=Nombre
+69=Bajas
+70=Asistencias
+71=Muertes
+72=&#9;ESCAPE = Salir    ENTER = Seguir
+73=&#9;ESCAPE = Salir
+74=Bienvenido %s
+75=%s murio
+76=%s fue eliminado por los guardianes
+77=%s fue atropellado
+78=%s fue eliminado por %s
+79=%s fue traicionado por %s
+80=%s se salio
+81=%s se suicido
+82=Traicionaste a %s
+83=Killtacular!
+84=Triple baja!
+85=Doble baja!
+86=Desenfreno!
+87=Vas en racha de bajas!
+88=Eliminaste a %s
+89=Killtacular! (%d)
+90=Triple baja! (%d)
+91=Doble baja! (%d)
+92=Desenfreno! (%d)
+93=Vas en racha de bajas! (%d)
+94=Eliminaste a %s (%d)
+95=Eres el que sobra
+96=Te quedaste sin vidas
+97=Vuelves en %d
+98=Esperando que se despeje el lugar
+99=Te saliste de la partida
+100=El teletransportador esta bloqueado
+101=primer lugar
+102=segundo lugar
+103=tercer lugar
+104=cuarto lugar
+105=quinto lugar
+106=sexto lugar
+107=septimo lugar
+108=octavo lugar
+109=9no lugar
+110=10mo lugar
+111=11ro lugar
+112=12do lugar
+113=13ro lugar
+114=14to lugar
+115=15to lugar
+116=16to lugar
+117=empatado en primer lugar
+118=empatado en segundo lugar
+119=empatado en tercer lugar
+120=empatado en cuarto lugar
+121=empatado en quinto lugar
+122=empatado en sexto lugar
+123=empatado en septimo lugar
+124=empatado en octavo lugar
+125=empatado en 9no lugar
+126=empatado en 10mo lugar
+127=empatado en 11ro lugar
+128=empatado en 12do lugar
+129=empatado en 13ro lugar
+130=empatado en 14to lugar
+131=empatado en 15to lugar
+132=empatado en 16to lugar
+133=empate
+134=ganando
+135=perdiendo
+136=empatado
+137=Muerto
+138=Se salio
+139=Equipo rojo %d Equipo azul %d
+140=Anotaste %d a %d.
+141=El enemigo anoto %d a %d.
+142=Tu aliado anoto %d a %d.
+143=Devolviste la bandera.
+144=El enemigo tiene tu bandera.
+145=El enemigo devolvio la bandera.
+146=Tu aliado tiene la bandera.
+147=Tu aliado devolvio la bandera.
+148=Tu bandera fue devuelta.
+149=La bandera enemiga fue devuelta.
+150=Se acabo el tiempo.
+151=Estas en el ataque.
+152=Estas en la defensa.
+153=Puntos
+154=%s (%d segundos)
+155=Aliado %s en la colina (%d segundos)
+156=Enemigo %s en la colina (%d segundos)
+157=Tiempo
+158=Te toca a ti!
+159=Le toca a un aliado!
+160=Le toca a %s.
+161=Tienes la bola.
+162=Un aliado tiene la bola.
+163=%s tiene la bola.
+164=Aliado %s tiene la bola (%d segundos)
+165=Enemigo %s tiene la bola (%d segundos)
+166=Anotaste una bandera!
+167=Aliado %s anoto una bandera!
+168=Enemigo %s anoto una bandera!
+169=Completaste la vuelta %d en %.2f segundos.
+170=Aliado %s completo la vuelta %d.
+171=Enemigo %s completo una vuelta.
+172=nuevo mejor tiempo de vuelta %.2f.
+173=%s 1 bandera
+174=%s %d banderas
+175=%s todas las vueltas completas
+176=%s vuelta %d de %d
+177=Banderas
+178=%d equipo %d
+179=Nuevo objetivo %s
+180=%s bajas %d equipo %d de %d
+181=%s bajas %d de %d
+182=Te telefraguearon
+183=Todos - 
+184=Equipo - 
+185=Vehiculo - 
+188= restantes
+189=Direccion IP del servidor - 
+190=Tiroteo
+## error/error_headers | 8
+0=ATENCION
+1=ATENCION
+2=ESTAS SEGURO?
+3=GUARDANDO...
+4=ATENCION:
+5=SABIAS QUE...
+6=UPS!
+7=ALERTA!
+## main_menu/difficulty_select/difficulty_descriptions | 4
+0=Tus enemigos se acobardan y caen\nante tu ataque imparable, pero\nla victoria final te dejara\ncon ganas de mas.
+1=Hordas de alienigenas quieren\ndestruirte, pero nervios de acero\ny un dedo rapido en el gatillo\nte dan buena oportunidad.
+2=Tus enemigos son tan numerosos\ncomo feroces; sus ataques\nson devastadores.\nSobrevivir no esta garantizado.
+3=Enfrentas rivales que nunca\nhan conocido la derrota, que se\nrien en lenguas alienigenas de\ntus intentos. Esto es un suicidio.
+## main_menu/difficulty_select/difficulty_options | 4
+1=NORMAL
+## main_menu/difficulty_select/warning_message | 1
+0=CUIDADO! Si eliges\nesta dificultad\nperderas el avance\nguardado en\neste nivel.
+## main_menu/gametype_select/var_gametype_banks | 6
+0=ESTANDAR
+1=OPENCE
+3=INYECTOR DE TAGS
+4=TIROTEO
+## main_menu/main_menu_options | 5
+0=NUEVA CAMPANA
+1=CARGAR CAMPANA
+4=DEMOS DEL JUEGO
+## main_menu/map_list | 11
+0=El Pilar de \nOtono
+1=Halo
+2=La Verdad y la \nReconciliacion
+3=El Cartografo \nSilencioso
+4=Asalto a la\nSala de Control
+5=343 Guilty \nSpark
+6=La Biblioteca
+7=Dos Traiciones
+8=Keyes
+9=Las Fauces
+10=Nivel no\ndisponible
+## main_menu/multiplayer_type_select/direct_ip/cap_direct_ip_options | 2
+0=Escribe la direccion del servidor al que te\nquieres conectar, y si quieres dos puntos y el\npuerto. Ejemplo: 206.0.8.4:2304.
+1=Escribe la contrasena del servidor al que te\nquieres conectar.
+## main_menu/multiplayer_type_select/direct_ip/direct_ip_options | 2
+0=DIRECCION DEL SERVIDOR
+1=CONTRASENA
+## main_menu/multiplayer_type_select/join_game/filters/cap_filter_options | 12
+0=No mostrar servidores vacios.
+1=Mostrar servidores vacios.
+2=No mostrar servidores llenos.
+3=Mostrar servidores llenos.
+4=Filtrar servidores por latencia (en ms).\nLa latencia es que tan rapido llegan los datos.
+5=Mostrar solo partidas del tipo de juego\nelegido.
+6=Mostrar servidores de todos contra todos\ny por equipos.
+7=Mostrar solo servidores de todos contra todos.
+8=Mostrar solo servidores por equipos.
+9=Mostrar solo servidores con mapas propios\nque tienes instalados.
+10=Mostrar servidores con mapas propios que no\ntienes instalados.
+11=Mostrar servidores con mapas que no tienes si su\nanfitrion los comparte: se bajan al entrar.
+## main_menu/multiplayer_type_select/join_game/filters/filter_options | 6
+0=SERVIDORES VACIOS
+1=SERVIDORES LLENOS
+2=PING
+3=TIPO DE JUEGO
+5=MAPAS QUE FALTAN
+## main_menu/multiplayer_type_select/join_game/join_game_buttons | 5
+0=BUSCAR
+1=ACTUALIZAR
+2=PARAR
+3=FILTROS
+## main_menu/multiplayer_type_select/join_game/join_game_column_headers | 5
+0=Servidor
+1=Mapa
+2=Jugadores
+3=Juego
+4=Ping
+## main_menu/multiplayer_type_select/join_game/join_game_mode | 2
+0=Internet
+1=LAN
+## main_menu/multiplayer_type_select/join_game/join_game_ticker_labels | 10
+0=Jugadores
+1=Reglas
+2=Mensaje
+3=Pidiendo datos del servidor...
+4=Pidiendo el mensaje del dia...
+5=Bienvenido al multijugador de Halo!
+6=SERVIDORES:
+7=JUGADORES:
+8=PAGINA
+9=PENDIENTE: URL DEL MENSAJE
+## main_menu/multiplayer_type_select/mp_map_select/map_data | 20
+0=Chapuzones\ny explosiones\n\n2-8 jugadores
+1=Sangre roja,\nnieve blanca\n\n4-16 jugadores\n\nCon vehiculos
+2=Centro de proce-\nsamiento Covenant\n\n4-8 jugadores
+3=Sube las rampas,\nbaja los tubos\n\n2-6 jugadores
+4=Sube a lo alto\n\n\n2-8 jugadores
+5=Lapidas para\ntodos\n\n4-16 jugadores
+6=Amigo, de verdad\nnecesitas...\n\n2-8 jugadores
+7=Anomalia del espacio\nprofundo No. 0198\n\n4-8 jugadores
+8=Combate de nave\na nave\n\n4-16 jugadores
+9=Los rapidos\ny los muertos\n\n4-16 jugadores\n\nCon vehiculos
+10=Vueltas y vueltas\ny mas vueltas\n\n2-8 jugadores
+11=Centro de entrena-\nmiento de clones\n\n2-6 jugadores
+12=Un largo paseo\npor un pasillo corto\n\n2-8 jugadores
+13=Resbalando\ny deslizando\n\n4-16 jugadores\n\nCon vehiculos
+14=Arena, olas y\ncasquillos\n\n4-16 jugadores\n\nCon vehiculos
+15=No mires abajo...\na menos que caigas\n\n4-16 jugadores\n\nCon vehiculos
+16=Me lo imaginaba\nmas grande\n\n4-16 jugadores\n\nCon vehiculos
+17=Un enemigo detras\nde cada arbol\n\n4-16 jugadores\n\nCon vehiculos
+18=Da miedo, no?\n\n\n2-12 jugadores\n\nCon vehiculos
+19=NIVEL DESCONOCIDO\n\n\n
+## main_menu/multiplayer_type_select/multiplayer_options | 9
+2=INTERNET
+3=LAN
+8=LOCAL
+## main_menu/multiplayer_type_select/server_settings/cap_server_settings_options | 8
+0=Escribe un nombre para tu servidor.
+1=Si quieres, escribe una contrasena para\ntu servidor.
+2=La red usara ajustes para conexiones de modem\nde 56 Kbps. Al crear partidas multijugador,\npodra entrar otro jugador mas\n(2 jugadores en total).
+3=La red usara ajustes para conexiones DSL / cable\nde 128 Kbps de subida. Al crear partidas\nmultijugador, podran entrar tres jugadores mas\n(4 jugadores en total).
+4=La red usara ajustes para conexiones DSL / cable\nde 384 Kbps de subida. Al crear partidas\nmultijugador, podran entrar siete jugadores mas\n(8 jugadores en total).
+5=La red usara ajustes para conexiones DSL / cable\nde 512 Kbps de subida. Al crear partidas\nmultijugador, podran entrar nueve jugadores mas\n(10 jugadores en total).
+6=La red usara ajustes para conexiones T1 / LAN\nde mas de 768 Kbps de subida. Al crear partidas\nmultijugador, podran entrar quince jugadores mas\n(16 jugadores en total).
+7=Elige el maximo de jugadores que pueden jugar\nen tu partida. El maximo de un servidor\ndepende de la velocidad de tu conexion.
+## main_menu/multiplayer_type_select/server_settings/server_settings_options | 6
+0=NOMBRE DEL SERVIDOR
+1=CONTRASENA
+2=MODO DEL SERVIDOR
+3=MAX. JUGADORES
+5=IP DEL SERVIDOR
+## main_menu/player_profiles_select/difficulty_names | 4
+1=Normal
+## main_menu/player_profiles_select/profile_description_labels | 6
+3=sin uso
+## main_menu/quit_select/header_quit_game_prompt | 2
+0=Seguro que quieres\nsalir de Halo?
+1=Salir?
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/cap_indicator_options | 8
+0=Los objetivos (colinas, banderas, bolas y demas)\nsaldran en tu radar.
+1=Los objetivos tendran marcas especiales\nencima en la pantalla.
+2=Los objetivos no se veran en tu radar\nni en la pantalla.
+3=Todos los demas jugadores saldran en tu radar\ncuando se muevan.
+4=Los demas jugadores de tu equipo saldran en tu\nradar cuando se muevan.
+5=Los demas jugadores nunca saldran en tu\nradar.
+6=Triangulos verdes sobre la cabeza de tus\ncompaneros te recuerdan que no debes\ndispararles.
+7=A tus companeros solo los distingue el color\nde su armadura.
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/indicator_options_labels | 4
+0=INDICADOR DE OBJETIVOS:
+1=OBJETIVOS EN PANTALLA:
+2=OTROS JUGADORES EN RADAR:
+3=MARCAS DE AMIGOS:
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/var_friends_on_screen | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/var_objectives_on_screen | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/var_others_on_radar | 3
+0=TODOS
+2=NO
+## main_menu/settings_select/multiplayer_setup/indicator_options_edit/var_radar display | 3
+0=RADAR
+1=MARCADORES
+## main_menu/settings_select/multiplayer_setup/item_options_edit/cap_item_options | 42
+0=Todos tienen granadas sin limite, para una diversion\nruidosa, explosiva y a veces un poco sucia.
+1=Cada jugador lleva hasta 4 granadas de cada\ntipo.
+2=El mapa tendra las armas que pusieron\nsus disenadores.
+3=Todas las armas del mapa se cambian por\npistolas.
+4=Todas las armas del mapa se cambian por\nrifles de asalto y rifles de plasma.
+5=Todas las armas del mapa se cambian por\narmas de plasma.
+6=Las armas del mapa se cambian por armas\ncon mira de francotirador.
+7=No habra rifles de francotirador ni pistolas\nen el mapa.
+8=Todas las armas del mapa se cambian por\nlanzacohetes.
+9=Todas las armas del mapa se cambian por\nescopetas.
+10=Todas las armas del mapa solo sirven a\ncorta distancia.
+11=No hay armas del mapa hechas en los\ntalleres del Covenant.
+12=Solo habra armas hechas por el Covenant\nen el mapa.
+13=El mapa tendra las armas que pusieron\nsus disenadores.
+14=Solo habra las armas mas devastadoras\ny peligrosas en el mapa.
+15=Las armas del mapa, sin granadas.
+16=Empiezas con las armas que los disenadores\neligieron para el mapa.
+17=Usa las mismas armas iniciales en todos\nlos mapas.
+18=Las armas del mapa salen donde las pusieron\nsus disenadores.
+19=No hay armas en el mapa: con equipo NINGUNA\ny NINGUNA, solo golpes y granadas.
+20=Las armas siguen el juego de armas de arriba.
+21=Todos empiezan con las armas principal y\nsecundaria de abajo; las del mapa son las suyas.
+## main_menu/settings_select/multiplayer_setup/item_options_edit/item_options_labels | 9
+0=GRANADAS INFINITAS:
+1=JUEGO DE ARMAS:
+2=JUEGO DE VEHICULOS:
+3=EQUIPO INICIAL:
+4=REAPARICION DE VEHICULOS:
+5=EQUIPO:
+## main_menu/settings_select/multiplayer_setup/item_options_edit/var_infinite_grenades | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/item_options_edit/var_starting_equipment | 2
+1=GENERICO
+## main_menu/settings_select/multiplayer_setup/item_options_edit/var_weapon_set | 14
+0=NORMAL
+1=PISTOLAS
+2=RIFLES
+3=ARMAS DE PLASMA
+4=FRANCOTIRADOR
+5=SIN FRANCOTIRADOR
+6=LANZACOHETES
+7=ESCOPETAS
+8=CORTO ALCANCE
+10=COVENANT
+11=CLASICO
+12=ARMAS PESADAS
+13=SIN GRANADAS
+## main_menu/settings_select/multiplayer_setup/player_options_edit/cap_player_options | 39
+0=Reapareces sin limite hasta que termine la partida\no se acabe el tiempo.
+1=Tienes una sola vida. Pero al menos la usas para\npatear traseros por la galaxia en vez de llorar\nen una mansion con tus amantes millonarios.
+2=Tienes tres vidas, lo que te hace un tercio\nde genial que un gato.
+3=Tienes cinco vidas, cuatro mas de las que\ntendrias en el mundo real. Usalas bien.
+4=Empiezas la partida con la mitad de la salud\ny el escudo a la mitad.
+5=Empiezas la partida con salud y escudo completos.
+6=Empiezas con 50% mas de salud y escudo\nde lo normal.
+7=Empiezas con el doble de salud y escudo\nde lo normal.
+8=Empiezas con el triple de salud y escudo\nde lo normal.
+9=Empiezas con cuatro veces la salud y el escudo\nde lo normal.
+10=Tu traje de batalla tendra escudo y sera\nmas dificil matarte.
+11=El escudo de tu traje no funcionara: sera mucho\nmas facil que todos mueran.
+12=Al morir puedes reaparecer de inmediato.
+13=Al morir esperas cinco segundos antes de\nvolver a la partida.
+14=Al morir esperas diez segundos antes de\nvolver a la partida.
+15=Al morir esperas quince segundos antes de\nreaparecer. Asi sabras como es la\neternidad.
+16=El tiempo de reaparicion siempre sera\nel inicial.
+17=Cada vez que mueres tu tiempo de reaparicion sube\ncinco segundos. Cada vez que matas a alguien\nbaja cinco segundos.
+18=Tu tiempo de reaparicion sube diez segundos cada\nvez que mueres, y baja diez segundos cada\nvez que matas a alguien.
+19=Cada vez que mueres sumas quince segundos a tu\ntiempo de reaparicion. Cada vez que matas a\nalguien restas quince.
+20=Al morir, el que sobra no reaparece hasta que\notro cargue con la vergonzosa tarea de ser\nel que sobra al morir.
+21=Al morir reapareces de inmediato, sin esperar\na que otro repita tus errores.
+22=Todos los jugadores seran invisibles.
+23=Todos los jugadores se veran, salvo que tomen\nun camuflaje activo.
+24=No pagas nada por acabar con tu propia vida.
+25=Cada vez que causes tu propia muerte, esperas\ncinco segundos antes de volver a la partida.
+26=Esperas diez segundos tras causar tu propia\nmuerte antes de volver a la partida.
+27=Si te suicidas, esperas quince segundos antes\nde reaparecer. Asi sabras como es\nla eternidad.
+28=Cada jugador conserva su ayuda de punteria\ndel mouse.
+29=Sin ayuda de punteria para mouse y teclado.\nMandos y pantalla tactil no cambian.
+30=Todos ven el escudo y el sobrescudo del\njuego original, sin importar sus ajustes.
+31=El escudo de todos ilumina alrededor\nal brillar.
+32=El escudo de todos ilumina alrededor al\nbrillar, tres veces mas lejos (Show de luces).
+33=Para todos, el sobrescudo sube por el cuerpo\ny queda encendido, en su color.
+34=Para todos, el escudo ilumina alrededor, y el\nsobrescudo sube y queda encendido.
+35=Para todos, el brillo del Show de luces, y el\nsobrescudo subiendo y quedando encendido.
+36=Sin sincronizar: cada jugador ve los efectos\nde escudo de sus propios ajustes de video.
+37=Todos juegan en primera persona.
+38=Cada jugador puede ver sobre el hombro (su\najuste de tercera persona). Versiones viejas: primera.
+## main_menu/settings_select/multiplayer_setup/player_options_edit/player_options_labels | 11
+0=NUMERO DE VIDAS:
+1=SALUD MAXIMA:
+3=TIEMPO DE REAPARICION:
+4=AUMENTO DE REAPARICION:
+5=EL QUE SOBRA:
+6=JUGADORES INVISIBLES:
+7=CASTIGO POR SUICIDIO:
+9=EFECTOS DE ESCUDO:
+## main_menu/settings_select/multiplayer_setup/player_options_edit/var_invisible_players | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/player_options_edit/var_number_of_lives | 4
+0=INFINITAS
+## main_menu/settings_select/multiplayer_setup/player_options_edit/var_odd_man_out | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/player_options_edit/var_respawn_time | 4
+0=INMEDIATO
+## main_menu/settings_select/multiplayer_setup/player_options_edit/var_shields | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/cap_ctf | 36
+0=Tienes que llevar tu propia bandera a la base\ndel otro equipo para anotar.
+1=Tienes que capturar la bandera enemiga y llevarla\na tu base.
+2=Cada equipo tendra su propia bandera.
+3=Habra una sola bandera en el mapa a la vez, en\nuna base. Los equipos se turnan ataque y\ndefensa cada minuto.
+4=Habra una sola bandera en el mapa a la vez, en\nuna base. Los equipos se turnan ataque y\ndefensa cada 2 minutos.
+5=Habra una sola bandera en el mapa a la vez, en\nuna base. Los equipos se turnan ataque y\ndefensa cada 3 minutos.
+6=Habra una sola bandera en el mapa a la vez, en\nuna base. Los equipos se turnan ataque y\ndefensa cada 5 minutos.
+7=Habra una sola bandera en el mapa a la vez, en\nuna base. Los equipos se turnan ataque y\ndefensa cada 10 minutos.
+8=No puedes devolver la bandera a tu base; vuelve\nsola despues de un tiempo.
+9=La bandera vuelve a la base si pasas sobre ella.
+10=Para anotar, tu bandera tiene que estar en su\nbase. Usala si te gusta perseguir a los\nenemigos con la bandera antes de anotar.
+11=Puedes anotar aunque tu bandera este en las\nviles manos del enemigo.
+12=El primer equipo en capturar la bandera gana.
+13=Necesitas capturar tres banderas para ganar.
+14=Captura la bandera cinco veces y ganas.
+15=Necesitas capturar diez banderas para ganar.
+16=Toma quince banderas y ganas, ademas de una\nimpresionante coleccion de banderas.
+17=Cada baja da un punto al equipo del que la hizo\n(una traicion lo quita), y cada captura vale\nBajas por captura. El limite es en capturas.
+18=Solo cuentan las capturas.
+19=Con Puntos por bajas, cada captura vale\n5 puntos (una baja vale 1).
+20=Con Puntos por bajas, cada captura vale\n10 puntos (una baja vale 1).
+21=Con Puntos por bajas, cada captura vale\n15 puntos (una baja vale 1).
+22=Con Puntos por bajas, cada captura vale\n20 puntos (una baja vale 1).
+23=Con Puntos por bajas, cada captura vale\n25 puntos (una baja vale 1).
+24=Con Puntos por bajas, cada captura vale\n30 puntos (una baja vale 1).
+25=Con Puntos por bajas, cada captura vale\n40 puntos (una baja vale 1).
+26=Con Puntos por bajas, cada captura vale\n50 puntos (una baja vale 1).
+27=Con Puntos por bajas, cada captura vale\n75 puntos (una baja vale 1).
+28=Con Puntos por bajas, cada captura vale\n100 puntos (una baja vale 1).
+29=La partida no tendra limite de tiempo. Solo\ntermina cuando alguien gana.
+30=La partida tendra 10 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+31=La partida tendra 15 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+32=La partida tendra 20 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+33=La partida tendra 25 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+34=La partida tendra 30 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+35=La partida tendra 45 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/ctf_labels | 8
+0=ASALTO:
+1=BANDERA UNICA:
+2=LA BANDERA VUELVE SOLA:
+3=BANDERA EN CASA PARA ANOTAR:
+4=CAPTURAS PARA GANAR:
+5=LIMITE DE TIEMPO:
+6=PUNTOS POR BAJAS:
+7=BAJAS POR CAPTURA:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_kills_score | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_assault | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_flag_at_home | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_flag_must_reset | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_single_flag | 6
+0=OFF
+1=1 MINUTO
+2=2 MINUTOS
+3=3 MINUTOS
+4=5 MINUTOS
+5=10 MINUTOS
+## main_menu/settings_select/multiplayer_setup/playlist_edit/ctf_edit/var_time_limit | 7
+1=10 MINUTOS
+2=15 MINUTOS
+3=20 MINUTOS
+4=25 MINUTOS
+5=30 MINUTOS
+6=45 MINUTOS
+## main_menu/settings_select/multiplayer_setup/playlist_edit/game_type_select/gametype_select_list_extended_dsc_text | 7
+0=Busca la bandera enemiga y\nllevala a tu base mientras\nproteges la tuya.\nReglas actuales:
+1=Ve a la colina y defiendela\nde los que te la quieren\nquitar.\nReglas actuales:
+2=A veces hay que matar.\nEsta es una de esas veces.\nMata o te matan.\nReglas actuales:
+3=Hazte uno con la bola. Y no\ndejes que nadie mas la\ntoque mientras tanto.\nReglas actuales:
+4=Completa las vueltas antes\nque tus rivales, volandolos\nen el camino.\nReglas actuales:
+5=Aguanta oleada tras oleada\ndel Covenant y el Flood,\nal estilo de Halo: Reach.\nReglas actuales:
+6= \n \n \nReglas actuales:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/game_type_select/gametype_select_list_options | 7
+0=CAPTURA LA BANDERA
+1=REY DE LA COLINA
+5=GUARDAR CAMBIOS
+6=TIROTEO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/cap_koth | 21
+0=Durante la partida, la colina se teletransporta\na un lugar al azar.
+1=La colina siempre estara en el mismo sitio.
+2=El primero en pasar sesenta segundos en la colina\ngana.
+3=Solo necesitas tener la colina dos minutos para\nganar la corona.
+4=Necesitas tener la colina cinco minutos para ganar.
+5=Pasa diez minutos dominando la colina y la\npartida es tuya.
+6=Consiguete una silla comoda: necesitas controlar\nla colina quince minutos completos para ganar.
+7=Es una partida por equipos.
+8=Cada quien por su cuenta.
+9=Habra una sola colina a la vez.
+10=Habra dos colinas a la vez. Tener cualquiera\nda puntos.
+11=Habra tres colinas a la vez. Tener cualquiera\nda puntos.
+12=Habra cuatro colinas a la vez. Tener cualquiera\nda puntos.
+13=Habra cinco colinas a la vez. Tener cualquiera\nda puntos.
+14=La partida no tendra limite de tiempo. Solo\ntermina cuando alguien gana.
+15=La partida tendra 10 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+16=La partida tendra 15 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+17=La partida tendra 20 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+18=La partida tendra 25 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+19=La partida tendra 30 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+20=La partida tendra 45 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/koth_labels | 4
+0=COLINA QUE SE MUEVE:
+1=PUNTOS PARA GANAR:
+2=POR EQUIPOS:
+3=VARIAS COLINAS:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/var_moving_hill | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/var_multi_hill | 5
+0=OFF
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/var_score_to_win | 5
+0=1 MINUTO
+1=2 MINUTOS
+2=5 MINUTOS
+3=10 MINUTOS
+4=15 MINUTOS
+## main_menu/settings_select/multiplayer_setup/playlist_edit/koth_edit/var_team_play | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/cap_oddball | 46
+0=No tendras habilidades especiales al llevar\nla bola.
+1=Mientras tengas la bola, seras invisible para\nlos demas jugadores.
+2=Mientras lleves la bola, haras mas dano a\ntus rivales.
+3=Mientras lleves la bola, resistiras mas\nel dano.
+4=No tendras habilidades especiales cuando no\nlleves la bola.
+5=Solo se ve al jugador con la bola; todos\nlos demas son invisibles.
+6=Los que no llevan la bola hacen mas dano;\nlo pierden mientras la tienen.
+7=Los que no llevan la bola resisten mas el\ndano que el que la tiene.
+8=Correras igual de rapido tengas o no\nla bola.
+9=Cuando tengas la bola, correras mas lento que\nlos demas.
+10=Cuando tengas la bola, correras mas rapido que\nlos demas.
+11=El objetivo es tener la bola el mayor tiempo\nposible. Gana el primero que la tenga\nel tiempo indicado.
+12=El primero en matar a otro se vuelve el que la lleva.\nLos demas lo son matandolo. Selo el tiempo\nindicado para ganar. No hay bola. Raro, no?
+13=El primero en matar se vuelve el Juggernaut y\nanota por cada baja. Los demas toman su lugar\nmatandolo. Otra vez, no hay bola.
+14=La bola aparecera en lugares al azar del mapa.
+15=La bola siempre aparecera en el mismo sitio\ndel mapa.
+16=Como Cenicienta, solo te preocuparas por\nuna bola.
+17=Seguro esperabas un chiste de dos bolas\naqui. Estas loco? Nos despedirian!
+18=Tres bolas, el triple de diversion.
+19=Que tiene cuatro bolas y emociona a todos? Este juego!
+20=Cinco bolas regadas por todas partes.
+21=Seis bolas, y todo bien.
+22=Cual es el significado oculto de la septima bola?
+23=Ocho bolas definitivamente son suficientes.
+24=Este juego se llamara desde ahora\nEl Juego de las Nueve Bolas.
+25=Diez! Diez bolas en este juego! Ja ja ja ja ja!
+26=Este juego llega a once. Bolas, claro.
+27=... y luego hubo doce bolas en el juego.
+28=Que suerte: hay trece bolas en este juego.
+29=Que obtienes al duplicar la emocion y el misterio\nde siete bolas? Catorce bolas, eso!
+30=Se el primero de tu barrio en juntar las quince bolas!
+31=Casi no podras caminar sin pisar una de las\ndieciseis bolas de este juego.
+32=Solo necesitas tener la bola o ser el que la lleva\nun minuto en total para ganar. Los Juggernaut\nsolo necesitan una baja.
+33=Ten la bola o se el que la lleva dos minutos y la\npartida es tuya. Gana el primer Juggernaut con dos bajas.
+34=Ten la bola o se el que la lleva cinco minutos y la\npartida es tuya. Gana el primer Juggernaut con cinco bajas.
+35=Gana el primero en tener la bola o ser el que la lleva\ndiez minutos. Gana el primer Juggernaut con diez bajas.
+36=Necesitas pasar quince minutos con la bola o\nsiendo el que la lleva para ganar. Los Juggernaut\nnecesitan quince bajas.
+37=Es una partida por equipos.
+38=Cada quien por su cuenta.
+39=La partida no tendra limite de tiempo. Solo\ntermina cuando alguien gana.
+40=La partida tendra 10 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+41=La partida tendra 15 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+42=La partida tendra 20 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+43=La partida tendra 25 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+44=La partida tendra 30 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+45=La partida tendra 45 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/oddball_labels | 8
+0=CON LA BOLA:
+1=SIN LA BOLA:
+2=VELOCIDAD CON LA BOLA:
+3=TIPO DE BOLA:
+4=INICIO AL AZAR:
+5=CANTIDAD DE BOLAS:
+6=MINUTOS/PUNTOS PARA GANAR:
+7=POR EQUIPOS:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_ball_type | 3
+0=NORMAL
+1=PERSECUCION INVERSA
+2=JUGGERNAUT
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_random_start | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_speed_with_ball | 3
+0=NORMAL
+1=LENTO
+2=RAPIDO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_team_play | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_trait_with_ball | 4
+1=INVISIBLE
+2=MAS DANO
+3=RESISTENTE
+## main_menu/settings_select/multiplayer_setup/playlist_edit/oddball_edit/var_trait_without_ball | 4
+1=INVISIBLE
+2=MAS DANO
+3=RESISTENTE
+## main_menu/settings_select/multiplayer_setup/playlist_edit/playlist_edit_list_extended_dsc_text | 10
+0=Cambia el nombre de este\ntipo de juego.\n\nEste tipo de juego:
+1=Elige el tipo de partida\nque quieres jugar y sus\nreglas.\nEste tipo de juego:
+2=Elige los ajustes y limites\nde los jugadores en este\ntipo de juego.\nEste tipo de juego:
+3=Elige las armas y demas\nobjetos que salen en este\ntipo de juego.\nEste tipo de juego:
+4=Opciones de como funcionan\nlos vehiculos y cuales salen\nen este tipo de juego.\nEste tipo de juego:
+5=Elige que indicadores hay\nmientras juegas este\ntipo de juego.\nEste tipo de juego:
+6=Cambia las opciones y reglas\nde los modos por\nequipos.\nEste tipo de juego:
+7=Guarda los cambios de este\ntipo de juego y vuelve a\nla pantalla anterior.\nEste tipo de juego:
+8=Elige las reglas de los tipos\nde OpenCE: SWAT, Infeccion,\nCarrera de armas y Hardcore.\nEste tipo de juego:
+9=El equipo y la ultima\nresistencia de los Spartan, y\nlas formas de los infectados.\nEste tipo de juego:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/playlist_edit_options | 8
+1=OPCIONES DE PARTIDA
+5=GUARDAR CAMBIOS
+## main_menu/settings_select/multiplayer_setup/playlist_edit/race_edit/cap_race | 21
+0=Al final, cada equipo se clasifica por su\nmiembro con menos puntos.
+1=Los puntos de cada equipo son los de su\nmiembro con mas puntos.
+2=Los puntos de cada equipo son la suma de los\npuntos de sus miembros.
+3=Para completar una vuelta, tienes que llegar a\ntodas las banderas en orden.
+4=Completas una vuelta tocando todas las banderas,\nen el orden que quieras.
+5=Todos tienen un solo destino, y el primero en\nllegar suma una vuelta.
+6=Una sola vuelta basta para ganar. Salvo que\ntengas los pantalones en llamas, sera\nrapido y facil.
+7=Tres vueltas rapidas y listo. Como una\npaleta.
+8=Vas a necesitar los dedos de una mano para\ncontar las vueltas de este juego.
+9=Para ganar necesitas nervios de acero, mucho\nvalor y diez vueltas.
+10=Necesitas quince vueltas (y quizas una parada\nen pits) para terminar la carrera.
+11=Ten una bolsa para el mareo a la mano si\nquieres terminar las 25 vueltas.
+12=Es una partida por equipos.
+13=Cada quien por su cuenta.
+14=La partida no tendra limite de tiempo. Solo\ntermina cuando alguien gana.
+15=La partida tendra 10 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+16=La partida tendra 15 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+17=La partida tendra 20 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+18=La partida tendra 25 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+19=La partida tendra 30 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+20=La partida tendra 45 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+## main_menu/settings_select/multiplayer_setup/playlist_edit/race_edit/race_labels | 4
+0=PUNTOS DEL EQUIPO:
+1=TIPO DE CARRERA:
+2=VUELTAS PARA GANAR:
+3=POR EQUIPOS:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/race_edit/var_race_type | 3
+0=NORMAL
+1=EN CUALQUIER ORDEN
+2=RALLY
+## main_menu/settings_select/multiplayer_setup/playlist_edit/race_edit/var_team_play | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/race_edit/var_team_scoring | 3
+0=MINIMO
+1=MAXIMO
+2=SUMA
+## main_menu/settings_select/multiplayer_setup/playlist_edit/slayer_edit/cap_slayer | 26
+0=Cuando mueres y reapareces corres un poco mas rapido.\nDa nuevo sentido a Los rapidos y los muertos.\nEquilibra el juego entre novatos y expertos.
+1=Siempre correras a la misma velocidad, sin importar\ncuantas veces mueras.
+2=Solo anotas al matar a tu objetivo asignado.\nEl objetivo cambia cada vez que haces\nuna baja.
+3=Cada baja que hagas cuenta para tus puntos.
+4=Cada vez que matas a otro jugador, corres un\npoco mas lento. Una desventaja divertida para\nel tirador de buena punteria.
+5=Siempre correras a la misma velocidad, sin importar\ncuantos jugadores mates.
+6=Solo cinco bajas y ganas la partida.
+7=Gana el primero en eliminar a diez enemigos.
+8=Al final habra quince hombres enojados. Enojados\nporque el ganador los mato.
+9=Necesitas veinticinco bajas para ganar\nla partida.
+10=Ojala tengas tiempo, porque necesitas\ncincuenta bajas para ganar esta.
+11=Setenta y cinco bajas para ganar. Preparate para\nuna pelea larga.
+12=Cien bajas para ganar. Para partidas grandes.
+13=Ciento cincuenta bajas para ganar. Solo un\nservidor lleno llega.
+14=Doscientas bajas para ganar. Trae amigos. Muchos\namigos.
+15=Doscientas cincuenta bajas para ganar.
+16=Quinientas bajas para ganar. Vas a estar aqui un rato.
+17=Es una partida por equipos.
+18=Cada quien por su cuenta.
+19=La partida no tendra limite de tiempo. Solo\ntermina cuando alguien gana.
+20=La partida tendra 10 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+21=La partida tendra 15 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+22=La partida tendra 20 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+23=La partida tendra 25 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+24=La partida tendra 30 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+25=La partida tendra 45 minutos de limite. Termina\nal acabarse el tiempo o cuando alguien gana.
+## main_menu/settings_select/multiplayer_setup/playlist_edit/slayer_edit/slayer_labels | 5
+0=BONO POR MUERTE:
+1=CASTIGO POR BAJA:
+2=BAJAS EN ORDEN:
+3=BAJAS PARA GANAR:
+4=POR EQUIPOS:
+## main_menu/settings_select/multiplayer_setup/playlist_edit/slayer_edit/var_death_bonus | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/slayer_edit/var_kill_in_order | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/playlist_edit/slayer_edit/var_team_play | 2
+1=NO
+## main_menu/settings_select/multiplayer_setup/teamplay_options_edit/cap_teamplay_options | 37
+0=A los jugadores no les hacen dano las armas ni\nexplosivos de sus companeros.
+1=A los jugadores les hacen dano las armas o\nexplosivos de sus companeros.
+2=El fuego amigo solo baja el escudo.\nLa salud no se toca.
+3=A los jugadores les hacen dano los explosivos\nde sus companeros.
+4=No hay castigo de reaparicion por matar a\nun companero.
+5=Quien mate a un companero esperara cinco segundos\nmas la proxima vez que muera.
+6=Quien mate a un companero esperara diez segundos\nmas la proxima vez que muera.
+7=Quien mate a un companero esperara quince\nsegundos mas la proxima vez que\nmuera.
+8=Sin equilibrio automatico de equipos. Los jugadores\npueden cambiarse de equipo cuando quieran.
+9=Con equilibrio automatico de equipos. Los jugadores\nno pueden pasarse a un equipo mas lleno.
+10=Los jugadores aparecen en cualquier punto que\npermita el tipo de juego.
+11=Los jugadores solo aparecen en los puntos de\nCaptura la bandera de su equipo.
+## main_menu/settings_select/multiplayer_setup/teamplay_options_edit/teamplay_options_labels | 10
+1=CASTIGO POR FUEGO AMIGO:
+2=EQUILIBRAR EQUIPOS:
+3=APARECER EN SU BASE:
+## main_menu/settings_select/multiplayer_setup/teamplay_options_edit/var_friendly_fire | 4
+0=OFF
+1=ON
+## main_menu/settings_select/multiplayer_setup/vehicle_options_edit/cap_vehicle_options | 51
+0=Los vehiculos no reaparecen.
+1=Los vehiculos reaparecen cada 30 segundos si nadie los usa.
+2=Los vehiculos reaparecen cada 60 segundos si nadie los usa.
+3=Los vehiculos reaparecen cada 90 segundos si nadie los usa.
+4=Los vehiculos reaparecen cada 2 minutos si nadie los usa.
+5=Los vehiculos reaparecen cada 3 minutos si nadie los usa.
+6=Los vehiculos reaparecen cada 5 minutos si nadie los usa.
+9=Ajusta los vehiculos del equipo rojo.
+10=Ajusta los vehiculos del equipo azul.
+11=El mapa tendra los vehiculos que trae: Warthogs,\ntanques Scorpion, Ghosts, Banshees y\ntorretas Covenant.
+12=No habra vehiculos en el mapa; andaras a pie\ntodo el tiempo.
+13=Recorreras el mapa en el agil Warthog, un jeep\nresistente con una ametralladora atras.
+14=Muevete en el Ghost, un aerodeslizador agil con\npotentes canones de energia y la mejor pintura\nde la galaxia.
+15=Avanza por el terreno en el tanque Scorpion,\nuna poderosa maquina de matar.
+16=Recorreras el mapa en el Warthog de cohetes, un\njeep resistente con un lanzacohetes atras.
+17=Domina el cielo en el Banshee.
+18=Defiende el terreno con la poderosa torreta\nCovenant.
+19=Saldran todos los vehiculos que pone el mapa,\ncomo en Halo PC.
+20=Elige que vehiculos salen en el mapa.
+21=No saldran Warthogs en el mapa.
+22=Saldra hasta un Warthog en el mapa.
+23=Saldran hasta dos Warthogs en el mapa.
+24=Saldran hasta tres Warthogs en el mapa.
+25=Saldran hasta cuatro Warthogs en el mapa.
+26=No saldran Ghosts en el mapa.
+27=Saldra hasta un Ghost en el mapa.
+28=Saldran hasta dos Ghosts en el mapa.
+29=Saldran hasta tres Ghosts en el mapa.
+30=Saldran hasta cuatro Ghosts en el mapa.
+31=No saldran Scorpions en el mapa.
+32=Saldra hasta un Scorpion en el mapa.
+33=Saldran hasta dos Scorpions en el mapa.
+34=Saldran hasta tres Scorpions en el mapa.
+35=Saldran hasta cuatro Scorpions en el mapa.
+36=No saldran Warthogs de cohetes en el mapa.
+37=Saldra hasta un Warthog de cohetes en el mapa.
+38=Saldran hasta dos Warthogs de cohetes en el mapa.
+39=Saldran hasta tres Warthogs de cohetes en el mapa.
+40=Saldran hasta cuatro Warthogs de cohetes en el mapa.
+41=No saldran Banshees en el mapa.
+42=Saldra hasta un Banshee en el mapa.
+43=Saldran hasta dos Banshees en el mapa.
+44=Saldran hasta tres Banshees en el mapa.
+45=Saldran hasta cuatro Banshees en el mapa.
+46=No saldran torretas en el mapa.
+47=Saldra hasta una torreta en el mapa.
+48=Saldran hasta dos torretas en el mapa.
+49=Saldran hasta tres torretas en el mapa.
+50=Saldran hasta cuatro torretas en el mapa.
+## main_menu/settings_select/multiplayer_setup/vehicle_options_edit/var_team | 2
+0=EQUIPO ROJO
+1=EQUIPO AZUL
+## main_menu/settings_select/multiplayer_setup/vehicle_options_edit/var_vehicle_set | 10
+2=WARTHOGS
+3=GHOSTS
+4=SCORPIONS
+5=WARTHOGS COHETES
+6=BANSHEES
+7=TORRETAS
+8=PC
+## main_menu/settings_select/multiplayer_setup/vehicle_options_edit/var_vehicles_respawn | 7
+0=NUNCA
+4=2 MINUTOS
+5=3 MINUTOS
+6=5 MINUTOS
+## main_menu/settings_select/multiplayer_setup/vehicle_options_edit/vehicle_options_labels | 10
+0=JUEGO DE VEHICULOS:
+1=WARTHOG:
+2=GHOST:
+3=SCORPION:
+4=WARTHOG COHETES:
+5=BANSHEE:
+6=TORRETA:
+7=REAPARICION DE VEHICULOS:
+8=LADO:
+## main_menu/settings_select/player_setup/player_profile_edit/audio_settings/audio_option_labels | 7
+2=SONIDO AMBIENTAL:
+3=ACELERACION POR HARDWARE:
+4=CALIDAD DE SONIDO:
+5=VARIEDAD DE SONIDO:
+## main_menu/settings_select/player_setup/player_profile_edit/audio_settings/cap_audio_settings_strings | 13
+0=Volumen general.
+1=Volumen de los efectos de sonido.
+2=Volumen de la musica.
+3=El sonido usara solo bufers por software.\nLa tarjeta de sonido no procesara\nlos bufers.
+4=El sonido usara bufers acelerados por hardware.\nLos bufers guardan los datos para\nprocesar los sonidos.
+5=Calidad y efectos de audio basicos para el\nmejor rendimiento.
+6=Mejor calidad de audio con efecto Doppler,\npara equipos medianos.
+7=La mejor calidad de audio con Doppler y sonido\n3D, para equipos potentes.
+8=Sin sonido ambiental. El sonido ambiental rebota\nen los objetos alrededor.
+9=Sonido ambiental activado con Environmental\nAudio Extensions (EAX).
+10=Sonidos con poca variedad. El mejor rendimiento\npara un procesador lento.
+11=Sonidos con algo de variedad. Equilibra\ncalidad y rendimiento.
+12=Sonidos con toda su variedad. La mejor calidad\npara un procesador rapido.
+## main_menu/settings_select/player_setup/player_profile_edit/audio_settings/var_environmental_sound | 2
+0=OFF
+1=EAX
+## main_menu/settings_select/player_setup/player_profile_edit/audio_settings/var_supplementary_buffers | 3
+0=BAJO
+1=NORMAL
+2=ALTO
+## main_menu/settings_select/player_setup/player_profile_edit/color_edit/colors_list | 18
+0=Blanco
+1=Negro
+2=Rojo
+3=Azul
+4=Gris
+5=Amarillo
+6=Verde
+7=Rosado
+8=Morado
+9=Cian
+10=Cobalto
+11=Naranja
+12=Verde azulado
+13=Salvia
+14=Cafe
+15=Canela
+16=Granate
+17=Salmon
+## main_menu/settings_select/player_setup/player_profile_edit/controls_setup/cap_controls_setup_strings | 4
+0=Elige un dispositivo de la lista para configurarlo.
+1=Pasa por los grupos de comandos para\nconfigurar todos los comandos.
+2=Elige este comando para cambiar el boton o\neje que tiene.
+3=Toca un boton o mueve un eje para asignarlo.\nESC = cancelar.  RETROCESO = borrar.
+## main_menu/settings_select/player_setup/player_profile_edit/controls_setup/controls_binding_labels | 30
+1=AVANZAR
+2=RETROCEDER
+3=IR A LA IZQUIERDA
+4=IR A LA DERECHA
+5=MIRAR ARRIBA
+6=MIRAR ABAJO
+7=MIRAR A LA IZQUIERDA
+8=MIRAR A LA DERECHA
+9=DISPARAR
+13=RECARGAR
+14=GOLPE
+15=CAMBIAR DE ARMA
+19=ZOOM DE LA MIRA
+20=ACCION
+21=ACEPTAR EN MENU
+22=ATRAS EN MENU
+23=HABLAR
+24=HABLAR AL EQUIPO
+25=HABLAR AL VEHICULO
+26=VER PUNTOS
+27=CAPTURA DE PANTALLA
+28=VER REGLAS
+29=VER NOMBRES
+## main_menu/settings_select/player_setup/player_profile_edit/controls_setup/controls_option_labels | 2
+0=DISPOSITIVO:
+1=CATEGORIA:
+## main_menu/settings_select/player_setup/player_profile_edit/controls_setup/var_command_groups | 4
+0=MOVIMIENTO
+1=COMBATE
+2=ACCIONES
+3=OTROS
+## main_menu/settings_select/player_setup/player_profile_edit/gamepad_setup/cap_gamepad_setup_strings | 2
+0=Elige el dispositivo para desactivarlo\ny quitarlo de tu perfil.
+1=Elige el dispositivo para activarlo\ny agregarlo a tu perfil.
+## main_menu/settings_select/player_setup/player_profile_edit/gamepad_setup/gamepad_setup_labels | 2
+0=DISPOSITIVOS DEL PERFIL
+1=DISPOSITIVOS DISPONIBLES
+## main_menu/settings_select/player_setup/player_profile_edit/mouse_settings/cap_mouse_settings_strings | 22
+0=Mirar a los lados sera bastante lento.
+1=Mirar a los lados sera un poco lento.
+2=Mirar a los lados sera justo: ni muy rapido,\nni muy lento.
+3=Mirar a los lados sera apenas un poco mas rapido\nde lo normal.
+4=Mirar a los lados sera un poco mas rapido\nde lo normal.
+5=Mirar a los lados sera mas rapido de lo normal.
+6=Mirar a los lados sera bastante mas rapido\nde lo normal.
+7=Mirar a los lados sera muy rapido.
+8=Mirar a los lados sera rapidisimo.
+9=Mirar a los lados sera ultrasensible.
+10=Mirar arriba y abajo sera bastante lento.
+11=Mirar arriba y abajo sera un poco lento.
+12=Mirar arriba y abajo sera justo: ni muy rapido,\nni muy lento.
+13=Mirar arriba y abajo sera apenas un poco mas rapido\nde lo normal.
+14=Mirar arriba y abajo sera un poco mas rapido\nde lo normal.
+15=Mirar arriba y abajo sera mas rapido de lo normal.
+16=Mirar arriba y abajo sera bastante mas rapido\nde lo normal.
+17=Mirar arriba y abajo sera muy rapido.
+18=Mirar arriba y abajo sera rapidisimo.
+19=Mirar arriba y abajo sera ultrasensible.
+20=El mouse usara lo normal: hacia adelante\nmira arriba y hacia atras mira abajo.
+21=El eje Y del mouse se invierte: hacia adelante\nmiras abajo, y al reves.
+## main_menu/settings_select/player_setup/player_profile_edit/network_setup/cap_network_settings_strings | 7
+0=La red usara ajustes para conexiones de modem\nde 56 Kbps. Al crear partidas multijugador,\npodra entrar otro jugador mas\n(2 jugadores en total).
+1=La red usara ajustes para conexiones DSL / cable\nde 128 Kbps de subida. Al crear partidas\nmultijugador, podran entrar tres jugadores mas\n(4 jugadores en total).
+2=La red usara ajustes para conexiones DSL / cable\nde 384 Kbps de subida. Al crear partidas\nmultijugador, podran entrar siete jugadores mas\n(8 jugadores en total).
+3=La red usara ajustes para conexiones DSL / cable\nde 512 Kbps de subida. Al crear partidas\nmultijugador, podran entrar nueve jugadores mas\n(10 jugadores en total).
+4=La red usara ajustes para conexiones T1 / LAN\nde mas de 768 Kbps de subida. Al crear partidas\nmultijugador, podran entrar quince jugadores mas\n(16 jugadores en total).&#9;
+5=Cambia el puerto de red en el que escucha el\nservidor. Tambien cambia el puerto donde los\nclientes buscan partidas LAN.
+6=Cambia el puerto de red por el que envia\nel cliente.
+## main_menu/settings_select/player_setup/player_profile_edit/network_setup/network_option_labels | 3
+0=TIPO DE CONEXION:
+1=PUERTO DEL SERVIDOR:
+2=PUERTO DEL CLIENTE:
+## main_menu/settings_select/player_setup/player_profile_edit/network_setup/var_connection_type | 5
+1=DSL/Cable (BAJO)
+2=DSL/Cable (MEDIO)
+3=DSL/Cable (ALTO)
+4=T1/LAN
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/cap_video_settings_strings | 18
+0=Elige una resolucion de pantalla.
+1=Elige la frecuencia del monitor.
+2=Los FPS pueden pasar la frecuencia del monitor. La imagen\npuede variar y verse cortada en lineas horizontales.
+3=Los FPS nunca pasan la frecuencia del monitor.\nLa imagen mas suave.
+4=Los FPS quedan fijos en 30 cuadros por segundo.\nLa imagen mas pareja.
+5=Sin efectos especulares. Los efectos especulares\nle dan brillo a los objetos.
+6=Con efectos especulares. Los efectos especulares\nle dan brillo a los objetos.
+7=Sin sombras dinamicas.
+8=Con sombras dinamicas.
+9=Sin marcas.
+10=Con marcas. Las marcas incluyen agujeros de\nbala y sangre.
+11=Sin particulas. Las particulas incluyen\npolvo y chispas.
+12=Con particulas, pero solo a\nla mitad.
+13=Con todas las particulas. Las particulas\nincluyen polvo y chispas.
+14=Texturas con el detalle mas bajo. Las texturas\nson los dibujos de paredes y objetos.
+15=Texturas con detalle medio. Las texturas\nson los dibujos de paredes y objetos.
+16=Texturas con el detalle mas alto. Las texturas\nson los dibujos de paredes y objetos.
+17=La gamma controla el brillo.
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/var_environmental_effects | 3
+0=BAJO
+1=MEDIO
+2=ALTO
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/var_framerate | 3
+0=SIN VSYNC
+1=VSYNC
+2=30 FPS
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/var_gamma | 2
+0=OSCURECER / ACLARAR
+1=OSCURECER / ACLARAR
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/var_particles | 3
+0=OFF
+1=BAJO
+2=ALTO
+## main_menu/settings_select/player_setup/player_profile_edit/video_settings/video_option_labels | 12
+1=FRECUENCIA:
+2=DETALLE DE EFECTOS:
+3=REFLEJOS:
+4=ESPECULAR:
+5=SOMBRAS:
+6=MARCAS:
+7=PARTICULAS:
+8=CALIDAD DE TEXTURAS:
+9=CALIDAD DE MODELOS:
+10=GAMMA:
+11=FPS:
+## main_menu/solo_level_select/map_data | 12
+0=Escapa con vida\nmientras el Covenant\naborda tu nave.
+1=Busca a los marines\nque sobrevivieron y\nayudalos a pelear\ncontra el Covenant.
+2=Aborda una nave\nCovenant para intentar\nrescatar al\nCapitan Keyes.
+3=Busca la sala del\nmapa que te llevara\na los secretos\nde Halo.
+4=Defiende la Sala de\nControl de oleada\ntras oleada del\nCovenant.
+5=Atraviesa un pantano\npara conocer al unico\nenemigo al que el\nCovenant teme.
+6=Abrete paso por unas\ninstalaciones antiguas\nen busca del\nIndice.
+7=Reactiva el arma del\ncorazon de Halo... y\nconoce la\nverdad.
+8=Lanza un asalto de un\nsolo ciborg a una nave\nCovenant y trae de\nvuelta al Capitan.
+9=Destruye Halo antes\nde que Halo destruya\ntoda la vida de\nla galaxia.
+10=Todavia no puedes\njugar este nivel...\npero pronto!
+11=Tienes una partida en\ncurso en este\nnivel. Eligelo para\nseguirla.
+## strings/displayed_error_messages | 60
+0=No se pudo completar\nla ultima accion.
+1=Hubo un error\nde red.
+2=No se puede entrar:\nla partida esta cerrada.
+3=No se pudo entrar\na la partida.
+4=La partida\nse cerro.
+5=Halo no se puede\nconectar a la red.
+6=Se perdio la conexion.
+7=No se pudo entrar a la partida.
+8=Tu partida se desincronizo\ncon las de los demas.\nReiniciando...
+9=Tu conexion\nesta teniendo\nproblemas...
+10=error de red sin uso
+11=Hubo un error\ncon el mando.
+12=Vuelve a conectar\nel mando #%controller.\nToca START para seguir\ndespues de conectarlo.
+13=Vuelve a conectar\nel mando #%controller.
+14=Hubo un error con\nla memoria\ndel mando.
+15=Guardando... un\nmomento, por favor.
+16=Creando perfil de jugador...\nun momento, por favor.
+17=Creando el archivo de ajustes\nde partida... un momento.
+18=El jugador 2 tiene que usar\notro mando distinto\nal del jugador 1.
+19=error de mando sin uso
+20=error de mando sin uso
+21=Inserta otra\nmoneda, por favor.
+22=Se perdera todo el avance\ndesde el ultimo\npunto de control.
+23=Se perdera todo el avance\nde este nivel.
+24=Seguro que quieres borrar\neste perfil? Se perderan\ntodo tu avance y\ntus ajustes.
+25=Seguro que quieres borrar\neste tipo de juego? Se\nperderan todos sus\najustes.
+26=Lo siento, no puedes borrar\nlos ajustes multijugador\npredeterminados.
+27=Lo siento, ya hay un\ntipo de juego o perfil\ncon ese nombre.
+28=De verdad quieres salir\nsin guardar\nlos cambios?
+29=Lo siento, no puedes crear\nuna partida guardada\nsin nombre.
+30=Guardando el ultimo punto\nde control... un momento.
+31=No se pudo cargar la\npartida guardada.
+32=advertencia sin uso
+33=No hay espacio suficiente\npara guardar.
+34=No hay espacios libres para guardar.
+35=Hubo un error al\ncargar un mapa.
+36=Llegaste al maximo de\narchivos de Halo. No se\npueden crear mas.
+37=No se pudo crear un\nperfil nuevo.
+38=No se pudieron crear\najustes multijugador\nnuevos.
+39=No se pudo cargar el\navance guardado de\neste perfil.
+40=Hubo un error al\nconectar con el servidor\nprincipal de GameSpy.
+41=Los ajustes de video cambiaron...\nToca OK para aceptar.
+42=El servidor que elegiste\npide contrasena!
+43=No se pudo entrar al\nservidor!
+44=El servidor dijo que\nla conexion no\nes valida.
+45=El servidor rechazo\ntu contrasena.
+46=El servidor esta lleno.
+47=Tu clave de CD no es valida.
+48=Otro jugador esta usando\ntu clave de CD.
+49=El administrador del servidor\nte prohibio jugar\nen este servidor.
+50=El administrador del servidor\nte expulso de este\nservidor.
+51=Se probaran los ajustes\nde video. Si no ves\nconfirmacion despues\ndel cambio, toca ESC.
+52=Punto de control guardado.
+53=La direccion no es valida.
+54=Tienes que crear o\nelegir un perfil para\nseguir.
+55=Tu version usa un\nprotocolo de red\nincompatible.
+56=Conexion rechazada: tu\nversion es mas vieja que\nla del servidor.
+57=Conexion rechazada: tu\nversion es mas nueva que\nla del servidor.
+58=Necesitas permisos de\nadministrador para bajar\neste parche.
+59=Seguro que quieres\nborrar esta partida guardada?
+## strings/var_boolean | 2
+0=NO
+## main_menu/mp_map_list | 21
+19=Nivel desconocido

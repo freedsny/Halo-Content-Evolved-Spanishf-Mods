@@ -11,9 +11,10 @@ Versión de **[Halo Content Evolved](https://github.com/Watanoge/halo-content-ev
 Halo Content Evolved es un Halo CE hecho sobre [OpenCE](https://github.com/OpenCommunityEdition/OpenCE) por Watanoge, con mucho más para la campaña y el multijugador. Esta versión le suma:
 
 - **Los menús en español** (sin tildes: la fuente del juego no las tiene).
-- **TRUCOS**, en **AJUSTES > tu perfil > JUEGO > TRUCOS** (en partida: **pausa > AJUSTES > JUEGO > TRUCOS**): munición infinita, modo dios, súper salto, armas y vehículos a elección, sobrescudo infinito, camuflaje, linterna, teletransporte y más.
+- **TRUCOS**, en **AJUSTES > tu perfil > JUEGO > TRUCOS** (en partida: **pausa > AJUSTES > JUEGO > TRUCOS**): munición infinita, modo dios, súper salto, armas y vehículos a elección, sobrescudo infinito, camuflaje, linterna, teletransporte, forzar punto de control, sin daño por caída, no caer del vehículo y más.
 - **La flecha guía** (TRUCOS > GUIA) hacia el objetivo de la misión, un aliado o un enemigo.
 - **El HUD movible**, el **HUD moderno** y el **radar redondo** (TRUCOS > HUD).
+- **El menú de los tres dedos en español.** Toca la pantalla con tres dedos a la vez y sale un panel a la izquierda con **Trucos**, **Bots**, **Velocidad del juego**, **HUD**, **Cámara** y **Sistema**. Sus trucos son los mismos de TRUCOS: lo que prendes o apagas en uno se ve igual en el otro, y en su carpeta Trucos también están el sobrescudo, el camuflaje, la luz infinita, la linterna amplia y el teletransporte.
 
 Y trae todo lo de Content Evolved:
 
@@ -27,6 +28,10 @@ Y trae todo lo de Content Evolved:
 | **Puntaje y medallas** | Puntaje de la campaña, medallas, reto diario y clasificaciones en línea |
 
 Cómo funciona cada cosa de Content Evolved está explicado (en inglés) en [su README](https://github.com/Watanoge/halo-content-evolved#readme).
+
+## Jetpack: cómo volar
+
+Pon **JETPACK** en ON (en TRUCOS o en el menú de los tres dedos). Luego **mantén disparar y granada a la vez** (en la pantalla, los dos botones con dos dedos) y vuelas hacia donde miras; suéltalos para bajar. Con el jetpack las caídas no te hacen daño. Puede dejar la misión trabada si llegas a donde no deberías: guarda antes.
 
 ## Cómo conseguir el APK
 
