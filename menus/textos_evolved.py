@@ -1125,3 +1125,279 @@ TITULOS_EVOLVED = [
     ("social/header_social.png", "SOCIAL"),
     ("theater/header_theater.png", "CINE"),
 ]
+
+
+# Mas textos de las pantallas de Content Evolved (etiquetas en mayusculas)
+TEXTOS.update({
+    "ANY": "CUALQUIERA", "ONE TYPE": "UN TIPO", "TAG INJECTOR": "INYECTOR DE TAGS",
+    "COMBAT FORM": "FORMA DE COMBATE", "CARRIER FORM": "FORMA PORTADORA", "MARINE": "MARINE",
+    "ENGINEER": "INGENIERO", "SENTINEL": "CENTINELA", "MINOR": "MENOR", "MAJOR": "MAYOR",
+    "SPEC OPS": "OP. ESPECIALES", "ZEALOT": "FANATICO", "STEALTH": "SIGILO",
+    "AS ENEMIES": "COMO ENEMIGOS", "PRECISION": "DE PRECISION", "AUTOMATIC": "AUTOMATICAS",
+    "POWER": "PODEROSAS", "ROCKETS": "COHETES", "FLAMETHROWER": "LANZALLAMAS", "FUEL ROD": "CANON DE COMBUSTIBLE",
+    "ENERGY SWORD": "ESPADA DE ENERGIA", "SET": "SERIE", "CTF": "BANDERA", "SLAYER": "ASESINO",
+    "ODDBALL": "BOLA", "KING": "REY", "RACE": "CARRERA", "START GAME": "EMPEZAR PARTIDA",
+    "GAME NAME:": "NOMBRE DE LA PARTIDA:", "INVITE LINK:": "ENLACE DE INVITACION:", "GAME TYPE:": "TIPO DE JUEGO:",
+    "PLAYER OPTIONS:": "OPCIONES DE JUGADOR:", "ITEM OPTIONS:": "OPCIONES DE OBJETOS:",
+    "VEHICLE OPTIONS:": "OPCIONES DE VEHICULOS:", "INDICATOR OPTIONS:": "OPCIONES DE INDICADORES:",
+    "TEAMPLAY OPTIONS:": "OPCIONES DE EQUIPO:", "CO-OP OPTIONS:": "OPCIONES DE COOPERATIVO:",
+    "VOICE AND VOTING:": "VOZ Y VOTACION:", "BOTS:": "BOTS:", "FLOODFECTION SETTINGS:": "AJUSTES DE FLOODFECTION:",
+    "LOBBY SETTINGS:": "AJUSTES DE LA SALA:", "GAME SETTINGS:": "AJUSTES DE LA PARTIDA:",
+    "MAP CONTENT:": "CONTENIDO DEL MAPA:", "FORK SETTINGS:": "AJUSTES EXTRA:",
+    "SCALE WITH PLAYERS:": "SEGUN LOS JUGADORES:", "USE CONTENT:": "USAR CONTENIDO:", "MAP ENEMY AI:": "ENEMIGOS DEL MAPA:",
+    "MAP WEAPONS:": "ARMAS DEL MAPA:", "MAP VEHICLES:": "VEHICULOS DEL MAPA:", "CHOOSE ENEMY AI:": "ELEGIR ENEMIGOS:",
+    "CHOOSE WEAPONS:": "ELEGIR ARMAS:", "CHOOSE VEHICLES:": "ELEGIR VEHICULOS:", "PLAYER LOADOUT:": "EQUIPO INICIAL:",
+    "SHIELDS:": "ESCUDOS:", "SHIELD REGEN:": "RECARGA DEL ESCUDO:", "HEALTH REGEN:": "RECARGA DE VIDA:",
+    "VEHICLES:": "VEHICULOS:", "SHIELD ONLY": "SOLO ESCUDO", "EXPLOSIVES ONLY": "SOLO EXPLOSIVOS",
+    "PER PLAYER": "POR JUGADOR", "STATIC MULTIPLIER": "MULTIPLICADOR FIJO", "INDIVIDUAL": "INDIVIDUAL",
+    "TEAM": "EQUIPO", "REVERT CHECKPOINT": "VOLVER AL PUNTO DE CONTROL", "RESPAWN ONLY": "SOLO REAPARECER",
+    "FRIENDLY FIRE:": "FUEGO AMIGO:", "EXTRA PICKUPS:": "ARMAS EXTRA:", "EXTRA VEHICLES:": "VEHICULOS EXTRA:",
+    "MULTIPLIER:": "MULTIPLICADOR:", "PER PLAYER:": "POR JUGADOR:", "PLAYER COLLISIONS:": "CHOQUES ENTRE JUGADORES:",
+    "CAMPAIGN SCORING:": "PUNTAJE DE CAMPANA:", "SCORING TYPE:": "TIPO DE PUNTAJE:",
+    "ALLY FRIENDLY FIRE:": "FUEGO AMIGO A ALIADOS:", "TEAM WIPE:": "EQUIPO ELIMINADO:",
+    "VEHICLE RIDING:": "IR ENCIMA DE VEHICULOS:", "TEAM NEAR": "EQUIPO CERCA", "ANYONE NEAR": "CUALQUIERA CERCA",
+    "TEAM, ENEMIES NEAR": "EQUIPO, ENEMIGOS CERCA", "WITH LINKS": "CON ENLACES", "LOBBY VOICE CHAT:": "VOZ EN LA SALA:",
+    "VOICE QUALITY:": "CALIDAD DE VOZ:", "VOICE NEAR DISTANCE:": "DISTANCIA DE VOZ:", "VOTE KICK:": "VOTAR EXPULSION:",
+    "SHARE MAPS:": "COMPARTIR MAPAS:", "DISTRIBUTED": "REPARTIDA", "RECRUIT": "RECLUTA", "EASY": "FACIL",
+    "NORMAL": "NORMAL", "HEROIC": "HEROICO", "VETERAN": "VETERANO", "LEGENDARY": "LEGENDARIO", "EVEN": "PAREJOS",
+    "AGAINST YOU": "CONTRA TI", "COUNT:": "CANTIDAD:", "SKILL:": "HABILIDAD:", "TEAMS:": "EQUIPOS:",
+    "KEEP PLAYER COUNT:": "MANTENER JUGADORES:", "ALL ON": "TODO ON", "ALL OFF": "TODO OFF",
+    "INVITE LINK": "ENLACE DE INVITACION", "VANILLA ONLY": "SOLO ORIGINAL", "INCLUDE MAP": "CON EL MAPA",
+    "ONLY MAP": "SOLO EL MAPA", "MAP'S": "DEL MAPA", "ALL AT SPAWN": "TODO AL APARECER",
+    "ORDNANCE REWARDS": "ARMAS DE PREMIO", "YES": "SI", "GUN GAME": "CARRERA DE ARMAS",
+    "TAG GUN GAME": "CARRERA DE ARMAS (TAGS)", "1 SECOND": "1 SEGUNDO", "3 SECONDS": "3 SEGUNDOS",
+    "5 SECONDS": "5 SEGUNDOS", "10 SECONDS": "10 SEGUNDOS", "15 SECONDS": "15 SEGUNDOS", "30 SECONDS": "30 SEGUNDOS",
+    "45 SECONDS": "45 SEGUNDOS", "60 SECONDS": "60 SEGUNDOS", "90 SECONDS": "90 SEGUNDOS", "120 SECONDS": "120 SEGUNDOS",
+    "ALLOWED": "PERMITIDO", "BLOCK M+KB": "SIN TECLADO", "STOCK": "ORIGINAL", "GLOW": "BRILLO",
+    "LIGHT SHOW": "SHOW DE LUCES", "OVERSHIELD": "SOBRESCUDO", "GLOW+OVERSHIELD": "BRILLO+SOBRESCUDO",
+    "SHOW+OVERSHIELD": "SHOW+SOBRESCUDO", "PLAYERS' OWN": "EL DE CADA JUGADOR", "UNLIMITED": "ILIMITADAS",
+    "0 LIVES": "0 VIDAS", "3 LIVES": "3 VIDAS", "5 LIVES": "5 VIDAS", "7 LIVES": "7 VIDAS", "10 LIVES": "10 VIDAS",
+    "15 LIVES": "15 VIDAS", "20 LIVES": "20 VIDAS", "30 LIVES": "30 VIDAS", "50 LIVES": "50 VIDAS",
+    "+1 LIFE": "+1 VIDA", "+2 LIVES": "+2 VIDAS", "+3 LIVES": "+3 VIDAS", "+5 LIVES": "+5 VIDAS",
+    "+10 LIVES": "+10 VIDAS", "NO CAP": "SIN LIMITE", "2 ENEMIES LEFT": "QUEDAN 2 ENEMIGOS", "CLEAR ALL": "MATAR A TODOS",
+    "GRUNTS ONLY": "SOLO GRUNTS", "ALL FACTIONS": "TODOS LOS BANDOS", "SENTINELS": "CENTINELAS",
+    "COV + FLOOD": "COV + FLOOD", "COV + SENTINELS": "COV + CENTINELAS", "FLOOD + SENTINELS": "FLOOD + CENTINELAS",
+    "HUMANS (UNSC)": "HUMANOS (UNSC)", "ALLIED VS TEAM": "ALIADOS CONTRA EQUIPO", "FREE-FOR-ALL": "TODOS CONTRA TODOS",
+    "+25% / SET": "+25% / SERIE", "+15% / SET": "+15% / SERIE", "+40% / SET": "+40% / SERIE", "+60% / SET": "+60% / SERIE",
+    "SMALL (50%)": "POCOS (50%)", "LARGE (150%)": "MUCHOS (150%)", "HORDE (200%)": "HORDA (200%)",
+    "SWARM (250%)": "ENJAMBRE (250%)", "WAVE 5 ONLY": "SOLO OLEADA 5", "EVERY 3RD WAVE": "CADA 3 OLEADAS",
+    "BOSS RUSH": "SOLO JEFES", "DEFAULT": "NORMAL", "HUMAN": "HUMANO", "RANDOMIZED": "AL AZAR",
+    "AUTO TELEPORT": "TELETRANSPORTE", "GROUND ONLY": "SOLO SUELO", "PLASMA BEACON": "BALIZA DE PLASMA",
+    "FLOOD BURST": "OLEADA FLOOD", "WRAITH/BANSHEE": "WRAITH/BANSHEE", "WRAITH ONLY": "SOLO WRAITH",
+    "BANSHEE ONLY": "SOLO BANSHEE", "SCORPION ONLY": "SOLO SCORPION", "PER SET": "POR SERIE", "PER ROUND": "POR RONDA",
+    "HEAVY CRATES": "CAJAS PESADAS", "2 ALLIES / SET": "2 ALIADOS / SERIE", "4 ALLIES / SET": "4 ALIADOS / SERIE",
+    "ODST / SPECOPS": "ODST / OP. ESPECIALES", "1 GENERATOR": "1 GENERADOR", "2 GENERATORS": "2 GENERADORES",
+    "3 GENERATORS": "3 GENERADORES", "LOSE ALL": "PERDER TODOS", "LOSE ANY": "PERDER UNO",
+    "25% OF UNITS": "25% DE LAS UNIDADES", "50% OF UNITS": "50% DE LAS UNIDADES", "75% OF UNITS": "75% DE LAS UNIDADES",
+    "ALL UNITS": "TODAS LAS UNIDADES", "OFF (LOCKED)": "OFF (BLOQUEADO)", "REACH STANDARD": "COMO EN REACH",
+    "RANDOM / ROUND": "AL AZAR / RONDA", "SPARTAN (UNSC)": "SPARTAN (UNSC)", "ELITE (COV)": "ELITE (COV)",
+    "NO SHIELDS": "SIN ESCUDO", "HALF (50%)": "MITAD (50%)", "2X OVERSHIELD": "SOBRESCUDO X2",
+    "4X JUGGERNAUT": "JUGGERNAUT X4", "50% (LOW GRAV)": "50% (POCA GRAVEDAD)", "150% (HEAVY)": "150% (PESADO)",
+    "INF. RESERVE": "RESERVA INF.", "BOTTOMLESS": "SIN RECARGAR", "FRAGILE (1250)": "FRAGIL (1250)",
+    "HEAVY (5000)": "PESADO (5000)", "FORTRESS (10K)": "FORTALEZA (10K)", "XBOX CLASSIC": "XBOX CLASICO",
+    "XBOX GEMS": "XBOX GEMAS", "XBOX DARK GEMS": "XBOX GEMAS OSCURAS", "XBOX MODERN": "XBOX MODERNO",
+    "PS CLASSIC": "PS CLASICO", "PS GEMS": "PS GEMAS", "PS DARK GEMS": "PS GEMAS OSCURAS", "PS MODERN": "PS MODERNO",
+    "SWITCH CLASSIC": "SWITCH CLASICO", "SWITCH GEMS": "SWITCH GEMAS", "SWITCH MODERN": "SWITCH MODERNO",
+    "GENERAL": "GENERAL", "DEBUG": "PRUEBAS", "FORGE": "FORJA", "FORGE PAD": "MANDO EN FORJA",
+    "SWITCH WEAPON": "CAMBIAR ARMA", "SWAP TRIGGERS": "CAMBIAR GATILLOS", "SWAP A, L TRIGGER": "CAMBIAR A Y GATILLO I",
+    "SWAP B, L TRIGGER": "CAMBIAR B Y GATILLO I", "SWAP B, R STICK": "CAMBIAR B Y STICK D", "LEGACY": "CLASICO",
+    "LEGACY SOUTHPAW": "CLASICO ZURDO", "SOUTHPAW": "ZURDO", "GLOBAL TAB": "PESTANA GLOBAL", "ANYONE": "CUALQUIERA",
+    "CODE ONLY": "SOLO CON CODIGO", "ALLOW": "PERMITIR", "BLOCK": "BLOQUEAR", "BLACK": "NEGRO", "BLUE": "AZUL",
+    "GRAY": "GRIS", "YELLOW": "AMARILLO", "GREEN": "VERDE", "PINK": "ROSADO", "PURPLE": "MORADO", "CYAN": "CIAN",
+    "COBALT": "COBALTO", "ORANGE": "NARANJA", "TEAL": "VERDE AZULADO", "SAGE": "SALVIA", "BROWN": "CAFE",
+    "TAN": "CANELA", "MAROON": "GRANATE", "SALMON": "SALMON", "BY DIFFICULTY": "SEGUN DIFICULTAD",
+    "RIGHT": "DERECHA", "LEFT": "IZQUIERDA", "CENTER": "CENTRO", "NEAR": "CERCA", "FAR": "LEJOS",
+    "MENUS ONLY": "SOLO MENUS", "HIGHEST": "MAXIMA", "MANAGE MAP": "ADMINISTRAR MAPA",
+})
+
+
+# Las ayudas de las pantallas de partida de Content Evolved
+TEXTOS.update({
+    "Each squad of enemies that many times as large,&#10;with co-op's extra enemies on top of it.":
+        "Cada escuadron enemigo tantas veces mas grande,&#10;con los enemigos extra del cooperativo encima.",
+    'The name the game shows in the lists of games.\\nEnter changes it.':
+        'El nombre que sale en las listas de partidas.\\nEnter lo cambia.',
+    'The most players the game takes (up to 128).': 'El maximo de jugadores de la partida (hasta 128).',
+    'Players join this game by its invite link, or your\\nDiscord invite. Enter copies the link again.':
+        'Se entra a esta partida con su enlace, o con tu\\ninvitacion de Discord. Enter copia el enlace otra vez.',
+    'The gametype and its rules, for this game.': 'El tipo de juego y sus reglas, para esta partida.',
+    'Lives, health, shields and respawning, for this game.': 'Vidas, salud, escudos y reaparicion, para esta partida.',
+    'Weapons, grenades and starting equipment, for\\nthis game.': 'Armas, granadas y equipo inicial, para\\nesta partida.',
+    "Each team's vehicles and their respawn time, for\\nthis game.":
+        'Los vehiculos de cada equipo y cuando reaparecen,\\npara esta partida.',
+    'The motion tracker and nav points, for this game.': 'El radar y los marcadores, para esta partida.',
+    'Friendly fire and team balance, for this game.': 'Fuego amigo y equilibrio de equipos, para esta partida.',
+    'Anyone can see and join your game: it is listed\\nfor everyone through the brokers.':
+        'Cualquiera puede ver y entrar a tu partida: sale\\nen la lista de todos.',
+    'Only players with your invite link can join.': 'Solo entran los jugadores con tu enlace de invitacion.',
+    "Team wipes, friendly fire, enemies, collisions and\\nthe campaign's scoring, for this game.":
+        'Equipo eliminado, fuego amigo, enemigos, choques y\\nel puntaje de la campana, para esta partida.',
+    'Voice chat, text chat and votes to kick a player,\\nfor this game.':
+        'Chat de voz, chat escrito y votos para expulsar,\\npara esta partida.',
+    'Players from the Server Browser must type it to\\njoin (an invite link needs none). Enter sets it.':
+        'Los que entran desde Buscar partidas la tienen que\\nescribir (con enlace no hace falta). Enter la pone.',
+    'Sharing Custom Edition maps and MCC packages\\nwith joining players, and how fast.':
+        'Compartir mapas de Custom Edition y paquetes de MCC\\ncon los que entran, y a que velocidad.',
+    "How this level's enemies and weapons are swapped,&#10;for every player.":
+        'Como se cambian los enemigos y armas del nivel,&#10;para todos los jugadores.',
+    'The skulls every player plays this level with.': 'Las calaveras con que todos juegan este nivel.',
+    'Computer players in this game: how many, how well\\nthey play. Slayer, CTF, KOTH and Firefight.':
+        'Jugadores de la maquina: cuantos y que tan bien\\njuegan. Asesino, Bandera, Rey y Tiroteo.',
+    'Listed for everyone through the brokers, and on\\nthe master servers with your publisher key.':
+        'Sale en la lista de todos, y en los servidores\\nprincipales con tu clave de publicador.',
+    'Chosen for the whole game before Server Setup:\\nwho can see it. Go back to change it.':
+        'Se elige antes de armar la partida: quien la\\npuede ver. Vuelve atras para cambiarlo.',
+    "The Spartans' loadout and last stands, and the\\ninfected's forms, for this game.":
+        'El equipo y la ultima resistencia de los Spartan,\\ny las formas de los infectados, para esta partida.',
+    'How many play, who can find and join the game,\\nand map sharing.':
+        'Cuantos juegan, quien puede encontrar y entrar\\na la partida, y compartir mapas.',
+    "The gametype and its rules for this game (co-op's\\noptions, for a co-op game).":
+        'El tipo de juego y sus reglas (las opciones de\\ncooperativo, en una partida cooperativa).',
+    "Play the map's own enemies, weapons and vehicles\\nin this game, beside the game's or alone.":
+        'Usa los enemigos, armas y vehiculos del propio mapa\\nen esta partida, junto a los del juego o solos.',
+    "This fork's own: game modes' settings, the tag\\nprofile, the randomizer and skulls.":
+        'Lo propio de esta version: ajustes de los modos, el\\nperfil de tags, el modo aleatorio y las calaveras.',
+    'Extra enemies added per player from the 2nd player\\nonwards (non-compounding from the base count).':
+        'Enemigos extra por cada jugador desde el 2do\\n(sobre la cantidad base, sin acumularse).',
+    'Turn Campaign and Firefight scoring on or off for\\nthis game.':
+        'Prende o apaga el puntaje de Campana y Tiroteo en\\nesta partida.',
+    'Add skulls for this game. Those the variant starts\\nwith stay on.':
+        'Agrega calaveras a esta partida. Las que trae la\\nvariante siguen puestas.',
+    "VANILLA ONLY: the game's own. INCLUDE MAP: the map's\\nbeside them. ONLY MAP: the map's in their place.":
+        'SOLO ORIGINAL: los del juego. CON EL MAPA: los del\\nmapa tambien. SOLO EL MAPA: los del mapa en su lugar.',
+    "The map's own enemy AI in the waves: all of them,\\nthose you choose (CUSTOM), or none.":
+        'Los enemigos del propio mapa en las oleadas: todos,\\nlos que elijas (CUSTOM) o ninguno.',
+    "The map's own weapons in the drop pods and the\\nenemies' hands: all, those you choose, or none.":
+        'Las armas del propio mapa en las capsulas y en manos\\nenemigas: todas, las que elijas o ninguna.',
+    "The map's own vehicles, the players' and the\\nenemies': all, those you choose, or none.":
+        'Los vehiculos del propio mapa, de jugadores y\\nenemigos: todos, los que elijas o ninguno.',
+    "Turn each of the map's enemy AI on or off. Kept for\\nthis map for the next games.":
+        'Prende o apaga cada enemigo del mapa. Se guarda\\npara este mapa en las proximas partidas.',
+    "Turn each of the map's weapons on or off. Kept for\\nthis map for the next games.":
+        'Prende o apaga cada arma del mapa. Se guarda\\npara este mapa en las proximas partidas.',
+    "Turn each of the map's vehicles on or off. Kept for\\nthis map for the next games.":
+        'Prende o apaga cada vehiculo del mapa. Se guarda\\npara este mapa en las proximas partidas.',
+    "Spawn with the map's own weapons in place of the\\ngame's loadout. Kept for this map.":
+        'Apareces con las armas del propio mapa en vez del\\nequipo del juego. Se guarda para este mapa.',
+    "This map's players have their own shield rules. ON\\ngives shields, OFF takes them. Kept for this map.":
+        'Los jugadores de este mapa tienen sus reglas de escudo.\\nON da escudo, OFF lo quita. Se guarda para este mapa.',
+    "ON: shields come back as in Halo. OFF: never (only\\nthe map's pickups). Kept for this map.":
+        'ON: el escudo se recarga como en Halo. OFF: nunca (solo\\ncon lo que haya en el mapa). Se guarda para este mapa.',
+    'ON: health comes back after 5 seconds unhurt, as a\\nshield does. Kept for this map.':
+        'ON: la salud se recarga tras 5 segundos sin dano,\\ncomo el escudo. Se guarda para este mapa.',
+    "The map's vehicles for the players: all from the\\nstart, one with each ordnance drop, or none.":
+        'Los vehiculos del mapa para los jugadores: todos\\ndesde el inicio, uno con cada envio, o ninguno.',
+    'Players can not be hurt by weapons and explosives\\nfired by the other players.':
+        'A los jugadores no les hacen dano las armas ni\\nexplosivos de los otros jugadores.',
+    'Players can be hurt by weapons or explosives\\nfired by the other players.':
+        'A los jugadores les hacen dano las armas o\\nexplosivos de los otros jugadores.',
+    'Damage from the other players will only reduce\\nshields. Health will be unaffected.':
+        'El dano de los otros jugadores solo baja el\\nescudo. La salud no se toca.',
+    'Players can be hurt by damage from explosives\\nfired by the other players.':
+        'A los jugadores les hacen dano los explosivos\\nde los otros jugadores.',
+    "Enemy squads grow with the players: by the value of\\n'Per Player' for each player past the first.":
+        "Los escuadrones enemigos crecen con los jugadores:\\nlo de 'Por jugador' por cada uno despues del primero.",
+    "Enemy squads use 'Multiplier', however many players\\nthere are.":
+        "Los escuadrones enemigos usan el 'Multiplicador',\\nsin importar cuantos jugadores haya.",
+    'Enemy squads are as the campaign has them.': 'Los escuadrones enemigos como en la campana.',
+    "Pickups grow with the players: by the value of\\n'Per Player' for each player past the first.":
+        "Las armas del suelo crecen con los jugadores: lo\\nde 'Por jugador' por cada uno despues del primero.",
+    "Pickups use 'Multiplier', up to eight times as many,\\nhowever many players there are.":
+        "Las armas del suelo usan el 'Multiplicador', hasta\\nocho veces, sin importar cuantos jugadores haya.",
+    'Pickups are as the campaign has them.': 'Las armas del suelo como en la campana.',
+    "Vehicles respawn after being driven a short distance\\nbased on the number of players: by two thirds the value of\\n'Per Player' for each player past the first.":
+        "Los vehiculos reaparecen al alejarlos un poco, segun\\nlos jugadores: dos tercios de 'Por jugador'\\npor cada uno despues del primero.",
+    "Vehicles respawn after being driven a short distance,\\nwith extra copies equal to ('Multiplier' - 1) * 2/3,\\nrounded down, however many players there are.":
+        "Los vehiculos reaparecen al alejarlos un poco, con\\ncopias extra de ('Multiplicador' - 1) * 2/3,\\nredondeado hacia abajo, sin importar los jugadores.",
+    'Vehicles are as the campaign has them.': 'Los vehiculos como en la campana.',
+    'Static amounts for the options set to this mode.\\nPickups are capped at eight times as many.':
+        'Cantidades fijas para las opciones en este modo.\\nLas armas del suelo llegan hasta ocho veces.',
+    'For each player past the first, options set to Per\\nPlayer get this much more (100%: as many again).':
+        'Por cada jugador despues del primero, lo que este en\\nPor jugador sube esto (100%: el doble).',
+    'Players bump into each other, as in the campaign.': 'Los jugadores chocan entre si, como en la campana.',
+    "Players walk through each other, so that no one\\nblocks a doorway. The AI's characters still block.":
+        'Los jugadores se atraviesan, para que nadie tape\\nuna puerta. Los personajes de la IA si chocan.',
+    'Scores each kill: the score and time at the bottom\\nright, and a summary at the end of each level.':
+        'Puntua cada baja: el puntaje y el tiempo abajo a la\\nderecha, y un resumen al final de cada nivel.',
+    'No score, time or summary.': 'Sin puntaje, tiempo ni resumen.',
+    'Each player has a score of their own, from the\\nenemies they kill.':
+        'Cada jugador tiene su propio puntaje, por los\\nenemigos que mata.',
+    "The players' scores are added together: every player\\nsees the team's score.":
+        'Los puntajes se suman: todos los jugadores\\nven el puntaje del equipo.',
+    'Players can hurt and kill their AI allies, as in\\nthe campaign.':
+        'Los jugadores pueden herir y matar a sus aliados\\nde la IA, como en la campana.',
+    'Players can not hurt their AI allies, so that no\\none can kill Keyes or the Marines a level needs.':
+        'Los jugadores no pueden herir a sus aliados, asi nadie\\nmata a Keyes ni a los Marines que el nivel necesita.',
+    'Private games revert the checkpoint; public games\\nonly respawn. A changed team or missing save\\nalways uses respawn only.':
+        'Las partidas privadas vuelven al punto de control;\\nlas publicas solo reaparecen. Si cambio el equipo o\\nno hay guardado, siempre solo reaparecen.',
+    'Revert the checkpoint after everyone dies. A changed\\nteam or missing save uses respawn only.':
+        'Volver al punto de control cuando todos mueren. Si\\ncambio el equipo o no hay guardado, solo reaparecen.',
+    'Respawn at checkpoint positions after everyone dies.\\nThe world keeps its progress.':
+        'Reaparecer en el punto de control cuando todos mueren.\\nEl mundo conserva su avance.',
+    'Players standing on a vehicle are carried by it.\\nOff: as the original game, riders slide off.':
+        'Los jugadores parados en un vehiculo viajan con el.\\nOff: como el juego original, se resbalan.',
+    'No voice chat during the game.': 'Sin chat de voz en la partida.',
+    'Players hear their teammates who are near them.': 'Los jugadores oyen a sus companeros que esten cerca.',
+    'Players hear everyone who is near them.': 'Los jugadores oyen a todos los que esten cerca.',
+    'Players hear all their teammates, wherever they\\nare.': 'Los jugadores oyen a todos sus companeros, donde\\nesten.',
+    'Players hear all their teammates, and the enemies\\nwho are near them.':
+        'Los jugadores oyen a todos sus companeros, y a los\\nenemigos que esten cerca.',
+    'Everyone hears everyone in the lobby, before and\\nafter the game.':
+        'Todos se oyen en la sala, antes y\\ndespues de la partida.',
+    'No voice chat in the lobby.': 'Sin chat de voz en la sala.',
+    'Players can vote to kick a player, from the\\nscoreboard.': 'Los jugadores pueden votar para expulsar a\\nalguien, desde el marcador.',
+    'Players cannot vote to kick anyone.': 'Los jugadores no pueden votar para expulsar.',
+    'Players can type to each other; lines with links\\nare refused. Off in a public internet game.':
+        'Los jugadores pueden escribirse; los mensajes con\\nenlaces se rechazan. Apagado en partidas publicas.',
+    'Players can type to each other, links too. Off\\nin a public internet game.':
+        'Los jugadores pueden escribirse, con enlaces.\\nApagado en partidas publicas por internet.',
+    'No text chat in the game.': 'Sin chat escrito en la partida.',
+    'Share CE maps and MCC packages automatically.\\nMCC base resources must be installed locally.':
+        'Comparte mapas de CE y paquetes de MCC solo.\\nLos recursos base de MCC deben estar instalados.',
+    'Players who join without the map cannot play.': 'Los que entren sin el mapa no pueden jugar.',
+    'The most you send of maps, so that the game\\nkeeps the rest of your upload.':
+        'Lo maximo que envias de mapas, para que la partida\\nconserve el resto de tu subida.',
+    'Bots join this game, as many as COUNT says.': 'Entran bots a esta partida, tantos como dice CANTIDAD.',
+    'No bots join this game; COUNT is kept for later.': 'No entran bots; CANTIDAD se guarda para despues.',
+    'No bots: only the players on this computer.': 'Sin bots: solo los jugadores de este equipo.',
+    'Bots join the lobby with you, as far as the game\\nhas room: Slayer, CTF, King of the Hill.':
+        'Los bots entran a la sala contigo, si la partida\\ntiene lugar: Asesino, Bandera, Rey de la colina.',
+    'Each bot its own level, on a curve: most NORMAL\\nand HEROIC, a few RECRUIT and LEGENDARY.':
+        'Cada bot con su nivel: la mayoria NORMAL y\\nHEROICO, unos pocos RECLUTA y LEGENDARIO.',
+    'For new players: they react late, aim loosely\\nand never throw grenades.':
+        'Para principiantes: reaccionan tarde, apuntan mal\\ny nunca tiran granadas.',
+    'They react slowly, and their aim trails a target\\nthat turns back.':
+        'Reaccionan lento, y su punteria se queda atras\\ncuando el blanco se devuelve.',
+    'They aim for the head once your shields are down,\\nand back off when they are losing.':
+        'Apuntan a la cabeza cuando cae tu escudo,\\ny se retiran cuando van perdiendo.',
+    'They lead their grenades and run in to finish a\\nfight they have won.':
+        'Adelantan sus granadas y corren a rematar una\\npelea que ya ganaron.',
+    'They throw where they last saw you, back off as\\ntheir shields pop, and take high ground.':
+        'Tiran a donde te vieron por ultima vez, se retiran\\nal perder el escudo y buscan lo alto.',
+    'The best: the fastest reactions, and no aim error\\neven at long range.':
+        'Los mejores: reaccionan rapidisimo y no fallan\\nni de lejos.',
+    'In a team game, the bots join both teams, evening\\nthem with the players.':
+        'En partidas por equipos, los bots van a los dos\\nequipos, emparejandolos con los jugadores.',
+    'In a team game, every bot is on the team the\\nplayers are not on.':
+        'En partidas por equipos, todos los bots van al\\nequipo contrario de los jugadores.',
+    "A player who joins takes a bot's place, and a bot\\ntakes theirs again when they leave.":
+        'Un jugador que entra toma el lugar de un bot, y un\\nbot vuelve a ocuparlo cuando se va.',
+    'The bots stay as many as COUNT, as far as the\\ngame has room.':
+        'Los bots se quedan en CANTIDAD, si la\\npartida tiene lugar.',
+    'Scan it with your phone for the invite link. B: back': 'Escanealo con tu telefono para el enlace. B: volver',
+    'ELITES &amp; HEAVIES': 'ELITES Y PESADOS',
+    'Turning it right looks left.': 'Girarlo a la derecha mira a la izquierda.',
+    'Tilting it up looks down.': 'Inclinarlo hacia arriba mira hacia abajo.',
+    'How far each stick moves before it does\\nanything.': 'Cuanto se mueve cada stick antes de que\\nhaga algo.',
+    'Same lighting as original XBOX.': 'La misma luz que el XBOX original.',
+    'Short, soft spill from plasma-weapon prongs.': 'Luz corta y suave de las puntas de las armas de plasma.',
+    "I don't even know why this setting's here.": 'Ni se por que esta este ajuste aqui.',
+    "You know there's flashlights, right?": 'Sabes que hay linternas, verdad?',
+    'Look at mr. rave lover over here!': 'Miren al fiestero de las luces!',
+})
+for _n in (8, 12, 16, 24, 32, 48, 64):
+    TEXTOS[f'Voices at {_n} kilobits a second, in the lobby\\nand in the game.'] = \
+        f'Voz a {_n} kilobits por segundo, en la sala\\ny en la partida.'
+for _n in (15, 30, 45, 60, 90, 150):
+    TEXTOS[f'Players {_n} metres apart or less are near\\nfor voice chat.'] = \
+        f'Jugadores a {_n} metros o menos estan cerca\\npara el chat de voz.'
