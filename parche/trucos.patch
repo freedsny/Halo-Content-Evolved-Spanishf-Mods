@@ -12,6 +12,23 @@
  # the phone's GPU family, for the GL ES renderer's fixes (host_render_policy.c; guest_render_policy.c)
  host_android_chip_family
  # the Theater's EXPORT and IMPORT (port/android/host/host_main.c; port/linux/game/menu_functions.c)
+--- a/port/android/app/build.gradle
++++ b/port/android/app/build.gradle
+@@ -24,8 +24,12 @@
+ // the app is com.halo.contentevolved; up to build 141 it was com.halo.decomp, OpenCE's id, which
+ // is now the bridge (port/android/bridge), the old app's last update: it hands its files over
+ // to this app (Migration.java) and installs it
+-def applicationIdBase = "com.halo.contentevolved"
+-def legacyPackage = "com.halo.decomp" + applicationIdSuffix
++// port (trucos): Halo C.E Evolved keeps its id, com.halo.decomp with its suffix
++// (com.halo.decomp.evolved), so that each build installs over the one before,
++// with its maps and saved games; Content Evolved's move to its new id (the
++// bridge, Migration.java) is not for it: no old app to take the files from
++def applicationIdBase = "com.halo.decomp"
++def legacyPackage = "com.halo.decomp.trucos.sin.app.vieja" + applicationIdSuffix
+ 
+ // the launcher's static shortcut names the app's id, which a resource cannot take from Gradle:
+ // written here, for this build's id
 --- a/port/android/app/src/main/java/com/halo/decomp/TouchControls.java
 +++ b/port/android/app/src/main/java/com/halo/decomp/TouchControls.java
 @@ -64,6 +64,19 @@

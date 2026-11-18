@@ -143,10 +143,26 @@ jobs:
       - name: Compile cache
         run: ccache --show-stats
 
+      # Desde la build 142 Content Evolved deja el juego en
+      # dist/halo-contentevolved-release, y en dist/halo-android-release su
+      # "puente" para pasar de la app vieja a la nueva (aqui no se usa: la app
+      # conserva su nombre, com.halo.decomp.evolved, ver parche/trucos.patch)
+      - name: Ubicar el APK del juego
+        run: |
+          for d in src/dist/halo-contentevolved-release src/dist/halo-android-release; do
+            if [ -f "$d/app-release.apk" ]; then
+              mkdir -p src/dist/juego
+              cp "$d/app-release.apk" src/dist/juego/
+              echo "APK del juego: $d/app-release.apk"
+              break
+            fi
+          done
+          test -f src/dist/juego/app-release.apk
+
       - uses: actions/upload-artifact@v4
         with:
           name: halo-evolved-android-release
-          path: src/dist/halo-android-release
+          path: src/dist/juego
           # las pruebas solo un dia: en un repositorio publico cualquiera con cuenta
           # de GitHub puede descargar un artifact
           retention-days: ${{ github.ref_name == 'main' && 7 || 1 }}
@@ -160,7 +176,7 @@ jobs:
           CAMBIOS=$(cd repo && git log -1 --format='%s%n%n%b' | grep -v '^Co-Authored-By\|^Claude-Session' | sed '/./,$!d')
           if [ "$GITHUB_REF_NAME" = "main" ]; then
             APK="HaloCE-Evolved-trucos-$VER-n${{ github.run_number }}.apk"
-            cp src/dist/halo-android-release/app-release.apk "$APK"
+            cp src/dist/juego/app-release.apk "$APK"
             gh release create "evolved-$(date +%Y%m%d-%H%M)" "$APK" \
               --repo "$GITHUB_REPOSITORY" \
               --title "Halo C.E Evolved con trucos - Content Evolved $VER (#${{ github.run_number }})" \
@@ -174,7 +190,7 @@ jobs:
               gh release delete "$viejo" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
             done
             APK="HaloCE-Evolved-PRUEBA-$VER-n${{ github.run_number }}.apk"
-            cp src/dist/halo-android-release/app-release.apk "$APK"
+            cp src/dist/juego/app-release.apk "$APK"
             gh release create "evolved-prueba-$(date +%Y%m%d-%H%M)" "$APK" \
               --repo "$GITHUB_REPOSITORY" \
               --target "$GITHUB_SHA" \
