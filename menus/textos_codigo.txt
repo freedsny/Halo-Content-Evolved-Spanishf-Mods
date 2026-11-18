@@ -6,7 +6,8 @@
 # archivo. "= " sin nada deja el texto vacio (para las partes de una frase que
 # el codigo escribe en varias comillas seguidas: la frase entera va en la
 # primera). Con "~ " y "~= " se cambia un pedazo de codigo tal cual. Un ¶
-# al final marca donde termina un texto que acaba en espacio.
+# al final marca donde termina un texto que acaba en espacio. Un comentario es
+# "#" o "# ..." (un texto que empieza por #, como "#%d", es un texto).
 # Sin tildes ni enie: la fuente del juego no las tiene.
 
 ## port/linux/game/tag_pack.c
@@ -2072,3 +2073,1473 @@ Looking for %s in the map archive...
 = Buscando %s en el archivo de mapas...
 Downloading %s from the map archive: %ld%% of %lu MB, %lu KB/s
 = Bajando %s del archivo de mapas: %ld%% de %lu MB, %lu KB/s
+
+# (la forja de Content Evolved, en espanol)
+## port/forge/src/forge_3d_mode.c
+A BUTTON
+= BOTON A
+B BUTTON
+= BOTON B
+X BUTTON
+= BOTON X
+Y BUTTON
+= BOTON Y
+BLACK / RB
+= NEGRO / RB
+WHITE / LB
+= BLANCO / LB
+L TRIGGER
+= GATILLO IZQ.
+R TRIGGER
+= GATILLO DER.
+D-PAD UP
+= FLECHA ARRIBA
+D-PAD DOWN
+= FLECHA ABAJO
+D-PAD LEFT
+= FLECHA IZQUIERDA
+D-PAD RIGHT
+= FLECHA DERECHA
+START
+= START
+BACK
+= BACK
+L THUMB
+= STICK IZQ.
+R THUMB
+= STICK DER.
+SNAP LOCKED [PT #%d <-> PT #%d]
+= UNIDO [PT #%d <-> PT #%d]
+Map budget reached: changes past %d of the map's own objects won't be saved
+= Limite del mapa: los cambios despues de %d objetos propios del mapa no se guardan
+AI INFANTRY
+= INFANTERIA IA
+AI + VEHICLES
+= IA + VEHICULOS
+ENEMY VEHICLE
+= VEHICULO ENEMIGO
+ENEMY GHOST
+= GHOST ENEMIGO
+ENEMY HEAVY VEH
+= VEH. PESADO ENEMIGO
+DROPSHIP ZONE
+= ZONA DE NAVE
+PLAYER VEH PAD
+= VEH. DEL JUGADOR
+DROPSHIP ROUTE
+= RUTA DE NAVE
+ALL ROUNDS
+= TODAS LAS RONDAS
+ROUND 1
+= RONDA 1
+ROUND 2
+= RONDA 2
+ROUND 3
+= RONDA 3
+ROUND 4
+= RONDA 4
+ROUND 5
+= RONDA 5
+ROUNDS 1-3
+= RONDAS 1-3
+ROUNDS 4-5
+= RONDAS 4-5
+BONUS ROUND
+= RONDA DE BONO
+ALL WAVES
+= TODAS LAS OLEADAS
+WAVE 1
+= OLEADA 1
+WAVE 2
+= OLEADA 2
+WAVE 3 (BOSS)
+= OLEADA 3 (JEFE)
+SENDER
+= EMISOR
+RECEIVER
+= RECEPTOR
+OFF
+= OFF
+Teleporter OFF: set it to SENDER or RECEIVER
+= Teletransportador OFF: ponlo en EMISOR o RECEPTOR
+Teleporter %s #%d: no %s on channel #%d yet
+= Teletransportador %s #%d: todavia no hay %s en el canal #%d
+Teleporter %s #%d: linked to %d %s%s
+= Teletransportador %s #%d: unido a %d %s%s
+receiver
+= receptor
+sender
+= emisor
+Forge Object Budget Reached (%d/%d)!
+= Limite de objetos de la forja (%d/%d)!
+Placed %s Player Spawn at (%.1f, %.1f, %.1f)
+= Inicio de jugador %s puesto en (%.1f, %.1f, %.1f)
+Blue Team
+= Equipo azul
+FFA (Yellow)
+= Todos contra todos (amarillo)
+Red Team
+= Equipo rojo
+Placed Firefight Spawn [%s | %s | %s]
+= Aparicion de Tiroteo puesta [%s | %s | %s]
+AI Spawn Limit Reached (%d)!
+= Limite de apariciones de IA (%d)!
+Placed AI Spawn
+= Aparicion de IA puesta
+Placed %s
+= Puesto: %s
+Placed Objective '%s' [Ref/Team #%d] at (%.1f, %.1f, %.1f)
+= Objetivo '%s' puesto [Ref/Equipo #%d] en (%.1f, %.1f, %.1f)
+Placed AI '%s' at (%.1f, %.1f, %.1f)
+= IA '%s' puesta en (%.1f, %.1f, %.1f)
+Save budget reached (%d placed): '%s' won't be saved with the map
+= Limite para guardar (%d puestos): '%s' no se guarda con el mapa
+Missing tag '%s': it stays in the map, but cannot be shown
+= Falta el tag '%s': queda en el mapa, pero no se puede mostrar
+Placed '%s' at (%.1f, %.1f, %.1f)
+= '%s' puesto en (%.1f, %.1f, %.1f)
+Deleted '%s'
+= Borrado: '%s'
+No Free Dropship Routes (%d in this map)
+= No quedan rutas de nave libres (%d en este mapa)
+Automatic Flight: Straight Down and Back Up
+= Vuelo automatico: baja derecho y vuelve a subir
+Dropship Route Restored
+= Ruta de nave restaurada
+Dropship Route Added: Move Its Points to Shape the Flight
+= Ruta de nave agregada: mueve sus puntos para dar forma al vuelo
+This Route Has No Dropship Zone
+= Esta ruta no tiene zona de nave
+This Leg of the Route Is Full (%d Points)
+= Este tramo de la ruta esta lleno (%d puntos)
+Added Route Point
+= Punto de ruta agregado
+Test Flight Stopped
+= Vuelo de prueba detenido
+Only the Host Can Fly a Test Flight
+= Solo el anfitrion puede hacer un vuelo de prueba
+No Dropship Tag Is Loaded in This Map
+= No hay tag de nave cargado en este mapa
+The Test Ship Could Not Be Made
+= No se pudo crear la nave de prueba
+Test Drop Stopped
+= Caida de prueba detenida
+No Pods Could Land Here: %s
+= Ninguna capsula puede caer aqui: %s
+Test Drop: %d of %d Pods Found Room
+= Caida de prueba: %d de %d capsulas tuvieron espacio
+Test Drop Finished
+= Caida de prueba terminada
+Test Drop: Falling
+= Caida de prueba: cayendo
+Approach
+= Llegada
+Hover
+= Sobrevuelo
+Departure
+= Salida
+Test Flight Finished
+= Vuelo de prueba terminado
+Test Flight: %s
+= Vuelo de prueba: %s
+CTF Only
+= Solo CTF
+Slayer Only
+= Solo Slayer
+Oddball Only
+= Solo Oddball
+King of the Hill
+= Rey de la colina
+Race Only
+= Solo Carrera
+All Modes (Default)
+= Todos los modos (normal)
+Cancelled Item Spawn
+= Objeto cancelado
+Restored Item Position
+= Posicion del objeto restaurada
+Placed KOTH Hill #%d
+= Colina KOTH #%d puesta
+Placed '%s'
+= Puesto: '%s'
+Properties Restored
+= Propiedades restauradas
+Reloaded Forge UI Theme
+= Tema de la forja recargado
+Spartan Mode
+= Modo Spartan
+Exit vehicle before entering Monitor Mode
+= Sal del vehiculo antes de entrar en modo Monitor
+Forge Mode
+= Modo forja
+3rd-Person View: %s
+= Tercera persona: %s
+Save the Map From the Menu First
+= Primero guarda el mapa desde el menu
+KOTH Hill #%d
+= Colina KOTH #%d
+Holding %s
+= Llevando %s
+Always spawn %s: %s
+= Siempre aparece %s: %s
+made in every game, whatever its gametype's vehicles
+= sale en cada partida, sin importar los vehiculos del tipo de juego
+made as the gametype's vehicles allow
+= sale segun los vehiculos del tipo de juego
+Rotating Item
+= Girando objeto
+Blue Team Spawn
+= Inicio del equipo azul
+FFA Spawn (Yellow)
+= Inicio todos contra todos (amarillo)
+Red Team Spawn
+= Inicio del equipo rojo
+Dropship Route #%d: %s Point %d
+= Ruta de nave #%d: %s punto %d
+FF Spawn: %s (%s / %s)
+= Aparicion Tiroteo: %s (%s / %s)
+%s CTF Flag Point
+= Bandera CTF %s
+Blue
+= azul
+Red
+= roja
+Oddball Spawn #%d
+= Calavera Oddball #%d
+KOTH Hill Marker #%d
+= Marca de colina KOTH #%d
+Race Node #%d
+= Punto de carrera #%d
+Firefight Generator
+= Generador de Tiroteo
+Off (Free)
+= Off (libre)
+15 Degrees
+= 15 grados
+45 Degrees
+= 45 grados
+90 Degrees
+= 90 grados
+Rotation Snapping: %s
+= Giro por pasos: %s
+Copied '%s'
+= Copiado: '%s'
+Holding '%s'
+= Llevando '%s'
+KOTH Hill #%d Diameter: %.1fm (Radius: %.2fm)
+= Colina KOTH #%d diametro: %.1fm (radio: %.2fm)
+Snapping to Floor (Z=%.2f)
+= Pegado al suelo (Z=%.2f)
+Snapped to Surface (%.1f, %.1f, %.1f)
+= Pegado a la superficie (%.1f, %.1f, %.1f)
+BLUE SPAWN
+= INICIO AZUL
+RED SPAWN
+= INICIO ROJO
+FFA SPAWN
+= INICIO TODOS
+TELEPORTER OFF
+= TELETRANSPORTADOR OFF
+ (NOT LINKED)
+=  (SIN UNIR)
+OBJECTIVE
+= OBJETIVO
+KOTH HILL
+= COLINA KOTH
+ODDBALL
+= ODDBALL
+BLUE FLAG
+= BANDERA AZUL
+RED FLAG
+= BANDERA ROJA
+RACE VEH
+= VEH. CARRERA
+RACE MARKER
+= PUNTO DE CARRERA
+GENERATOR
+= GENERADOR
+SNAP LOCKED
+= UNIDO
+WEAPONS
+= ARMAS
+EQUIPMENT
+= EQUIPO
+VEHICLES
+= VEHICULOS
+BIPEDS
+= BIPEDOS
+SCENERY
+= DECORADO
+DOORS
+= PUERTAS
+LIGHTS
+= LUCES
+SPAWNS
+= INICIOS
+OBJECTIVES
+= OBJETIVOS
+ACTORS
+= ENEMIGOS IA
+FIREFIGHT
+= TIROTEO
+TELEPORTERS
+= TELETRANSPORT.
+15 DEG
+= 15 GRADOS
+45 DEG
+= 45 GRADOS
+90 DEG
+= 90 GRADOS
+%s FORGE   %s QUICK SAVE
+= %s FORJA   %s GUARDADO RAPIDO
+%s FORGE
+= %s FORJA
+%s %s   %s SETTINGS   %s COPY
+= %s %s   %s AJUSTES   %s COPIAR
+FORGE
+= FORJA
+%s SNAP: %s
+= %s PASOS: %s
+%s PLACE  %s %.0fM  %s PITCH/YAW  %s SURFACE
+= %s COLOCAR  %s %.0fM  %s GIRAR  %s SUPERFICIE
+%s FLOOR  %s OPTIONS  HOLD %s DELETE  %s CANCEL
+= %s SUELO  %s OPCIONES  MANTEN %s BORRAR  %s CANCELAR
+%s OBJECTS (HOLD: MAP)  %s GRAB  %s COPY  %s PLAY
+= %s OBJETOS (MANTEN: MAPA)  %s AGARRAR  %s COPIAR  %s JUGAR
+FORGE PALETTE
+= OBJETOS DE LA FORJA
+{A} PLACE
+= {A} COLOCAR
+[ENTER] PLACE
+= [ENTER] COLOCAR
+{B} DONE
+= {B} LISTO
+[ESC] DONE
+= [ESC] LISTO
+AI SPAWN
+= APARICION DE IA
+TELEPORTER
+= TELETRANSPORTADOR
+FIREFIGHT SPAWN
+= APARICION DE TIROTEO
+OBJECT PROPERTIES
+= PROPIEDADES DEL OBJETO
+ROT SNAP:
+= GIRO POR PASOS:
+DROP TO FLOOR
+= BAJAR AL SUELO
+DELETE OBJECT
+= BORRAR OBJETO
+TYPE:
+= TIPO:
+CHANNEL:
+= CANAL:
+#%d - NOT LINKED
+= #%d - SIN UNIR
+TELEPORT TO OTHER END
+= IR AL OTRO EXTREMO
+TELEPORT TO %s
+= IR A %s
+SNAP POINTS:
+= PUNTOS DE UNION:
+POINT:
+= PUNTO:
+APPROACH
+= LLEGADA
+DEPARTURE
+= SALIDA
+ADD POINT BEFORE
+= AGREGAR PUNTO ANTES
+ADD POINT AFTER
+= AGREGAR PUNTO DESPUES
+STOP TEST FLIGHT
+= PARAR VUELO DE PRUEBA
+TEST FLIGHT
+= VUELO DE PRUEBA
+SPAWN TYPE:
+= TIPO DE APARICION:
+ROUNDS:
+= RONDAS:
+WAVES:
+= OLEADAS:
+FLIGHT ROUTE:
+= RUTA DE VUELO:
+%d POINTS
+= %d PUNTOS
+AUTOMATIC
+= AUTOMATICA
+ARRIVAL:
+= LLEGADA:
+DEPARTURE:
+= SALIDA:
+TEAM:
+= EQUIPO:
+BLUE TEAM
+= EQUIPO AZUL
+FFA
+= TODOS
+RED TEAM
+= EQUIPO ROJO
+ORDER:
+= ORDEN:
+GAME MODE:
+= MODO DE JUEGO:
+STOP TEST DROP
+= PARAR CAIDA DE PRUEBA
+TEST DROP
+= CAIDA DE PRUEBA
+ALWAYS SPAWN:
+= SIEMPRE APARECE:
+DONE
+= LISTO
+HOLD TO UNDO
+= MANTEN PARA DESHACER
+UNDO
+= DESHACER
+SAVE MAP..
+= GUARDAR MAPA..
+ENTER FORGE MAP NAME:
+= NOMBRE DEL MAPA DE LA FORJA:
+After initial save, press %s in-game for Quick Save.
+= Despues de guardarlo una vez, %s en la partida lo guarda rapido.
+{A} SAVE
+= {A} GUARDAR
+[ENTER] SAVE
+= [ENTER] GUARDAR
+{B} CANCEL
+= {B} CANCELAR
+[ESC] CANCEL
+= [ESC] CANCELAR
+
+## port/forge/src/forge_3d_mode.c
+~ ends, role == 1 ? "receiver" : "sender", ends == 1 ? "" : "s");
+~= ends, role == 1 ? "receptor" : "emisor", ends == 1 ? "" : "es");
+
+## port/forge/src/forge_ai.c
+GRUNTS
+= GRUNTS
+JACKALS
+= JACKALS
+ELITES
+= ELITES
+HUNTERS
+= HUNTERS
+ENGINEERS
+= INGENIEROS
+MARINES
+= MARINES
+CREW
+= TRIPULACION
+FLOOD
+= FLOOD
+SENTINELS
+= CENTINELAS
+OTHER
+= OTROS
+GRUNT MINOR
+= GRUNT MENOR
+GRUNT MAJOR
+= GRUNT MAYOR
+GRUNT SPECOPS
+= GRUNT OPS. ESPECIALES
+JACKAL MINOR
+= JACKAL MENOR
+JACKAL MAJOR
+= JACKAL MAYOR
+ELITE MINOR
+= ELITE MENOR
+ELITE MAJOR
+= ELITE MAYOR
+ELITE SPECOPS
+= ELITE OPS. ESPECIALES
+ELITE COMMANDER
+= ELITE COMANDANTE
+ELITE STEALTH MAJOR
+= ELITE INVISIBLE MAYOR
+ELITE STEALTH
+= ELITE INVISIBLE
+HUNTER MAJOR
+= HUNTER MAYOR
+HUNTER
+= HUNTER
+ENGINEER MAJOR
+= INGENIERO MAYOR
+ENGINEER
+= INGENIERO
+ARMORED MARINE MAJOR
+= MARINE BLINDADO MAYOR
+ARMORED MARINE
+= MARINE BLINDADO
+WOUNDED MARINE
+= MARINE HERIDO
+SUICIDAL MARINE
+= MARINE SUICIDA
+MARINE MAJOR
+= MARINE MAYOR
+MARINE
+= MARINE
+CREWMAN
+= TRIPULANTE
+FLOOD COMBAT ELITE
+= FLOOD DE COMBATE ELITE
+FLOOD COMBAT HUMAN
+= FLOOD DE COMBATE HUMANO
+FLOOD CARRIER
+= FLOOD PORTADOR
+FLOOD INFECTION
+= FLOOD INFECCION
+SHIELDED SENTINEL MAJOR
+= CENTINELA CON ESCUDO MAYOR
+SHIELDED SENTINEL
+= CENTINELA CON ESCUDO
+DEFENSIVE SENTINEL
+= CENTINELA DEFENSIVO
+SENTINEL MAJOR
+= CENTINELA MAYOR
+SENTINEL
+= CENTINELA
+NONE
+= NINGUNO
+TELEPORT
+= TELETRANSPORTE
+CLOAK
+= INVISIBLE
+PLASMA BLAST
+= EXPLOSION DE PLASMA
+FLOOD BURST
+= ESTALLIDO FLOOD
+UNIT'S OWN
+= EL SUYO
+PLAYER
+= JUGADOR
+HUMAN
+= HUMANO
+COVENANT
+= COVENANT
+ALL MODES
+= TODOS LOS MODOS
+CTF ONLY
+= SOLO CTF
+SLAYER ONLY
+= SOLO SLAYER
+ODDBALL ONLY
+= SOLO ODDBALL
+KOTH ONLY
+= SOLO KOTH
+RACE ONLY
+= SOLO CARRERA
+FIREFIGHT ONLY
+= SOLO TIROTEO
+ALL BUT FIREFIGHT
+= TODOS MENOS TIROTEO
+%s: RANDOM
+= %s: AL AZAR
+WEAPON:
+= ARMA:
+AI'S OWN
+= LA SUYA
+TEAM:
+= EQUIPO:
+AT START:
+= AL EMPEZAR:
+RESPAWN:
+= REAPARECE:
+KEEP %d ALIVE
+= MANTENER %d VIVOS
+OFF
+= OFF
+RESPAWN DELAY:
+= ESPERA PARA REAPARECER:
+%d SECONDS
+= %d SEGUNDOS
+RESPAWN LIMIT:
+= LIMITE DE APARICIONES:
+ENDLESS
+= SIN LIMITE
+GAME MODE:
+= MODO DE JUEGO:
+SPAWN EFFECT:
+= EFECTO AL APARECER:
+AI: %s (Inactive)
+= IA: %s (inactiva)
+
+## port/forge/src/forge_hooks.c
+User Created Forge Map
+= Mapa de forja creado por ti
+Downloaded Forge Map
+= Mapa de forja descargado
+(No User Created Maps Yet)
+= (Todavia no has creado mapas)
+(No Downloaded Forge Maps)
+= (No hay mapas de forja descargados)
+%s\r\n%s.map\r\nPress OK to Edit in Forge
+= %s\r\n%s.map\r\nPulsa ACEPTAR para editarlo en la forja
+NONE
+= NINGUNO
+Halo: Forge
+= Halo: Forja
+Forge's tags are not ready: they are built from the game's maps at the main menu.
+= Los tags de la forja no estan listos: se crean de los mapas del juego en el menu principal.
+LAYOUT
+= FORMA
+ADD POINT
+= AGREGAR PUNTO
+POINT
+= PUNTO
+PRESET
+= PREDEFINIDO
+OFFSET FORWARD
+= DESPLAZAR ADELANTE
+OFFSET SIDE
+= DESPLAZAR AL LADO
+OFFSET UP
+= DESPLAZAR ARRIBA
+FACING
+= DIRECCION
+DELETE POINT
+= BORRAR PUNTO
+DELETE ALL POINTS
+= BORRAR TODOS LOS PUNTOS
+%d POINTS
+= %d PUNTOS
+PRESS KEY/PAD
+= PULSA UNA TECLA/BOTON
+PAD LOOK SENS
+= SENSIBILIDAD DE MIRA
+PAD FLY SPEED
+= VELOCIDAD DE VUELO
+LEFT / RIGHT
+= IZQUIERDA / DERECHA
+3rd-Person Forge View: %s
+= Forja en tercera persona: %s
+4-SIDE BOX
+= CAJA DE 4 LADOS
+2-END BRIDGE
+= PUENTE DE 2 EXTREMOS
+6-FACE CUBE
+= CUBO DE 6 CARAS
+4 BASE EDGES
+= 4 BORDES DE BASE
+CUSTOM OFFSET
+= DESPLAZAMIENTO PROPIO
+FRONT FACE
+= CARA DELANTERA
+BACK FACE
+= CARA TRASERA
+LEFT FACE
+= CARA IZQUIERDA
+RIGHT FACE
+= CARA DERECHA
+TOP FACE
+= CARA SUPERIOR
+BOTTOM FACE
+= CARA INFERIOR
+FRONT BASE
+= BASE DELANTERA
+BACK BASE
+= BASE TRASERA
+LEFT BASE
+= BASE IZQUIERDA
+RIGHT BASE
+= BASE DERECHA
+FRONT (+X)
+= ADELANTE (+X)
+RIGHT (-Y)
+= DERECHA (-Y)
+BACK (-X)
+= ATRAS (-X)
+LEFT (+Y)
+= IZQUIERDA (+Y)
+DOWN (-Z)
+= ABAJO (-Z)
+FORGE / SPARTAN
+= FORJA / SPARTAN
+OBJECT PALETTE
+= LISTA DE OBJETOS
+3RD-PERSON VIEW
+= TERCERA PERSONA
+QUICK SAVE MAP
+= GUARDADO RAPIDO
+ROTATE ITEM
+= GIRAR OBJETO
+SNAP TO FLOOR
+= PEGAR AL SUELO
+SNAP TO SURFACE
+= PEGAR A SUPERFICIE
+ROTATION SNAP
+= GIRO POR PASOS
+OBJECT OPTIONS
+= OPCIONES DEL OBJETO
+DELETE OBJECT
+= BORRAR OBJETO
+COPY OBJECT
+= COPIAR OBJETO
+OBJECT SETTINGS
+= AJUSTES DEL OBJETO
+SAVE MAP..
+= GUARDAR MAPA..
+
+## port/forge/src/forge_map_settings.c
+MAP DEFAULT
+= LA DEL MAPA
+CLEAR
+= DESPEJADO
+LIGHT FOG
+= NIEBLA LEVE
+HEAVY FOG
+= NIEBLA DENSA
+FLOOD FOG
+= NIEBLA FLOOD
+CUSTOM
+= PROPIA
+(the map's)
+= (la del mapa)
+its own
+= el suyo
+Test spawn: %s could not be made
+= Prueba: no se pudo crear %s
+Test spawn: %s cannot hold %d of your weapons (no animations for them)
+= Prueba: %s no puede llevar %d de tus armas (no tiene sus animaciones)
+Test spawn: %s, unarmed
+= Prueba: %s, sin armas
+
+## port/forge/src/forge_runtime_tags.c
+RANDOM
+= AL AZAR
+ERROR: '%s' can't name an MCC map
+= ERROR: '%s' no sirve de nombre para un mapa MCC
+ERROR: Failed to export mcc_maps/%s/%s.map
+= ERROR: no se pudo guardar mcc_maps/%s/%s.map
+Updated saved map 'mcc_maps/%s/%s.map' (%d placed, %d default edits)!
+= Mapa guardado actualizado 'mcc_maps/%s/%s.map' (%d puestos, %d cambios)!
+Initial save complete: 'mcc_maps/%s/%s.map'
+= Primer guardado listo: 'mcc_maps/%s/%s.map'
+Updated saved map 'custom_maps/%s.map' (%d placed, %d default edits)!
+= Mapa guardado actualizado 'custom_maps/%s.map' (%d puestos, %d cambios)!
+Initial save complete: 'custom_maps/%s.map'
+= Primer guardado listo: 'custom_maps/%s.map'
+ERROR: Failed to export custom_maps/%s.map
+= ERROR: no se pudo guardar custom_maps/%s.map
+
+# (el Tag Injector de Content Evolved, en espanol)
+## port/linux/game/menu_functions.c
+~ port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "On" : "Off",
+~= port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "ON" : "OFF",
+~ port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "off" : "on",
+~= port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "OFF" : "ON",
+~ tags_screen.campaign ? "campaign" : "multiplayer", tags_browse_folder()[0] ? ", in " : "",
+~= tags_screen.campaign ? "campana" : "multijugador", tags_browse_folder()[0] ? ", en " : "",
+ALL
+= TODOS
+ENEMIES
+= ENEMIGOS
+ALLIES
+= ALIADOS
+RANDOM
+= AL AZAR
+SET
+= ESCOGIDAS
+DEFAULT
+= NORMAL
+NONE
+= NINGUNA
+PISTOL
+= PISTOLA
+ASSAULT RIFLE
+= RIFLE DE ASALTO
+SHOTGUN
+= ESCOPETA
+SNIPER RIFLE
+= FRANCOTIRADOR
+ROCKET LAUNCHER
+= LANZACOHETES
+PLASMA PISTOL
+= PISTOLA DE PLASMA
+PLASMA RIFLE
+= RIFLE DE PLASMA
+NEEDLER
+= NEEDLER
+FLAMETHROWER
+= LANZALLAMAS
+%s (RANDOMIZER)
+= %s (ALEATORIO)
+A campaign profile whose profile is not there:\nthe level plays as it is.
+= Un perfil de campana cuyo perfil no esta:\nel nivel se juega normal.
+Campaign profile: %ld AI and %ld weapons of %.24s,\nin the randomizer's place.
+= Perfil de campana: %ld IA y %ld armas de %.24s,\nen lugar del aleatorio.
+%ld AI and %ld weapons on (%s): they join\nthe pools, and TAG INJECTOR's.
+= %ld IA y %ld armas activas (%s): se suman\na las listas, y a las del TAG INJECTOR.
+No Tag Injector tags: the randomizer plays the\ncampaign's alone.
+= Sin tags del Tag Injector: el aleatorio usa\nsolo los de la campana.
+No Tag Injector tags: the level as it is.
+= Sin tags del Tag Injector: el nivel normal.
+Locked. An enemy carries it: pick it up,\nthen finish the level to keep it.
+= Bloqueada. La lleva un enemigo: recogela\ny termina el nivel para quedartela.
+%s\nPart of this variant: it stays on.
+= %s\nEs parte de esta variante: queda activa.
+%s  (%ld PLAYER%hs)
+= %s  (%ld JUGADOR%hs)
+PLAYER
+= JUGADOR
+PROFILE
+= PERFIL
+VIEW: ONLINE
+= VER: EN LINEA
+VIEW: THIS MACHINE
+= VER: ESTE EQUIPO
+DAY %ld.
+= DIA %ld.
+Your maps, custom maps, mods and MCC maps are in the app's storage (APP DATA).
+= Tus mapas, mapas custom, mods y mapas MCC estan en el almacenamiento de la app (DATOS DE LA APP).
+Your maps, custom maps, mods and MCC maps are in %s (OTHER FOLDER).
+= Tus mapas, mapas custom, mods y mapas MCC estan en %s (OTRA CARPETA).
+\n\nAPP DATA moves them into the app's storage, which Android empties when the app is removed. OTHER FOLDER moves them into a folder you choose, such as one on a memory card.\n\nThe game starts again to move them, and shows how far it has got.
+= \n\nDATOS DE LA APP los mueve al almacenamiento de la app, que Android borra al desinstalarla. OTRA CARPETA los mueve a una carpeta que elijas, como una de la tarjeta de memoria.\n\nEl juego se reinicia para moverlos y muestra cuanto lleva.
+Player 2 chooses their\r\nprofile with their own\r\ncontroller.
+= El jugador 2 elige su\r\nperfil con su propio\r\ncontrol.
+MOVE FORWARD
+= AVANZAR
+MOVE BACKWARD
+= RETROCEDER
+STRAFE LEFT
+= IR A LA IZQUIERDA
+STRAFE RIGHT
+= IR A LA DERECHA
+JUMP
+= SALTAR
+CROUCH
+= AGACHARSE
+FIRE
+= DISPARAR
+THROW GRENADE
+= LANZAR GRANADA
+MELEE
+= GOLPE
+RELOAD
+= RECARGAR
+ZOOM
+= ZOOM
+SWITCH WEAPON
+= CAMBIAR ARMA
+SWITCH GRENADE
+= CAMBIAR GRANADA
+ACTION
+= ACCION
+FLASHLIGHT
+= LINTERNA
+SHOW SCORES
+= VER PUNTAJES
+PAUSE MENU
+= PAUSA
+SCREENSHOT
+= CAPTURA
+PUSH TO TALK
+= PULSAR PARA HABLAR
+CHAT
+= CHAT
+TEAM CHAT
+= CHAT DE EQUIPO
+VOTE YES
+= VOTAR SI
+VOTE NO
+= VOTAR NO
+PRESS A KEY
+= PULSA UNA TECLA
+No mods
+= Sin mods
+Each mod is a folder of its own in the mods folder, beside the maps folder.
+= Cada mod es una carpeta dentro de la carpeta mods, al lado de maps.
+IMPORT takes one from a .zip file of its folder's files.
+= IMPORTAR agrega uno desde un .zip con los archivos de su carpeta.
+%s\nPriority: %d of %d
+= %s\nPrioridad: %d de %d
+Cannot be played
+= No se puede jugar
+Off
+= Apagado
+AUTO
+= AUTO
+COVENANT
+= COVENANT
+FLOOD
+= FLOOD
+HUMAN
+= HUMANO
+ANY POOL ONLY
+= SOLO CUALQUIERA
+GRUNT
+= GRUNT
+ELITE
+= ELITE
+JACKAL
+= JACKAL
+HUNTER
+= HUNTER
+COMBAT FORM
+= FORMA DE COMBATE
+CARRIER FORM
+= FORMA PORTADORA
+MARINE
+= MARINE
+ENGINEER
+= INGENIERO
+SENTINEL
+= CENTINELA
+PRECISION
+= PRECISION
+AUTOMATIC
+= AUTOMATICA
+POWER
+= PODEROSA
+OWN
+= PROPIO
+STOCK: AUTO
+= DEL JUEGO: AUTO
+ADD TO MAP'S
+= SUMAR A LAS DEL MAPA
+PROFILE'S ONLY
+= SOLO LAS DEL PERFIL
+FULLY RANDOM
+= TODO AL AZAR
+ONCE PER POSITION
+= UNA VEZ POR LUGAR
+ONCE PER WEAPON
+= UNA VEZ POR ARMA
+MANUAL
+= MANUAL
+GAMETYPE'S
+= LAS DEL TIPO DE JUEGO
+ADD TO LEVEL'S
+= SUMAR A LAS DEL NIVEL
+MAP'S
+= LA DEL MAPA
+BIPED
+= BIPEDO
+HANDS
+= MANOS
+MOVEMENT
+= MOVIMIENTO
+BIPED'S OWN
+= EL DEL BIPEDO
+SPARTAN
+= SPARTAN
+The profile cannot be written (the log says why).
+= No se puede guardar el perfil (el registro dice por que).
+The biped the players spawn as: one of the profile's (TAG PROFILES' BIPEDS), or the map's own. Its hands are chosen with it (the hands taken out of its map).\n \nA, left and right choose another.
+= El bipedo con el que aparecen los jugadores: uno del perfil (BIPEDOS de PERFILES DE TAGS) o el del mapa. Sus manos se eligen con el (las de su mapa).\n \nA, izquierda y derecha eligen otro.
+The first-person arms: the profile's (FIRST PERSON HANDS, or those a biped brought), or the map's own.\n \nA, left and right choose another.
+= Los brazos en primera persona: los del perfil (MANOS EN PRIMERA PERSONA, o las que trajo un bipedo) o los del mapa.\n \nA, izquierda y derecha eligen otros.
+SPARTAN (the default): as the map's own player biped moves (strafing, the player's speeds, its jump, slopes and landings). BIPED'S OWN: as its tag moves it.\n \nA, left and right choose.
+= SPARTAN (normal): como se mueve el bipedo del jugador del mapa (pasos de lado, velocidades, salto, pendientes y caidas). EL DEL BIPEDO: como lo mueve su tag.\n \nA, izquierda y derecha eligen.
+RED TEAM
+= EQUIPO ROJO
+BLUE TEAM
+= EQUIPO AZUL
+FREE FOR ALL
+= TODOS CONTRA TODOS
+MAP'S %s
+= %s DEL MAPA
+ORIGINAL (MAP'S %s)
+= ORIGINAL (%s DEL MAPA)
+No profiles: TAG PROFILES' NEW PROFILE makes one.
+= Sin perfiles: PERFIL NUEVO de PERFILES DE TAGS crea uno.
+The multiplayer profile cannot be written (the log says why).
+= No se puede guardar el perfil de multijugador (el registro dice por que).
+The campaign profile cannot be written (the log says why).
+= No se puede guardar el perfil de campana (el registro dice por que).
+%ld AI, %ld WEAPONS
+= %ld IA, %ld ARMAS
+ORIGINAL (LEVEL'S %s)
+= ORIGINAL (%s DEL NIVEL)
+ORIGINAL (ITS OWN)
+= ORIGINAL (EL SUYO)
+CAMPAIGN'S %s
+= %s DE LA CAMPANA
+WEAPON
+= ARMA
+EQUIPMENT
+= EQUIPO
+VEHICLE
+= VEHICULO
+SCENERY
+= DECORADO
+DOOR
+= PUERTA
+CONTROL
+= CONTROL
+LIGHT
+= LUZ
+TAG
+= TAG
+TAG INJECTION
+= INYECCION DE TAGS
+TAG PROFILES
+= PERFILES DE TAGS
+CAMPAIGN PROFILES
+= PERFILES DE CAMPANA
+MULTIPLAYER PROFILES
+= PERFILES DE MULTIJUGADOR
+MAPS
+= MAPAS
+EMPTY
+= VACIO
+FIRING RANGE
+= CAMPO DE TIRO
+FAILED  %s
+= FALLO  %s
+NAME
+= NOMBRE
+ENABLED
+= ACTIVO
+CUSTOM TYPE
+= TIPO PROPIO
+SNAP POINTS
+= PUNTOS DE UNION
+REMOVE TAG
+= QUITAR TAG
+A AGAIN
+= A OTRA VEZ
+FACTION
+= BANDO
+COUNTS AS
+= CUENTA COMO
+HUD
+= HUD
+REPLACE ORIGINAL
+= REEMPLAZA AL ORIGINAL
+CLASS
+= CLASE
+ADD TO
+= AGREGAR A
+MCC SINGLEPLAYER
+= MCC UN JUGADOR
+MCC MULTIPLAYER
+= MCC MULTIJUGADOR
+CUSTOM SINGLEPLAYER
+= CUSTOM UN JUGADOR
+CUSTOM MULTIPLAYER
+= CUSTOM MULTIJUGADOR
+%d MAPS
+= %d MAPAS
+NO PROFILE
+= SIN PERFIL
+TAG PROFILE
+= PERFIL DE TAGS
+%ld CHOSEN
+= %ld ELEGIDAS
+PLAYER BIPEDS
+= BIPEDOS DE JUGADOR
+CHANGED
+= CAMBIADO
+PRIMARY
+= PRINCIPAL
+SECONDARY
+= SECUNDARIA
+ROTATION
+= ROTACION
+REPLACEMENT
+= REEMPLAZO
+LOADOUT
+= ARMAS
+WEAPONS
+= ARMAS
+ONLY
+= SOLO
+ADD
+= SUMAR
+PLAYER BIPED
+= BIPEDO DEL JUGADOR
+PLAYER ¶
+=
+CONFIG
+= AJUSTE
+CUSTOM
+= PROPIO
+NO WEAPONS
+= SIN ARMAS
+ITS OWN
+= LA SUYA
+ADDED
+= AGREGADO
+%ld tag%s, %ld on: %ld AI, %ld weapons. %s.\n \n%s\n
+= %ld tag%s, %ld activos: %ld IA, %ld armas. %s.\n \n%s\n
+, off
+= , apagado
+It failed to load last time: %s. It was turned off: turn it on to try it again.\n \n
+= La ultima vez no cargo: %s. Se apago: enciendelo para probar otra vez.\n \n
+Tag Injection
+= Inyeccion de tags
+On: a campaign level played alone can be given a profile's weapons and AI, by the randomizer or as a campaign profile says. A screen before the level chooses which, or none.\n \nA, left or right turns it on or off.
+= ON: un nivel de campana jugado solo puede llevar las armas e IA de un perfil, con el aleatorio o como diga un perfil de campana. Una pantalla antes del nivel elige cual, o ninguno.\n \nA, izquierda o derecha lo encienden o apagan.
+Campaign Profiles
+= Perfiles de campana
+How a campaign level played alone plays a profile's weapons and AI, in the randomizer's place: the level's weapons and enemies swapped for them, and the weapons its AI hold. The screen before the level chooses one.\n \nA lists them.
+= Como un nivel de campana jugado solo usa las armas e IA de un perfil, en lugar del aleatorio: las armas y enemigos del nivel se cambian por ellos, y las armas que lleva su IA. La pantalla antes del nivel elige uno.\n \nA los muestra.
+Multiplayer Profiles
+= Perfiles de multijugador
+How a multiplayer game on the game's own maps plays a profile's weapons: swapped for the map's, and as the players' loadouts. Server Setup's TAG PROFILE chooses one for a game you host; its players download the weapons from you.\n \nA lists them.
+= Como una partida multijugador en los mapas del juego usa las armas de un perfil: cambiadas por las del mapa, y como armas de los jugadores. PERFIL DE TAGS al crear servidor elige uno para tu partida; sus jugadores bajan las armas de ti.\n \nA los muestra.
+Tag Profiles
+= Perfiles de tags
+The profiles, each with its tags' size. A lists them, to see a profile's tags, turn them on or off and change their settings.\n \nThere NEW PROFILE makes one. Each is a folder of the tag_injector folder, beside the maps folder.
+= Los perfiles, cada uno con el tamano de sus tags. A los muestra, para ver los tags de un perfil, encenderlos o apagarlos y cambiar sus ajustes.\n \nAhi PERFIL NUEVO crea uno. Cada uno es una carpeta de tag_injector, al lado de maps.
+Maps
+= Mapas
+The Custom Edition maps of custom_maps and the MCC maps of mcc_maps, singleplayer and multiplayer, by their folders.\n \nA lists them, to add their weapons and AI to a profile.
+= Los mapas de Custom Edition de custom_maps y los mapas MCC de mcc_maps, de un jugador y multijugador, por carpetas.\n \nA los muestra, para agregar sus armas e IA a un perfil.
+No profiles
+= Sin perfiles
+NEW PROFILE makes one, to add tags to. Each is a folder of the tag_injector folder, beside the maps folder.
+= PERFIL NUEVO crea uno, para agregarle tags. Cada uno es una carpeta de tag_injector, al lado de maps.
+A lists its tags: there DUPLICATE PROFILE copies it, and DELETE PROFILE, twice, deletes it
+= A muestra sus tags: ahi DUPLICAR PERFIL lo copia, y BORRAR PERFIL, dos veces, lo borra
+Try out all the weapon and enemy tags from your profile.\n \nWhen holding a weapon, you're able to edit its values (like HUD element positions, name, category, damage, etc) from the overlay menu.\n \nYou'll be able to see all enemies and their animations, as well as spawn them into a small arena to fight them and make sure everything works properly.
+= Prueba todas las armas y enemigos de tu perfil.\n \nCon un arma en la mano puedes editar sus valores (posicion del HUD, nombre, categoria, dano, etc.) desde el menu de los tres dedos.\n \nPuedes ver todos los enemigos y sus animaciones, y hacerlos aparecer en una arena pequena para pelear con ellos y ver que todo funcione.
+A lists them, to turn them on or off and change their settings.
+= A los muestra, para encenderlos o apagarlos y cambiar sus ajustes.
+None yet: choose a map in MAPS, then these to add here.
+= Todavia ninguno: elige un mapa en MAPAS y luego estos para agregarlos.
+None: the randomizer cannot play these yet.
+= Ninguno: el aleatorio todavia no puede usar estos.
+No %s yet: choose a map in MAPS, then its %s to add here.
+= Todavia no hay %s: elige un mapa en MAPAS y luego sus %s para agregarlos.
+missing: it is left out
+= falta: queda fuera
+%s%s from %s, %s%s.\n \n%s: the randomizer %s it.\n \nLeft or right turns it %s. A opens its settings%s.
+= %s%s de %s, %s%s.\n \n%s: el aleatorio lo %s.\n \nIzquierda o derecha lo ponen en %s. A abre sus ajustes%s.
+, replacing the original
+= , en lugar del original
+plays
+= usa
+leaves out
+= deja fuera
+: its name, faction, class, custom type and HUD
+= : nombre, bando, clase, tipo propio y HUD
+: its name, faction, type and custom type
+= : nombre, bando, tipo y tipo propio
+: its name
+= : nombre
+The name the menus show it by: %s.\n%s %s\n \nA types another. Nothing typed is the last part of its path. Its path stays its map's: a level knows it by it.
+= El nombre que muestran los menus: %s.\n%s %s\n \nA escribe otro. Sin nada, es la ultima parte de su ruta. Su ruta sigue siendo la de su mapa: un nivel lo conoce por ella.
+%sOn: the randomizer plays it. Off: it stays in the profile, and is left out.\n \nA, left or right turns it on or off.
+= %sON: el aleatorio lo usa. OFF: queda en el perfil, pero fuera.\n \nA, izquierda o derecha lo encienden o apagan.
+The weapon pools it joins: COVENANT's or HUMAN's.\n \nAUTO: by its name (a plasma, needle or carbine weapon is the Covenant's).\n \nLeft and right choose another.
+= Las listas de armas en que entra: COVENANT o HUMANO.\n \nAUTO: por su nombre (un arma de plasma, needle o carabina es Covenant).\n \nIzquierda y derecha eligen otra.
+The enemy pool it joins: COVENANT, FLOOD or HUMAN, or ANY's alone.\n \nAUTO: by its unit's name (a grunt, elite, jackal, hunter or engineer is the Covenant's, a flood form the Flood's, a marine human). A brute is none of them: choose COVENANT.\n \nLeft and right choose another.
+= La lista de enemigos en que entra: COVENANT, FLOOD o HUMANO, o solo CUALQUIERA.\n \nAUTO: por el nombre de su unidad (grunt, elite, jackal, hunter o ingeniero es Covenant, una forma flood es Flood, un marine humano). Un brute no es ninguno: elige COVENANT.\n \nIzquierda y derecha eligen otra.
+The campaign's type it counts as for ONE TYPE: as an ELITE, it is among the elites a pool of one type plays.\n \nAUTO: by its unit's name. NONE: no type's.\n \nLeft and right choose another.
+= El tipo de la campana que cuenta para UN TIPO: como ELITE, entra con los elites cuando se juega un solo tipo.\n \nAUTO: por el nombre de su unidad. NINGUNO: de ningun tipo.\n \nIzquierda y derecha eligen otro.
+The weapon pool it joins: PRECISION, AUTOMATIC or POWER.\n \nAUTO: by its name (a sniper or a pistol is precision, a rocket or a shotgun power, a rifle automatic). NONE: none of them.\n \nLeft and right choose another.
+= La lista de armas en que entra: PRECISION, AUTOMATICA o PODEROSA.\n \nAUTO: por su nombre (francotirador o pistola es de precision, cohete o escopeta poderosa, un rifle automatica). NINGUNA: ninguna.\n \nIzquierda y derecha eligen otra.
+The randomizer's ONE TYPE has TAG INJECTOR, and its CUSTOM TYPE these: the profile's %s of the custom type %s alone. Give tags the same one (BRUTE) to play them together.\n \nA types it. Nothing typed is its name.
+= UN TIPO del aleatorio tiene TAG INJECTOR, y su TIPO PROPIO estos: solo los %s del perfil del tipo propio %s. Da el mismo a varios tags (BRUTE) para jugarlos juntos.\n \nA lo escribe. Sin nada, es su nombre.
+The HUD it is drawn with, whoever carries it (an AI of the profile too). OWN: its map's. STOCK: the campaign's HUD of the weapon chosen (its zoom and ammo art; the weapon zooms and fires as it did). AUTO: by its name, else by its zoom and magazine.\n \nLeft and right choose another.
+= El HUD con que se dibuja, la lleve quien la lleve (tambien una IA del perfil). PROPIO: el de su mapa. DEL JUEGO: el HUD de la campana del arma elegida (su zoom y municion; el arma apunta y dispara igual). AUTO: por su nombre, o por su zoom y cargador.\n \nIzquierda y derecha eligen otro.
+ON: it takes the place of the campaign's tag of its path, with the tags it names as its map has them, wherever the level has that tag (its own, or one the randomizer copies).\n \nOFF: the level's stays, and this one joins the pools as it is.\n \nA, left or right turns it on or off.
+= ON: toma el lugar del tag de la campana con su misma ruta, con los tags que usa como los tiene su mapa, donde el nivel tenga ese tag (el suyo, o uno que copie el aleatorio).\n \nOFF: queda el del nivel, y este entra a las listas tal cual.\n \nA, izquierda o derecha lo encienden o apagan.
+Where Forge's objects of this tag join each other, as they are placed.\n \nA edits them. They are kept with the tag's path, on this machine.
+= Donde se unen los objetos de la forja de este tag al ponerlos.\n \nA los edita. Se guardan con la ruta del tag, en este equipo.
+A, twice, takes it out of %s and deletes its bundle. Its map can add it again.\n \nTo leave it out for now, turn it off.
+= A, dos veces, lo saca de %s y borra su paquete. Su mapa lo puede agregar otra vez.\n \nPara dejarlo fuera por ahora, apagalo.
+%d snap points, marked on its model (the white one is chosen).\n \nLAYOUT sets them by the model's box; each is then moved by its own rows, Shift for smaller steps.
+= %d puntos de union, marcados en su modelo (el blanco es el elegido).\n \nFORMA los pone segun la caja del modelo; luego cada uno se mueve con sus filas, Shift para pasos mas pequenos.
+Add To
+= Agregar a
+No profiles: NEW PROFILE makes one, to add tags to.
+= Sin perfiles: PERFIL NUEVO crea uno, para agregarle tags.
+The profile a map's tags are added to: %s. Left and right choose another.\n \nVIEW PROFILE, here and in the maps' lists, shows it.
+= El perfil al que se agregan los tags de un mapa: %s. Izquierda y derecha eligen otro.\n \nVER PERFIL, aqui y en las listas de mapas, lo muestra.
+MCC Singleplayer
+= MCC un jugador
+MCC Multiplayer
+= MCC multijugador
+%d MCC %s maps.\n \nA lists their packages and Workshop collections of mcc_maps. Their tags play on any map. Those of MCC's own maps, or drawn from MCC's shared files, stay on this machine: network games and Forge maps leave them out.
+= %d mapas MCC de %s.\n \nA muestra sus paquetes y colecciones del Workshop de mcc_maps. Sus tags sirven en cualquier mapa. Los de los mapas propios de MCC, o de sus archivos compartidos, quedan en este equipo: las partidas en red y los mapas de la forja no los llevan.
+Custom Singleplayer
+= Custom un jugador
+Custom Multiplayer
+= Custom multijugador
+%d Custom Edition %s maps.\n \nA lists their folders of custom_maps, and the maps beside them.
+= %d mapas Custom Edition de %s.\n \nA muestra sus carpetas de custom_maps, y los mapas sueltos.
+No maps
+= Sin mapas
+No Custom Edition maps of this kind: put them in custom_maps.
+= No hay mapas Custom Edition de este tipo: ponlos en custom_maps.
+A package or Workshop collection of mcc_maps.\n \nA lists its maps.
+= Un paquete o coleccion del Workshop de mcc_maps.\n \nA muestra sus mapas.
+A folder of custom_maps: %d maps.\n \nA lists them.
+= Una carpeta de custom_maps: %d mapas.\n \nA los muestra.
+An MCC %s map.\n \nA lists its weapons, AI and the rest, to add to %s. Opening it takes a moment.
+= Un mapa MCC de %s.\n \nA muestra sus armas, IA y lo demas, para agregar a %s. Abrirlo tarda un momento.
+a profile
+= un perfil
+campaign
+= campana
+multiplayer
+= multijugador
+A %s map%s%s.\n \nA lists its weapons, AI and the rest, to add to %s.
+= Un mapa de %s%s%s.\n \nA muestra sus armas, IA y lo demas, para agregar a %s.
+No multiplayer profiles
+= Sin perfiles de multijugador
+NEW PROFILE makes one, playing the weapons of a profile of TAG PROFILES. Each is a file of the tag_injector folder's multiplayer folder.
+= PERFIL NUEVO crea uno, con las armas de un perfil de PERFILES DE TAGS. Cada uno es un archivo de la carpeta multiplayer de tag_injector.
+Its profile (%s) is not there: A, then TAG PROFILE, chooses another.
+= Su perfil (%s) no esta: A, y luego PERFIL DE TAGS, elige otro.
+Plays the %ld weapons on of %s.\n \nA opens its settings: there DELETE PROFILE, twice, deletes it.
+= Usa las %ld armas activas de %s.\n \nA abre sus ajustes: ahi BORRAR PERFIL, dos veces, lo borra.
+The name the menus and Server Setup show it by.\n \nA types another.
+= El nombre que muestran los menus y crear servidor.\n \nA escribe otro.
+The profile whose weapons on it plays (%ld of them): its weapons alone, not its AI or equipment. A game you host shares them with its players, who download them from you.\n \nA, left and right choose another.
+= El perfil cuyas armas activas usa (%ld): solo sus armas, no su IA ni equipo. Una partida que creas las comparte con sus jugadores, que las bajan de ti.\n \nA, izquierda y derecha eligen otro.
+ADD TO MAP'S: the profile's weapons join the map's, so a weapon may be either. PROFILE'S ONLY: the map's weapons are all the profile's.\n \nWith MANUAL, ADD keeps the map's weapon among those chosen for it.\n \nLeft and right choose.
+= SUMAR A LAS DEL MAPA: las armas del perfil se suman a las del mapa, asi un arma puede ser cualquiera. SOLO LAS DEL PERFIL: todas las armas del mapa son del perfil.\n \nCon MANUAL, SUMAR deja el arma del mapa entre las elegidas.\n \nIzquierda y derecha eligen.
+How the map's weapons are swapped:\nFULLY RANDOM: any weapon, each time one spawns.\nONCE PER POSITION: each place rolls once a game.\nONCE PER WEAPON: each of the map's weapons rolls once (every shotgun the same).\nMANUAL: the weapons chosen for each.\n \nLeft and right choose.
+= Como se cambian las armas del mapa:\nTODO AL AZAR: cualquier arma, cada vez que aparece una.\nUNA VEZ POR LUGAR: cada lugar se sortea una vez por partida.\nUNA VEZ POR ARMA: cada arma del mapa se sortea una vez (todas las escopetas igual).\nMANUAL: las armas elegidas para cada una.\n \nIzquierda y derecha eligen.
+The weapons that take the place of the map's %s, one at random each time it spawns. None chosen: it stays as it is.\n \nA lists them.
+= Las armas que toman el lugar de %s del mapa, una al azar cada vez que aparece. Sin elegir: queda igual.\n \nA las muestra.
+What the players spawn as: the red team's, the blue team's and a free for all game's biped, first-person hands and movement.\n \nA opens them.
+= Con que aparecen los jugadores: el bipedo, las manos y el movimiento del equipo rojo, del azul y de todos contra todos.\n \nA los abre.
+The weapons each player spawns with.\nGAMETYPE'S: as the gametype gives them.\nRANDOM: two of the weapons a map's weapon may be swapped for.\nSET: the two chosen below.\n \nLeft and right choose.
+= Las armas con que aparece cada jugador.\nLAS DEL TIPO DE JUEGO: como las da el tipo de juego.\nAL AZAR: dos de las armas por las que se puede cambiar un arma del mapa.\nESCOGIDAS: las dos elegidas abajo.\n \nIzquierda y derecha eligen.
+A weapon each player spawns with: one of the profile's, or one of the map's (when the map has it).\n \nA, left and right choose another.
+= Un arma con que aparece cada jugador: una del perfil, o una del mapa (si el mapa la tiene).\n \nA, izquierda y derecha eligen otra.
+No campaign profiles
+= Sin perfiles de campana
+NEW PROFILE makes one, playing the weapons and AI of a profile of TAG PROFILES. Each is a file of the tag_injector folder's campaign folder.
+= PERFIL NUEVO crea uno, con las armas e IA de un perfil de PERFILES DE TAGS. Cada uno es un archivo de la carpeta campaign de tag_injector.
+Plays the %ld weapons and %ld AI on of %s.\n \nA opens its settings: there DELETE PROFILE, twice, deletes it.
+= Usa las %ld armas y %ld IA activas de %s.\n \nA abre sus ajustes: ahi BORRAR PERFIL, dos veces, lo borra.
+The name the menus show it by.\n \nA types another.
+= El nombre que muestran los menus.\n \nA escribe otro.
+The profile whose weapons (%ld) and AI (%ld) on it plays.\n \nA, left and right choose another.
+= El perfil cuyas armas (%ld) e IA (%ld) activas usa.\n \nA, izquierda y derecha eligen otro.
+How the weapons lying in the level are swapped for the profile's.\n \nA opens them.
+= Como se cambian las armas tiradas en el nivel por las del perfil.\n \nA las abre.
+What the player (every player of a co-op game) spawns as: the biped, its first-person hands and its movement.\n \nA opens them.
+= Con que aparece el jugador (cada jugador en cooperativo): el bipedo, sus manos en primera persona y su movimiento.\n \nA los abre.
+How the level's enemies are swapped for the profile's AI, and the weapons each kind and rank of them holds (its LOADOUT).\n \nA opens them.
+= Como se cambian los enemigos del nivel por la IA del perfil, y las armas que lleva cada tipo y rango (sus ARMAS).\n \nA los abre.
+Enemies
+= Enemigos
+Weapons
+= Armas
+ADD TO LEVEL'S: the profile's %s join the level's, so one may stay as it is. PROFILE'S ONLY: they are all the profile's.\n \nWith MANUAL, ADD keeps the level's own among those chosen for it.\n \nLeft and right choose.
+= SUMAR A LAS DEL NIVEL: los %s del perfil se suman a los del nivel, asi uno puede quedar igual. SOLO LAS DEL PERFIL: todos son del perfil.\n \nCon MANUAL, SUMAR deja el del nivel entre los elegidos.\n \nIzquierda y derecha eligen.
+How the level's enemies are swapped:\nRANDOM: any of the profile's AI, each placed (your allies stay as they are).\nMANUAL: the AI chosen for each enemy (and rank) below.\n \nLeft and right choose.
+= Como se cambian los enemigos del nivel:\nAL AZAR: cualquier IA del perfil, en cada lugar (tus aliados quedan igual).\nMANUAL: la IA elegida abajo para cada enemigo (y rango).\n \nIzquierda y derecha eligen.
+How the level's weapons, lying in it or held by its AI, are swapped:\nRANDOM: any of the profile's weapons, each placed.\nMANUAL: the weapons chosen for each of the campaign's.\n \nLeft and right choose.
+= Como se cambian las armas del nivel, tiradas o en manos de su IA:\nAL AZAR: cualquier arma del perfil, en cada lugar.\nMANUAL: las armas elegidas para cada una de la campana.\n \nIzquierda y derecha eligen.
+The weapons that take the place of the level's %s, lying in it or held by its AI (who keep it when they cannot hold them), one at random each placed. None chosen: it stays as it is.\n \nA lists them.
+= Las armas que toman el lugar de %s del nivel, tirada o en manos de su IA (que la conserva si no puede usarlas), una al azar en cada lugar. Sin elegir: queda igual.\n \nA las muestra.
+The level's %ss, each rank its own: the AI that take its place, and the weapons it holds.\n \nA lists its ranks.
+= Los %s del nivel, cada rango aparte: la IA que toma su lugar, y las armas que lleva.\n \nA muestra sus rangos.
+The AI that take the place of the level's %ss%s.\n \nA opens them.
+= La IA que toma el lugar de los %s del nivel%s.\n \nA la abre.
+, and the weapons it holds
+= , y las armas que lleva
+On: %s may take the place of the level's %s, one of those on at random each placed.\n \nA, left or right turns it on or off.
+= ON: %s puede tomar el lugar de %s del nivel, uno de los activos al azar en cada lugar.\n \nA, izquierda o derecha lo encienden o apagan.
+the level's own
+= el propio del nivel
+, and the weapons they hold
+= , y las armas que llevan
+The AI that take its place, one of those on at random each placed. None chosen: it stays as it is.\n \nA lists them.
+= La IA que toma su lugar, una de las activas al azar en cada lugar. Sin elegir: queda igual.\n \nA la muestra.
+ENEMIES' REPLACEMENT is RANDOM: any of the profile's AI takes its place. MANUAL chooses them here.
+= El REEMPLAZO de ENEMIGOS es AL AZAR: cualquier IA del perfil toma su lugar. MANUAL los elige aqui.
+It holds no weapons a loadout can choose.
+= No lleva armas que se puedan elegir.
+The weapons it holds (it, or the AI that took its place), one of those on that it can hold, at random. None chosen: its own, swapped as WEAPONS says.\n \nA lists them.
+= Las armas que lleva (el, o la IA que tomo su lugar), una de las activas que pueda usar, al azar. Sin elegir: la suya, cambiada como diga ARMAS.\n \nA las muestra.
+On: it may hold %s%s.\n \nA, left or right turns it on or off.
+= ON: puede llevar %s%s.\n \nA, izquierda o derecha lo encienden o apagan.
+its own weapon
+= su propia arma
+ (when the level has it)
+=  (si el nivel la tiene)
+The player (every player of a co-op game): %s
+= El jugador (cada jugador en cooperativo): %s
+%s: the biped its players spawn as, their first-person hands and movement.\n \nA opens them.
+= %s: el bipedo con que aparecen sus jugadores, sus manos en primera persona y su movimiento.\n \nA los abre.
+The red team
+= El equipo rojo
+The blue team
+= El equipo azul
+A free for all game
+= Todos contra todos
+CUSTOM: its own biped, hands and movement, set below. Another team: plays whatever that team has.\n \nA, left and right choose.
+= PROPIO: su bipedo, manos y movimiento, elegidos abajo. Otro equipo: usa lo que tenga ese equipo.\n \nA, izquierda y derecha eligen.
+On: %s may take the place of the map's %s, one of those on at random each time it spawns.\n \nA, left or right turns it on or off.
+= ON: %s puede tomar el lugar de %s del mapa, una de las activas al azar cada vez que aparece.\n \nA, izquierda o derecha lo encienden o apagan.
+the map's own
+= la propia del mapa
+None here.
+= Ninguno aqui.
+A lists them, to add to the profile.
+= A los muestra, para agregarlos al perfil.
+A lists them. The randomizer cannot play these yet.
+= A los muestra. El aleatorio todavia no puede usar estos.
+%ld tags required. The randomizer cannot play these yet.
+= Necesita %ld tags. El aleatorio todavia no puede usar estos.
+%ld tags required. Make a profile to add it to.
+= Necesita %ld tags. Crea un perfil para agregarlo.
+%ld tags required.%s
+= Necesita %ld tags.%s
+ In the profile.
+=  Esta en el perfil.
+\n \nIts map hides its tags' names: this one is made from what it is.
+= \n \nSu mapa oculta los nombres de sus tags: este nombre sale de lo que es.
+Copied %ld profile%s downloaded from network games into TAG PROFILES (and their multiplayer profiles): yours to change.
+= Se copiaron %ld perfil%s bajados de partidas en red a PERFILES DE TAGS (y sus perfiles de multijugador): puedes cambiarlos.
+The map cannot be read (the log says why).
+= No se puede leer el mapa (el registro dice por que).
+The firing range is opened from the main menu's settings.
+= El campo de tiro se abre desde los ajustes del menu principal.
+A again takes %s out of %s and deletes its bundle.
+= A otra vez saca %s de %s y borra su paquete.
+Took %s out of %s.
+= Se saco %s de %s.
+No profiles: NEW PROFILE makes one.
+= Sin perfiles: PERFIL NUEVO crea uno.
+ENEMIES' REPLACEMENT is RANDOM: MANUAL chooses each enemy's AI.
+= El REEMPLAZO de ENEMIGOS es AL AZAR: MANUAL elige la IA de cada enemigo.
+The randomizer cannot play these yet: only weapons, AI and equipment can be added.
+= El aleatorio todavia no puede usar estos: solo se pueden agregar armas, IA y equipo.
+Make a profile first: NEW PROFILE.
+= Primero crea un perfil: PERFIL NUEVO.
+Taken out of %s.
+= Sacado de %s.
+Added to %s, with its map's first-person hands.
+= Agregado a %s, con las manos en primera persona de su mapa.
+Added to %s, with %ld weapon%s and equipment it carries.
+= Agregado a %s, con %ld arma%s y el equipo que lleva.
+Added to %s.
+= Agregado a %s.
+It cannot be taken out (the log says why).
+= No se puede sacar (el registro dice por que).
+DELETE PROFILE again deletes the campaign profile %s (not its tags' profile).
+= BORRAR PERFIL otra vez borra el perfil de campana %s (no su perfil de tags).
+Deleted %s.
+= Se borro %s.
+%s cannot be deleted (the log says why).
+= No se puede borrar %s (el registro dice por que).
+DELETE PROFILE again deletes the multiplayer profile %s (not its weapons' profile).
+= BORRAR PERFIL otra vez borra el perfil de multijugador %s (no el perfil de sus armas).
+DELETE PROFILE again deletes %s and its %ld tags. This cannot be undone.
+= BORRAR PERFIL otra vez borra %s y sus %ld tags. No se puede deshacer.
+VIEW %.14s%s PROFILE
+= VER PERFIL %.14s%s
+DUPLICATE PROFILE
+= DUPLICAR PERFIL
+NEW PROFILE
+= PERFIL NUEVO
+DELETE PROFILE
+= BORRAR PERFIL
+A name needs a letter or a digit (the log says why).
+= Un nombre necesita una letra o un numero (el registro dice por que).
+A profile's name needs a letter or a digit (the log says why).
+= El nombre de un perfil necesita una letra o un numero (el registro dice por que).
+Made %s, playing %s. A opens its settings.
+= Se creo %s, con %s. A abre sus ajustes.
+no profile yet
+= todavia sin perfil
+The custom type cannot be kept (the log says why).
+= No se puede guardar el tipo propio (el registro dice por que).
+The name cannot be kept (the log says why).
+= No se puede guardar el nombre (el registro dice por que).
+It is %s now.
+= Ahora es %s.
+The copy cannot be made: its name needs a letter or a digit, or the files could not be copied (the log says why).
+= No se puede hacer la copia: su nombre necesita una letra o un numero, o no se pudieron copiar los archivos (el registro dice por que).
+Made %s, a copy of %s.
+= Se creo %s, copia de %s.
+Made %s. Choose a map in MAPS, then its weapons or AI to add.
+= Se creo %s. Elige un mapa en MAPAS y luego sus armas o IA para agregar.
+Packing the profiles' tags: %ld left, %lu MB smaller so far.
+= Empacando los tags de los perfiles: faltan %ld, %lu MB menos hasta ahora.
+Packed %ld tags: the profiles are %lu MB smaller.
+= %ld tags empacados: los perfiles ocupan %lu MB menos.
+Its tags cannot be read.
+= No se pueden leer sus tags.
+MISSING: ¶
+= FALTA: ¶
+%sNo '%s' animations: %s
+= %sSin animaciones de '%s': %s
+it holds its weapon wrong.
+= lleva mal su arma.
+the Spartan holds it as another weapon.
+= el Spartan la lleva como otra arma.
+CANNOT: ¶
+= NO PUEDE: ¶
+NO ANIMATION: ¶
+= SIN ANIMACION: ¶
+Fully usable: nothing missing.
+= Se puede usar todo: no falta nada.
+No data missing.
+= No faltan datos.
+Press DELETE again to delete it.
+= Pulsa BORRAR otra vez para borrarlo.
+
+## port/linux/game/tag_injector.c
+its bundle is missing from the profile's folder
+= falta su paquete en la carpeta del perfil
+its bundle could not be read
+= no se pudo leer su paquete
+its tags, with those before it, were more than a level adds
+= sus tags, con los anteriores, eran mas de los que un nivel admite
+its bundle is not one this build can play
+= su paquete no es uno que esta version pueda usar
+there was no memory for it
+= no hubo memoria para el
+a weapon it adds has no first-person model or animations
+= un arma que agrega no tiene modelo ni animaciones en primera persona
+a bitmap it adds cannot be drawn by this build
+= esta version no puede dibujar una imagen que agrega
+a model it adds cannot be made this build's
+= esta version no puede usar un modelo que agrega
+WEAPONS
+= ARMAS
+EQUIPMENT
+= EQUIPO
+VEHICLES
+= VEHICULOS
+BIPEDS
+= BIPEDOS
+SCENERY
+= DECORADO
+DOORS & DEVICES
+= PUERTAS Y APARATOS
+SKIES
+= CIELOS
+FIRST PERSON HANDS
+= MANOS EN PRIMERA PERSONA
+Custom Edition maps are off (game.custom_edition in config.toml), or cannot run here.
+= Los mapas Custom Edition estan apagados (game.custom_edition en config.toml), o no funcionan aqui.
+A Custom Edition map is being played.
+= Se esta jugando un mapa Custom Edition.
+An MCC map is being played.
+= Se esta jugando un mapa MCC.
+It names a tag this build cannot take out: %s
+= Usa un tag que esta version no puede sacar: %s
+It has no first-person model or animations: its map never lets a player hold it, and it cannot be added.
+= No tiene modelo ni animaciones en primera persona: su mapa nunca deja que un jugador la lleve, y no se puede agregar.
+Make a profile first.
+= Primero crea un perfil.
+Out of memory.
+= Sin memoria.
+The map cannot be read again.
+= No se puede volver a leer el mapa.
+The profile cannot be written (the log says why).
+= No se puede guardar el perfil (el registro dice por que).
+1st person model
+= modelo en primera persona
+1st person animations
+= animaciones en primera persona
+%ld Tag Injector tag%s failed to load (turned off):
+= %ld tag%s del Tag Injector no cargaron (se apagaron):
+%ld Tag Injector tag%s left out: a level adds %d at most
+= %ld tag%s del Tag Injector quedaron fuera: un nivel admite %d como maximo
+No Tag Injector tags were added: no room for them
+= No se agrego ningun tag del Tag Injector: no habia espacio
+it could not be played
+= no se pudo usar

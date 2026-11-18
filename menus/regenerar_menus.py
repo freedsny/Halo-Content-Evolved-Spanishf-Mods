@@ -131,6 +131,16 @@ pares.update(textos_es.AJUSTES)
 pares.update(textos_evolved.TEXTOS)
 valores = dict(textos_es.VALORES)
 valores.update(textos_evolved.VALORES)
+# (control: un texto traducido de los menus no rompe su XML ni pide letras
+# que la fuente del juego no tiene; si no, no se compila)
+_malos = [f"{en!r} -> {es!r}" for en, es in list(pares.items()) + list(valores.items())
+          if '"' in es or "<" in es or re.search(r"&(?!amp;|lt;|gt;|quot;|apos;|#)", es)
+          or any(ord(letra) > 126 for letra in es)]
+if _malos:
+    print("ERROR: textos de los menus que romperian el XML o la fuente del juego:")
+    for _malo in _malos:
+        print("  " + _malo)
+    sys.exit(1)
 
 
 def _texto(m):
@@ -226,6 +236,12 @@ for (nombre, cuantos), textos in juego.items():
         distintos.append(f"{nombre} ({(len(partes) - 1) // 4} textos, no {cuantos})")
         continue
     for numero, texto in textos.items():
+        # (control: los mismos % que el texto del juego, que el codigo llena;
+        # nada que rompa el XML ni letras que la fuente no tiene)
+        import codigo_es
+        problema = codigo_es.revisar_par("strings.xml", partes[2 + 4 * numero], texto.replace('"', "&quot;"))
+        if problema or "<" in texto or '"' in texto:
+            sys.exit(f"ERROR: textos_juego.txt, {nombre} {numero}: {problema or 'rompe el XML'}")
         partes[2 + 4 * numero] = texto
         cambiados += 1
     contenido = contenido[:m.start(2)] + "".join(partes) + contenido[m.end(2):]
