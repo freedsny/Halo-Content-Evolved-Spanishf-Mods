@@ -192,7 +192,7 @@ TEXTOS = {
 
 # ---- reto diario, botones y listas
 "DAILY CHALLENGE": "RETO DIARIO",
-"RANDOM RUN": "PARTIDA AL AZAR",
+"RANDOM RUN": "AL AZAR",
 "PLAY": "JUGAR",
 "LEADERBOARD": "CLASIFICACION",
 "PAST DAYS": "DIAS ANTERIORES",
@@ -223,7 +223,7 @@ TEXTOS = {
 "%y-button ON / OFF": "%y-button ON / OFF",
 "%b-button CANCEL": "%b-button CANCELAR",
 "%b-button Back": "%b-button Volver",
-"%x-button NEWS": "%x-button NOTICIAS",
+"%x-button NEWS": "%x-button AVISOS",
 "%a-button SELECT": "%a-button ELEGIR",
 "%y-button CREATE NEW": "%y-button CREAR NUEVO",
 "%x-button DELETE": "%x-button BORRAR",
@@ -966,7 +966,7 @@ OVERLAY = {
     "Infinite Ammo": "Municion infinita",
     "Bottomless Clip": "Sin recargar",
     "Super Jump": "Super salto",
-    "No Fall Damage": "Jetpack (disparar + granada)",
+    "No Fall Damage": "Jetpack",
     "Medusa Mode": "Medusa",
     "Bump Possession": "Poseer al chocar",
     "Easy Rider": "No caer del vehiculo",
@@ -1080,4 +1080,48 @@ OVERLAY_TRUCOS = [
     ("Teletransporte (boton Ir)", "cheats.teleport"),
     ("Sentir el dano de otros", "cheats.reflexive_damage_effects"),
     ("Sin dano por caida", "cheats.no_fall_damage"),
+]
+
+
+# Las palabras grandes de los menus de Content Evolved (imagenes en
+# ce/port/main_menu, de 1024, 1280 o 1536 de ancho) y sus titulos (imagenes de
+# 2048x256), dibujadas en espanol. Firefight, Forge y Theater con sus nombres
+# en los Halo en espanol: Tiroteo, Forja y Cine.
+ITEMS_EVOLVED = [
+    ("menu_play", "JUGAR"),
+    ("menu_forge", "FORJA"),
+    ("menu_theater", "CINE"),
+    ("menu_mods", "MODS"),
+    ("menu_daily", "RETO DIARIO"),
+    ("menu_firefight", "TIROTEO"),
+    ("menu_firefight_variants", "VARIANTES DE TIROTEO"),
+    ("menu_single_player", "UN JUGADOR"),
+    ("menu_solo", "SOLO"),
+    ("menu_tag_injector", "INYECTOR DE TAGS"),
+]
+TITULOS_EVOLVED = [
+    ("difficulty_select/randomizer/header_randomizer.png", "ALEATORIO"),
+    ("difficulty_select/skulls/header_skulls.png", "CALAVERAS"),
+    ("map_manager/header_maps.png", "MAPAS"),
+    ("mods/header_mods.png", "MODS"),
+    ("multiplayer_type_select/coop/header_player_2.png", "PERFIL DEL JUGADOR 2"),
+    ("multiplayer_type_select/header_firefight.png", "TIROTEO"),
+    ("multiplayer_type_select/header_forge.png", "FORJA"),
+    ("multiplayer_type_select/header_standard.png", "ESTANDAR"),
+    ("multiplayer_type_select/join_game/header_direct_link.png", "ENLACE DIRECTO"),
+    ("multiplayer_type_select/join_game/header_password.png", "CONTRASEÑA"),
+    ("multiplayer_type_select/join_game/header_server_browser.png", "BUSCAR PARTIDAS"),
+    ("multiplayer_type_select/lobby/header_add_player.png", "AGREGAR JUGADOR"),
+    ("multiplayer_type_select/lobby/header_lobby.png", "SALA DE LA PARTIDA"),
+    ("multiplayer_type_select/server_settings/bots_options/header_bots_options.png", "BOTS"),
+    ("multiplayer_type_select/server_settings/coop_options/header_coop_options.png", "OPCIONES DE COOPERATIVO"),
+    ("multiplayer_type_select/server_settings/fork_settings/header_fork_settings.png", "AJUSTES EXTRA"),
+    ("multiplayer_type_select/server_settings/game_settings/header_game_settings.png", "AJUSTES DE LA PARTIDA"),
+    ("multiplayer_type_select/server_settings/lobby_settings/header_lobby_settings.png", "AJUSTES DE LA SALA"),
+    ("multiplayer_type_select/server_settings/map_content/header_map_content.png", "CONTENIDO DEL MAPA"),
+    ("multiplayer_type_select/server_settings/map_share_options/header_map_share_options.png", "COMPARTIR MAPAS"),
+    ("multiplayer_type_select/server_settings/voice_options/header_voice_options.png", "VOZ Y VOTACION"),
+    ("settings_select/player_setup/player_profile_edit/gameplay/header_gameplay.png", "JUEGO"),
+    ("social/header_social.png", "SOCIAL"),
+    ("theater/header_theater.png", "CINE"),
 ]

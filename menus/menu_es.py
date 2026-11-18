@@ -16,10 +16,11 @@ def _font(font_path, cap):
     return ImageFont.truetype(font_path, round(1000 * cap / (bottom - top)))
 
 
-def _layer(font, text, fill, stroke=0):
+def _layer(font, text, fill, stroke=0, width=W):
     widths = [font.getlength(c) for c in text]
-    x = MIDDLE - (sum(widths) + TRACK * (len(text) - 1)) / 2
-    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    # (el centro de las palabras del juego: 8 px a la derecha del de la imagen)
+    x = width / 2 + 8 - (sum(widths) + TRACK * (len(text) - 1)) / 2
+    img = Image.new("RGBA", (width, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     for c, w in zip(text, widths):
         draw.text((x, BASELINE), c, font=font, fill=fill, anchor="ls", stroke_width=stroke, stroke_fill=fill)
@@ -27,16 +28,17 @@ def _layer(font, text, fill, stroke=0):
     return img
 
 
-def item(text, state, font_path):
-    """state 0: apagada (azul tenue); state 1: resaltada (blanca con brillo azul)"""
+def item(text, state, font_path, width=W):
+    """state 0: apagada (azul tenue); state 1: resaltada (blanca con brillo azul);
+    width: el ancho de la imagen (1024, o 1280 y 1536 las de Content Evolved)"""
     font = _font(font_path, CAP)
     if state == 0:
-        return _layer(font, text, (0x28, 0x95, 0xFF, round(0.467 * 255)))
-    glow = _layer(font, text, (0x28, 0x95, 0xFF, 255), stroke=11)
+        return _layer(font, text, (0x28, 0x95, 0xFF, round(0.467 * 255)), width=width)
+    glow = _layer(font, text, (0x28, 0x95, 0xFF, 255), stroke=11, width=width)
     glow = glow.filter(ImageFilter.GaussianBlur(2.19 * SCALE))
     a = np.asarray(glow).copy()
     a[..., 3] = (a[..., 3] * 0.65).astype(np.uint8)
-    return Image.alpha_composite(Image.fromarray(a, "RGBA"), _layer(font, text, (255, 255, 255, 255)))
+    return Image.alpha_composite(Image.fromarray(a, "RGBA"), _layer(font, text, (255, 255, 255, 255), width=width))
 
 
 # ---- titulo de pantalla (512x64 a escala 4)

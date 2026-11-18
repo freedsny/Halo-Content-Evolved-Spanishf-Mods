@@ -167,6 +167,10 @@ if overlay_c.exists():
         global sincronizados
         sincronizados += 1
         ajuste = "cheats." + m.group(2)
+        if m.group(2) == "jetpack":
+            # (con una nota abajo: como se vuela)
+            return ('OVERLAY_TOGGLE_NOTE("%s", _overlay_state_config, "config %s true", "config %s false", "%s", '
+                    '"Manten disparar y granada a la vez para volar")' % (m.group(1), ajuste, ajuste, ajuste))
         return ('OVERLAY_TOGGLE("%s", _overlay_state_config, "config %s true", "config %s false", "%s", 0.0f, FALSE)'
                 % (m.group(1), ajuste, ajuste, ajuste))
     fuente_c = re.sub(r'OVERLAY_GLOBAL\("([^"]+)", "cheat_(deathless_player|omnipotent|infinite_ammo|bottomless_clip|'
@@ -195,6 +199,13 @@ if overlay_c.exists():
 else:
     print("AVISO: no esta overlay_menu.c (menu de los tres dedos)")
 
+# 8) los textos que el codigo escribe en pantalla (textos_codigo.txt)
+import codigo_es
+hechos, faltan = codigo_es.aplicar()
+print(f"textos del codigo en espanol: {hechos}, no encontrados: {len(faltan)}")
+for falta in faltan:
+    print("  no encontrado:", falta)
+
 # 6) las palabras del menu principal y los titulos, dibujados en espanol
 # (si faltan pillow, numpy o scipy, quedan en ingles y solo se avisa)
 try:
@@ -217,6 +228,22 @@ try:
     for ruta, titulo in textos_es.TITULOS + textos_es.TITULOS_AJUSTES:
         if (principal / ruta).parent.is_dir():
             menu_es.header(titulo, fuente).save(principal / ruta, optimize=True)
+    # (las de Content Evolved: en ce/port/main_menu, cada una de su ancho)
+    propias = ce / "port/main_menu"
+    for nombre, palabra in textos_evolved.ITEMS_EVOLVED:
+        for estado in (0, 1):
+            archivo = propias / f"{nombre}__{estado}.png"
+            if archivo.exists():
+                from PIL import Image
+                ancho = Image.open(archivo).size[0]
+                menu_es.item(palabra, estado, fuente, ancho).save(archivo, optimize=True)
+            else:
+                print("AVISO: no esta", archivo)
+    for ruta, titulo in textos_evolved.TITULOS_EVOLVED:
+        if (propias / ruta).exists():
+            menu_es.header(titulo, fuente).save(propias / ruta, optimize=True)
+        else:
+            print("AVISO: no esta", propias / ruta)
     print("menu en espanol: dibujado")
 except ImportError as error:
     print("AVISO: el menu queda en ingles, falta:", error)
