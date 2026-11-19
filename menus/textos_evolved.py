@@ -1401,3 +1401,15 @@ for _n in (8, 12, 16, 24, 32, 48, 64):
 for _n in (15, 30, 45, 60, 90, 150):
     TEXTOS[f'Players {_n} metres apart or less are near\\nfor voice chat.'] = \
         f'Jugadores a {_n} metros o menos estan cerca\\npara el chat de voz.'
+# (Content Evolved build 142 y 143: MAPAS Y MODS, el archivo de mapas)
+TEXTOS.update({
+    "MAPS &amp; MODS": "MAPAS Y MODS",
+    "BROWSE MAPS": "BUSCAR MAPAS",
+    "COMMUNITY CONTENT (COMING SOON)": "CONTENIDO DE LA COMUNIDAD (PRONTO)",
+    "CUSTOM EDITION MAPS": "MAPAS DE CUSTOM EDITION",
+    "MASTER CHIEF COLLECTION MAPS": "MAPAS DE MASTER CHIEF COLLECTION",
+    "OPEN FOLDER": "ABRIR CARPETA",
+    "MAP ARCHIVE FIRST:": "ARCHIVO DE MAPAS PRIMERO:",
+    "Get a missing CE map from FractumSeraph's map\\narchive before asking the host's players.":
+        "Un mapa CE que falte se busca en el archivo de\\nFractumSeraph antes de pedirlo al anfitrion.",
+})

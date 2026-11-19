@@ -86,14 +86,18 @@ jobs:
         run: |
           patch -p1 -l < ../repo/parche/trucos.patch
           /usr/bin/python3 ../repo/menus/regenerar_menus.py
-          # El nombre de la app en el celular, y su propio paquete
-          # (com.halo.decomp.evolved, HALO_APPLICATION_ID_SUFFIX de build.gradle):
-          # se instala al lado de Halo C.E, con su propia carpeta y partidas. Las
-          # pruebas son otra app mas (com.halo.decomp.evolved.pruebas).
+          # El nombre de la app en el celular, y su propio paquete: el de Content
+          # Evolved desde la build 142 (com.halo.contentevolved) con .trucos
+          # (HALO_APPLICATION_ID_SUFFIX de build.gradle): com.halo.contentevolved.trucos.
+          # No choca con la app de Content Evolved ni con Halo C.E; y la "app vieja"
+          # de la que la nueva pasaria los archivos (com.halo.decomp.trucos) no
+          # existe, asi que no pregunta nada. Las pruebas son otra app mas
+          # (com.halo.contentevolved.trucos.pruebas). Hasta la build 141 era
+          # com.halo.decomp.evolved: esa se borra a mano.
           if [ "$GITHUB_REF_NAME" = "main" ]; then
-            nombre="Halo C.E Evolved"; sufijo=".evolved"
+            nombre="Halo C.E Evolved"; sufijo=".trucos"
           else
-            nombre="Evolved PRUEBA"; sufijo=".evolved.pruebas"
+            nombre="Evolved PRUEBA"; sufijo=".trucos.pruebas"
           fi
           sed -i "s#<string name=\"app_name\">Halo</string>#<string name=\"app_name\">$nombre</string>#" port/android/app/src/main/res/values/strings.xml
           echo "HALO_APPLICATION_ID_SUFFIX=$sufijo" >> "$GITHUB_ENV"
@@ -143,10 +147,26 @@ jobs:
       - name: Compile cache
         run: ccache --show-stats
 
+      # Desde la build 142 Content Evolved deja el juego en
+      # dist/halo-contentevolved-release, y en dist/halo-android-release su
+      # "puente" para pasar de la app vieja a la nueva (aqui no se usa: la app
+      # vieja, com.halo.decomp.evolved, se borra a mano)
+      - name: Ubicar el APK del juego
+        run: |
+          for d in src/dist/halo-contentevolved-release src/dist/halo-android-release; do
+            if [ -f "$d/app-release.apk" ]; then
+              mkdir -p src/dist/juego
+              cp "$d/app-release.apk" src/dist/juego/
+              echo "APK del juego: $d/app-release.apk"
+              break
+            fi
+          done
+          test -f src/dist/juego/app-release.apk
+
       - uses: actions/upload-artifact@v4
         with:
           name: halo-evolved-android-release
-          path: src/dist/halo-android-release
+          path: src/dist/juego
           # las pruebas solo un dia: en un repositorio publico cualquiera con cuenta
           # de GitHub puede descargar un artifact
           retention-days: ${{ github.ref_name == 'main' && 7 || 1 }}
@@ -160,7 +180,7 @@ jobs:
           CAMBIOS=$(cd repo && git log -1 --format='%s%n%n%b' | grep -v '^Co-Authored-By\|^Claude-Session' | sed '/./,$!d')
           if [ "$GITHUB_REF_NAME" = "main" ]; then
             APK="HaloCE-Evolved-trucos-$VER-n${{ github.run_number }}.apk"
-            cp src/dist/halo-android-release/app-release.apk "$APK"
+            cp src/dist/juego/app-release.apk "$APK"
             gh release create "evolved-$(date +%Y%m%d-%H%M)" "$APK" \
               --repo "$GITHUB_REPOSITORY" \
               --title "Halo C.E Evolved con trucos - Content Evolved $VER (#${{ github.run_number }})" \
@@ -174,7 +194,7 @@ jobs:
               gh release delete "$viejo" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
             done
             APK="HaloCE-Evolved-PRUEBA-$VER-n${{ github.run_number }}.apk"
-            cp src/dist/halo-android-release/app-release.apk "$APK"
+            cp src/dist/juego/app-release.apk "$APK"
             gh release create "evolved-prueba-$(date +%Y%m%d-%H%M)" "$APK" \
               --repo "$GITHUB_REPOSITORY" \
               --target "$GITHUB_SHA" \

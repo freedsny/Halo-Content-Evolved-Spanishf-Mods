@@ -36,8 +36,10 @@ Pon **JETPACK** en ON (en TRUCOS o en el menú de los tres dedos). Luego **mant�
 ## Cómo conseguir el APK
 
 1. Entra a **Releases** de este repositorio.
-2. Descarga el APK de la versión más reciente ("Latest"). Su nombre lleva la versión de Content Evolved y el número de la versión, por ejemplo `HaloCE-Evolved-trucos-build-141-n5.apk`.
+2. Descarga el APK de la versión más reciente ("Latest"). Su nombre lleva la versión de Content Evolved y el número de la versión, por ejemplo `HaloCE-Evolved-trucos-build-143-n13.apk`.
 3. Instálalo. Se llama **Halo C.E Evolved** y es **otra app**: se instala al lado de Halo C.E sin reemplazarla, con su propia carpeta y sus propias partidas.
+
+> **Desde la versión con Content Evolved build-143** la app usa el nombre interno nuevo de Content Evolved (`com.halo.contentevolved.trucos`; antes `com.halo.decomp.evolved`). Es una app nueva: **desinstala la Halo C.E Evolved anterior** e instala esta. La primera vez vuelve a sacar los mapas de la ISO, y las partidas y perfiles de la anterior no pasan.
 4. La primera vez te pide tu imagen de disco de Halo y saca los mapas de ahí.
 
 ### Actualización automática
