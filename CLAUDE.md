@@ -8,7 +8,7 @@
 - `.github/workflows/compilar.yml` compila el APK:
   - En `main` sale la versión oficial (Release "Latest", `Halo C.E Evolved con trucos - Content Evolved build-N (#n)`, paquete `com.halo.contentevolved.trucos`).
   - En `pruebas` sale un borrador privado (`EVOLVED PRUEBA (pruebas) - ...`, paquete `com.halo.contentevolved.trucos.pruebas`). Sin versión indicada, usa el último tag de arriba.
-- `.github/workflows/vigilar.yml` corre todos los días a las 6:43 a. m. de Colombia. Si arriba hay una versión nueva, lanza `compilar.yml` en `main` con esa versión.
+- `.github/workflows/vigilar.yml` está programado todos los días a las 6:43 a. m. de Colombia, pero GitHub suele lanzarlo horas después (en noviembre de 2026, hacia las 2 p. m.). Si arriba hay una versión nueva, lanza `compilar.yml` en `main` con esa versión.
 - Si una compilación falla, se abre el issue **"Fallo la compilacion de Evolved"**. Mientras esté abierto, el vigilante no lanza nada.
 
 ## Reglas

@@ -222,8 +222,9 @@ def aplicar(raiz=".", revisar=False):
             faltan.append(f"{archivo} (no esta)")
             continue
         original = ruta.read_text(encoding="utf-8")
-        codigo = ruta.suffix in (".c", ".h", ".java")
-        fuente = unir(original) if ruta.suffix in (".c", ".h") else original
+        # (un .inl es C que otro .c incluye: los mismos controles)
+        codigo = ruta.suffix in (".c", ".h", ".inl", ".java")
+        fuente = unir(original) if ruta.suffix in (".c", ".h", ".inl") else original
         if codigo and esqueleto(fuente) != esqueleto(original):
             errores.append(f"{archivo}: juntar los literales cambio el codigo")
         for viejo, nuevo in crudos:
