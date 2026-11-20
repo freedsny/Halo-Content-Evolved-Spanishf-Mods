@@ -567,7 +567,7 @@
 +}
 --- a/port/linux/game/menu_functions.c
 +++ b/port/linux/game/menu_functions.c
-@@ -20325,8 +20325,11 @@
+@@ -20577,8 +20577,11 @@
  	struct widget_instance *widget;
  
  	list->horizontal_offset = shift;

@@ -238,7 +238,7 @@
 ## main_menu/multiplayer_type_select/direct_ip/direct_ip_options | 2
 0=DIRECCION DEL SERVIDOR
 1=CONTRASENA
-## main_menu/multiplayer_type_select/join_game/filters/cap_filter_options | 12
+## main_menu/multiplayer_type_select/join_game/filters/cap_filter_options | 26
 0=No mostrar servidores vacios.
 1=Mostrar servidores vacios.
 2=No mostrar servidores llenos.
@@ -251,6 +251,20 @@
 9=Mostrar solo servidores con mapas propios\nque tienes instalados.
 10=Mostrar servidores con mapas propios que no\ntienes instalados.
 11=Mostrar servidores con mapas que no tienes si su\nanfitrion los comparte: se bajan al entrar.
+12=No mostrar partidas en los mapas del juego.
+13=Mostrar partidas en los mapas del juego.
+14=No mostrar partidas en mapas de Custom Edition.
+15=Mostrar partidas en mapas de Custom Edition.
+16=No mostrar partidas en mapas de MCC.
+17=Mostrar partidas en mapas de MCC.
+18=Mostrar partidas de multijugador y de campana\ncooperativa.
+19=Mostrar solo partidas de multijugador.
+20=Mostrar solo partidas de campana cooperativa.
+21=Mostrar servidores dedicados y las partidas que\ncrean los jugadores.
+22=Mostrar solo servidores dedicados.
+23=Mostrar solo partidas que crean los jugadores (P2P).
+24=Mostrar todas. FAVORITO (gatillo izquierdo, F\nen teclado) marca con estrella la elegida.
+25=Mostrar solo tus servidores favoritos.
 ## main_menu/multiplayer_type_select/join_game/filters/filter_options | 6
 0=SERVIDORES VACIOS
 1=SERVIDORES LLENOS

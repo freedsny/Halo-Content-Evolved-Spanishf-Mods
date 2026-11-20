@@ -2827,8 +2827,14 @@ ERROR: Failed to export custom_maps/%s.map
 ~= port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "ON" : "OFF",
 ~ port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "off" : "on",
 ~= port_tag_profiles_tag_enabled(tags_screen.profile, tag) ? "OFF" : "ON",
-~ tags_screen.campaign ? "campaign" : "multiplayer", tags_browse_folder()[0] ? ", in " : "",
-~= tags_screen.campaign ? "campana" : "multijugador", tags_browse_folder()[0] ? ", en " : "",
+# ("campaign" y "multiplayer" solo donde se muestran: desde la build-144 el
+# mismo archivo tambien los usa de clave del filtro del buscador)
+~ tags_screen.campaign ? "campaign" : "multiplayer",
+~= tags_screen.campaign ? "campana" : "multijugador",
+~ tags_browse_folder()[0] ? ", in " : "",
+~= tags_browse_folder()[0] ? ", en " : "",
+~ campaign ? "campaign" : "multiplayer");
+~= campaign ? "campana" : "multijugador");
 ALL
 = TODOS
 ENEMIES
@@ -3273,10 +3279,6 @@ An MCC %s map.\n \nA lists its weapons, AI and the rest, to add to %s. Opening i
 = Un mapa MCC de %s.\n \nA muestra sus armas, IA y lo demas, para agregar a %s. Abrirlo tarda un momento.
 a profile
 = un perfil
-campaign
-= campana
-multiplayer
-= multijugador
 A %s map%s%s.\n \nA lists its weapons, AI and the rest, to add to %s.
 = Un mapa de %s%s%s.\n \nA muestra sus armas, IA y lo demas, para agregar a %s.
 No multiplayer profiles
@@ -3543,3 +3545,358 @@ No Tag Injector tags were added: no room for them
 = No se agrego ningun tag del Tag Injector: no habia espacio
 it could not be played
 = no se pudo usar
+
+# ---- lo nuevo de Content Evolved build-144: volumenes de la Forja, el Flood
+# del Tiroteo, deshacer y rehacer, y las carpetas nuevas de la paleta
+
+## port/forge/src/forge_volumes.c
+CUBE
+= CUBO
+CYLINDER
+= CILINDRO
+SPHERE
+= ESFERA
+MAP'S OWN
+= LA DEL MAPA
+APPLY DAMAGE
+= DANO UNICO
+CONSTANT DAMAGE
+= DANO CONSTANTE
+INSTA KILL
+= MATA AL INSTANTE
+MAP SCRIPT
+= SCRIPT DEL MAPA
+GRAVITY
+= GRAVEDAD
+ONE WAY
+= UN SOLO SENTIDO
+VOLUME
+= VOLUMEN
+MAP VOLUME %s%s(%s)
+= VOLUMEN DEL MAPA %s%s(%s)
+ (SAFE TILL LANDING)
+=  (SEGURO HASTA ATERRIZAR)
+ (SAFE INSIDE)
+=  (SEGURO DENTRO)
+ (STOPS)
+=  (FRENA)
+GRAVITY X%.2f %s%s
+= GRAVEDAD X%.2f %s%s
+LENGTH
+= LARGO
+WIDTH
+= ANCHO
+HEIGHT
+= ALTO
+SHAPE:
+= FORMA:
+EFFECT:
+= EFECTO:
+STRENGTH:
+= FUERZA:
+DAMAGE:
+= DANO:
+%.0f%% ONCE
+= %.0f%% UNA VEZ
+%.0f%% A SECOND
+= %.0f%% POR SEGUNDO
+FALL DAMAGE:
+= DANO POR CAIDA:
+LANDING
+= AL ATERRIZAR
+EXIT
+= AL SALIR
+VANILLA
+= NORMAL
+REMOVE INERTIA:
+= QUITAR INERCIA:
+DIAMETER X
+= DIAMETRO X
+DIAMETER Y
+= DIAMETRO Y
+DIAMETER Z
+= DIAMETRO Z
+A map's volume keeps its own shape
+= Un volumen del mapa conserva su forma
+Only APPLY DAMAGE, CONSTANT DAMAGE and GRAVITY have an amount
+= Solo DANO UNICO, DANO CONSTANTE y GRAVEDAD tienen cantidad
+Fall damage LANDING: whoever was in it takes none until they next land
+= Dano por caida AL ATERRIZAR: quien estuvo dentro no lo recibe hasta volver al suelo
+Fall damage EXIT: none while they are in it
+= Dano por caida AL SALIR: ninguno mientras esten dentro
+Fall damage VANILLA: as the game does
+= Dano por caida NORMAL: como en el juego
+Remove inertia on: a player coming into it stops dead
+= Quitar inercia SI: el jugador que entra se frena en seco
+Remove inertia off
+= Quitar inercia NO
+
+## port/forge/src/forge_3d_mode.c
+INFANTRY AI
+= INFANTERIA IA
+INFANTRY + VEHICLES
+= INFANTERIA + VEHICULOS
+VEHICLE AI: ANY
+= VEHICULOS IA: CUALQUIERA
+VEHICLE AI: LIGHT
+= VEHICULOS IA: LIGEROS
+VEHICLE AI: HEAVY
+= VEHICULOS IA: PESADOS
+PLAYER SPAWN
+= INICIO DE JUGADOR
+ENEMY DROP POINT
+= DESEMBARCO ENEMIGO
+PLAYER VEHICLE
+= VEHICULO DEL JUGADOR
+FIREFIGHT PLAYER SPAWN
+= INICIO DE JUGADOR (TIROTEO)
+FIREFIGHT PLAYER VEHICLE
+= VEHICULO DEL JUGADOR (TIROTEO)
+FIREFIGHT VEHICLE AI
+= VEHICULOS IA (TIROTEO)
+FIREFIGHT INFANTRY AI
+= INFANTERIA IA (TIROTEO)
+A map's volume can't be deleted: it is turned OFF
+= Un volumen del mapa no se puede borrar: queda en OFF
+ALL
+= TODAS
+HUMAN
+= HUMANOS
+This Route Has No Enemy Drop Point
+= Esta ruta no tiene punto de desembarco enemigo
+Test Flood Stopped
+= Flood de prueba detenido
+Only the Host Can Fly a Test Drop
+= Solo el anfitrion puede lanzar una caida de prueba
+No Spirit or Pelican Tag Is Loaded in This Map
+= No hay tag de Spirit ni de Pelican cargado en este mapa
+Keyes' Flood Form Is Not Loaded in This Map
+= La forma Flood de Keyes no esta cargada en este mapa
+The Flood Form Could Not Be Made
+= No se pudo crear la forma Flood
+Test Flood Finished
+= Flood de prueba terminado
+Test Flood: The Flood Is Emerging
+= Flood de prueba: el Flood esta saliendo
+Test Drop: %s %s
+= Caida de prueba: %s %s
+%s %s '%s'%s (%d left)
+= %s %s '%s'%s (quedan %d)
+Redid
+= Rehecho:
+Undid
+= Deshecho:
+placing
+= poner
+moving
+= mover
+the settings of
+= ajustes de
+Nothing to redo
+= Nada que rehacer
+Nothing to undo
+= Nada que deshacer
+A Drop Point Spawns One Faction at Least
+= Un punto de desembarco saca al menos una faccion
+Collision %s
+= Colision %s
+off: seen, but nothing stands on it or hits it
+= no: se ve, pero nada se apoya ni choca con el
+Deal damage %s%s
+= Hace dano %s%s
+off: its fire burns no one
+= no: su fuego no quema a nadie
+ (this emitter's effects deal none)
+=  (los efectos de este emisor no hacen dano)
+on
+= si
+off
+= no
+EFFECTS
+= EFECTOS
+DECALS
+= MARCAS
+VOLUMES
+= VOLUMENES
+FIREFIGHT SPAWNS
+= APARICIONES DE TIROTEO
+FACTIONS TO SPAWN
+= FACCIONES QUE SALEN
+MAP VOLUME
+= VOLUMEN DEL MAPA
+VOLUME
+= VOLUMEN
+TURN OFF
+= APAGAR
+VEHICLE AI:
+= VEHICULOS IA:
+LIGHT
+= LIGEROS
+HEAVY
+= PESADOS
+ANY
+= CUALQUIERA
+FACTIONS:
+= FACCIONES:
+STOP TEST FLOOD
+= PARAR FLOOD DE PRUEBA
+TEST FLOOD
+= FLOOD DE PRUEBA
+REPEAT:
+= REPETIR:
+EVERY %d S
+= CADA %d S
+SCALE:
+= ESCALA:
+DEAL DAMAGE:
+= HACE DANO:
+COLLISION:
+= COLISION:
+
+## port/forge/src/forge_ai.c
+ALL PLAYERS
+= TODOS LOS JUGADORES
+RED TEAM
+= EQUIPO ROJO
+BLUE TEAM
+= EQUIPO AZUL
+CLOAKED:
+= CAMUFLADO:
+FLYING HEIGHT:
+= ALTURA DE VUELO:
+%d UNITS
+= %d UNIDADES
+
+## port/forge/src/forge_map_settings_menu.inl
+Render distance: %.0f (the map is drawn further out)
+= Distancia de dibujo: %.0f (el mapa se ve mas lejos)
+Render distance: the game's (1024)
+= Distancia de dibujo: la del juego (1024)
+Monitor speed: %gx
+= Velocidad del Monitor: %gx
+RENDER DISTANCE:
+= DISTANCIA DE DIBUJO:
+DEFAULT (1024)
+= NORMAL (1024)
+MONITOR SPEED:
+= VELOCIDAD DEL MONITOR:
+REDO
+= REHACER
+UNDO
+= DESHACER
+%d STEP%s
+= %d PASO%s
+NONE
+= NINGUNO
+How far the map is drawn: further for big maps.
+= Hasta donde se dibuja el mapa: mas lejos en mapas grandes.
+How fast the Monitor flies in Forge.
+= Que tan rapido vuela el Monitor en la Forja.
+Puts back your last move, turn, settings or placing.
+= Deshace tu ultimo movimiento, giro, ajuste u objeto puesto.
+Does again what UNDO put back.
+= Vuelve a hacer lo que DESHACER quito.
+
+## port/forge/src/forge_runtime_tags.c
+CUSTOM
+= PROPIOS
+CAMPAIGN
+= CAMPANA
+MAP
+= MAPA
+TAG PROFILE
+= PERFIL DE TAGS
+FORGE
+= FORJA
+TREES
+= ARBOLES
+ROCKS
+= ROCAS
+PLANTS
+= PLANTAS
+WRECKS
+= RESTOS
+VEHICLE PROPS
+= PIEZAS DE VEHICULOS
+BARRICADES
+= BARRICADAS
+BEACONS
+= BALIZAS
+COVENANT PROPS
+= OBJETOS COVENANT
+HUMAN PROPS
+= OBJETOS HUMANOS
+LIFEPODS
+= CAPSULAS
+TURRETS
+= TORRETAS
+GRENADES
+= GRANADAS
+AMMO
+= MUNICION
+POWERUPS
+= POTENCIADORES
+BLOOD
+= SANGRE
+FIRE
+= FUEGO
+SPARKS
+= CHISPAS
+SMOKE & STEAM
+= HUMO Y VAPOR
+WATER
+= AGUA
+BURNS & SCORCHES
+= QUEMADURAS
+BULLET HOLES
+= AGUJEROS DE BALA
+TRACKS
+= HUELLAS
+SIGNS & SYMBOLS
+= SENALES Y SIMBOLOS
+[FF] Firefight Spawns
+= [FF] Apariciones de Tiroteo
+[FF] Player Spawn
+= [FF] Inicio de jugador
+[FF] Player Vehicle
+= [FF] Vehiculo del jugador
+[FF] Infantry AI
+= [FF] Infanteria IA
+[FF] Vehicle AI
+= [FF] Vehiculos IA
+[FF] Enemy Drop
+= [FF] Desembarco enemigo
+[VOLUME] Box Volume
+= [VOLUMEN] Caja
+[VOLUME] Cylinder Volume
+= [VOLUMEN] Cilindro
+[VOLUME] Sphere Volume
+= [VOLUMEN] Esfera
+
+## port/linux/game/firefight_hud.c
+THE FLOOD IS EMERGING
+= EL FLOOD ESTA SALIENDO
+A FLOOD FORM IS GROWING OUT OF THE GROUND
+= UNA FORMA FLOOD ESTA SALIENDO DEL SUELO
+PELICAN INBOUND
+= LLEGA UN PELICAN
+UNSC INSERTION DETECTED
+= SE DETECTA UN DESEMBARCO DEL UNSC
+COVENANT SPIRIT INSERTION DETECTED
+= SE DETECTA UN SPIRIT COVENANT
+
+## port/linux/game/tag_injector.c
+EFFECTS
+= EFECTOS
+DECALS
+= MARCAS
+
+## port/linux/game/menu_functions.c
+EFFECT
+= EFECTO
+DECAL
+= MARCA
+
+## port/linux/include/halo_firefight_route.h
+HUMAN
+= HUMANOS

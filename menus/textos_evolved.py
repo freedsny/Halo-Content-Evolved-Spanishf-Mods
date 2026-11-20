@@ -1413,3 +1413,14 @@ TEXTOS.update({
     "Get a missing CE map from FractumSeraph's map\\narchive before asking the host's players.":
         "Un mapa CE que falte se busca en el archivo de\\nFractumSeraph antes de pedirlo al anfitrion.",
 })
+
+# Los filtros nuevos del buscador de partidas (Content Evolved build-144)
+TEXTOS.update({
+    "VANILLA MAPS": "MAPAS DEL JUEGO",
+    "MCC MAPS": "MAPAS DE MCC",
+    "GAME MODE": "MODO DE JUEGO",
+    "HOSTS": "ANFITRIONES",
+    "FAVORITES ONLY": "SOLO FAVORITOS",
+    "FAVORITE": "FAVORITO",
+})
+VALORES.update({"CAMPAIGN": "CAMPANA"})
