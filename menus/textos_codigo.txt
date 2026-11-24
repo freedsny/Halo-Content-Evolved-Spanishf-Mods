@@ -3900,3 +3900,494 @@ DECAL
 ## port/linux/include/halo_firefight_route.h
 HUMAN
 = HUMANOS
+
+# ---- lo nuevo de Content Evolved build-145: objetivos del Tiroteo, rutas de
+# IA y patrullas en la Forja, invitaciones del chat
+
+## port/linux/game/firefight_objectives.c
+HIGH VALUE TARGET
+= OBJETIVO VALIOSO
+ENEMY GENERATOR
+= GENERADOR ENEMIGO
+CLEAR ENEMY BASE
+= LIMPIAR BASE ENEMIGA
+DATA LINK
+= ENLACE DE DATOS
+FLAG
+= BANDERA
+RESCUE
+= RESCATE
+ODDBALL
+= CALAVERA
+COLLECT
+= RECOLECTAR
+BOMB
+= BOMBA
+KILLS
+= BAJAS
+NO DEATHS
+= SIN MUERTES
+SHIELDS INTACT
+= ESCUDOS INTACTOS
+KILL THE MARKED ENEMY FIRST
+= MATA PRIMERO AL MARCADO
+DON'T USE
+= NO USAR
+VEHICLE KILLS
+= BAJAS EN VEHICULO
+TRAVEL
+= LLEGAR AL PUNTO
+USE ONLY
+= USAR SOLO
+HEADSHOT
+= TIRO A LA CABEZA
+MELEE
+= CUERPO A CUERPO
+GRENADE
+= GRANADA
+SPLATTER
+= ATROPELLO
+AUTOMATIC WEAPON
+= ARMA AUTOMATICA
+SEMI-AUTOMATIC WEAPON
+= ARMA SEMIAUTOMATICA
+SHOTGUN
+= ESCOPETA
+PLASMA WEAPON
+= ARMA DE PLASMA
+ROCKET
+= COHETE
+AUTOMATIC WEAPONS
+= ARMAS AUTOMATICAS
+SEMI-AUTOMATIC WEAPONS
+= ARMAS SEMIAUTOMATICAS
+SHOTGUNS
+= ESCOPETAS
+PLASMA WEAPONS
+= ARMAS DE PLASMA
+ROCKETS
+= COHETES
+A PLAYER
+= UN JUGADOR
+WAVE OBJECTIVE COMPLETE: +%d
+= OBJETIVO DE OLEADA CUMPLIDO: +%d
+WAVE OBJECTIVE: TIE
+= OBJETIVO DE OLEADA: EMPATE
+WAVE OBJECTIVE FAILED
+= OBJETIVO DE OLEADA FALLIDO
+%d %s KILLS
+= %d BAJAS: %s
+DON'T THROW %s
+= NO LANCES %s
+FRAG GRENADES
+= GRANADAS DE FRAGMENTACION
+PLASMA GRENADES
+= GRANADAS DE PLASMA
+GRENADES
+= GRANADAS
+DON'T FIRE %s
+= NO DISPARES %s
+%d KILLS WITH THE %s
+= %d BAJAS CON: %s
+GET TO THE MARKED POINT
+= LLEGA AL PUNTO MARCADO
+USE ONLY THE %s
+= USA SOLO: %s
+WAVE OBJECTIVE: %s
+= OBJETIVO DE OLEADA: %s
+BROKE THEIR SHIELDS
+= PERDIO LOS ESCUDOS
+%s BROKE THEIR SHIELDS (%d OF %d)
+= %s PERDIO LOS ESCUDOS (%d DE %d)
+%s COMPLETE: +%d
+= %s CUMPLIDO: +%d
+%s FAILED
+= %s FALLIDO
+ROUND OBJECTIVE: %s
+= OBJETIVO DE RONDA: %s
+%d MARINES RESCUED: +%d
+= %d MARINES RESCATADOS: +%d
+%s BANKED %d (%ld / %ld)
+= %s DEPOSITO %d (%ld / %ld)
+BOMB PLANTED: DEFEND IT
+= BOMBA PUESTA: DEFIENDELA
+THE BOMB WAS DISARMED
+= DESACTIVARON LA BOMBA
+NOT ON THIS MAP:
+= NO EN ESTE MAPA:
+USE ONLY THE %s FROM NOW
+= DESDE AHORA USA SOLO: %s
+KILLED ANOTHER ENEMY FIRST
+= MATO PRIMERO A OTRO ENEMIGO
+THE SKULL IS DOWN: HOLD IT
+= LA CALAVERA ESTA EN EL SUELO: AGARRALA
+%s DROPPED %d SKULL%s
+= %s SOLTO %d CALAVERA%s
+DIED
+= MURIO
+FIRED ANOTHER WEAPON
+= DISPARO OTRA ARMA
+FIRED A VEHICLE'S GUN
+= DISPARO EL ARMA DE UN VEHICULO
+FIRED %s
+= DISPARO %s
+THREW A GRENADE
+= LANZO UNA GRANADA
+COMPLETE
+= CUMPLIDO
+FAILED
+= FALLIDO
+TIE
+= EMPATE
+BROKEN %d / %d
+= ROTOS %d / %d
+MARKED
+= MARCADO
+WAITING
+= ESPERANDO
+THIS WAVE
+= ESTA OLEADA
+KILL THE VIP  %s
+= MATA AL VIP  %s
+DESTROY IT  %d%%  %s
+= DESTRUYELO  %d%%  %s
+%d LEFT
+= QUEDAN %d
+ CONTESTED
+=  DISPUTADO
+TAKE IT TO THE OTHER BASE
+= LLEVALA A LA OTRA BASE
+GET THE FLAG
+= TOMA LA BANDERA
+THEIR LIFE %d%%
+= SU VIDA %d%%
+KILL THE SKULL CARRIER
+= MATA AL QUE LLEVA LA CALAVERA
+HOLD %s / %s
+= AGUANTA %s / %s
+%ld / %ld  CARRYING %d
+= %ld / %ld  LLEVAS %d
+BANKED %ld / %ld
+= DEPOSITADAS %ld / %ld
+ARMING %s / %s%s
+= ARMANDO %s / %s%s
+ DISARMING
+=  DESACTIVANDO
+PLANT IT AT THE TARGET
+= PONLA EN EL OBJETIVO
+GET THE BOMB
+= TOMA LA BOMBA
+
+## port/linux/game/firefight_hud.c
+WAVE
+= OLEADA
+ROUND
+= RONDA
+FIRST
+= PRIMERO
+GO HERE
+= VE AQUI
+ENEMY GENERATOR
+= GENERADOR ENEMIGO
+ENEMY BASE
+= BASE ENEMIGA
+ELIMINATE
+= ELIMINAR
+DATA LINK
+= ENLACE DE DATOS
+CAPTURE
+= CAPTURAR
+FLAG CARRIER
+= LLEVA LA BANDERA
+FLAG
+= BANDERA
+DEPOSIT
+= DEPOSITAR
+%d DROPPED SKULL%s
+= %d CALAVERA%s EN EL SUELO
+BOMB
+= BOMBA
+TARGET
+= OBJETIVO
+BOMB CARRIER
+= LLEVA LA BOMBA
+RESCUE
+= RESCATE
+SKULL CARRIER
+= LLEVA LA CALAVERA
+SKULL HOLDER
+= TIENE LA CALAVERA
+SKULL
+= CALAVERA
+
+## port/forge/src/forge_ai_routes.c
+PING PONG
+= IDA Y VUELTA
+STAY AT END
+= QUEDARSE AL FINAL
+LOOP
+= EN CIRCULO
+This AI Route Is Full (%d Points)
+= Esta ruta de IA esta llena (%d puntos)
+Added Point %d to AI Route #%d
+= Punto %d agregado a la ruta de IA #%d
+No Free AI Route Numbers (%d in this map)
+= No quedan numeros de ruta de IA libres (%d en este mapa)
+AI Route #%d: place its start, then move its points (ADD POINT in their settings)
+= Ruta de IA #%d: pon su inicio y luego mueve sus puntos (AGREGAR PUNTO en sus ajustes)
+AI ROUTE POINT
+= PUNTO DE RUTA DE IA
+AI ROUTE #%d SETTINGS
+= AJUSTES DE LA RUTA DE IA #%d
+AI ROUTE #%d POINT %d OF %d
+= RUTA DE IA #%d PUNTO %d DE %d
+POINT:
+= PUNTO:
+%d OF %d
+= %d DE %d
+POINT WAIT TIME:
+= ESPERA EN EL PUNTO:
+%d SECONDS
+= %d SEGUNDOS
+ADD POINT BEFORE
+= AGREGAR PUNTO ANTES
+ADD POINT AFTER
+= AGREGAR PUNTO DESPUES
+ROUTE #%d SETTINGS
+= AJUSTES DE LA RUTA #%d
+ROUTE NUMBER:
+= NUMERO DE RUTA:
+#%d (%d POINTS)
+= #%d (%d PUNTOS)
+ROUTE BEHAVIOR:
+= RECORRIDO:
+DELETE ROUTE
+= BORRAR RUTA
+< BACK
+= < VOLVER
+The AI walking it waits %d seconds here
+= La IA que la recorre espera %d segundos aqui
+A route's number is its own: AI spawns' GOAL picks it
+= Cada ruta tiene su propio numero: la META de cada aparicion de IA la elige
+Ping pong: back the way it came at either end
+= Ida y vuelta: en cada punta regresa por donde vino
+Stay at end: it stops at the last point
+= Quedarse al final: se detiene en el ultimo punto
+Loop: from the last point on to the first
+= En circulo: del ultimo punto sigue al primero
+Deleted AI Route #%d
+= Ruta de IA #%d borrada
+AI Route
+= Ruta de IA
+AI Route #%d: Point %d of %d (%s)
+= Ruta de IA #%d: punto %d de %d (%s)
+
+## port/forge/src/forge_3d_mode.c
+DELETE POINT
+= BORRAR PUNTO
+
+## port/forge/src/forge_ai.c
+PATROL VOLUME
+= VOLUMEN DE PATRULLA
+ROUTE
+= RUTA
+GO TO PLAYER
+= IR AL JUGADOR
+ANY PLAYER
+= CUALQUIER JUGADOR
+PATROL #%d%s
+= PATRULLA #%d%s
+ROUTE #%d%s
+= RUTA #%d%s
+GO TO %s
+= IR A %s
+Patrol: each unit roams the volume's ground, point to point
+= Patrulla: cada unidad recorre el suelo del volumen, de punto en punto
+Route: a leader walks it, the rest follow the leader
+= Ruta: un lider la recorre y los demas lo siguen
+Go to player: they go to the nearest player in their RANGE
+= Ir al jugador: van al jugador mas cercano dentro de su ALCANCE
+No goal: they stand, and fight from around the spawn
+= Sin meta: se quedan quietos y pelean cerca de donde aparecen
+LOADOUT:
+= ARMAS:
+UNIT SETTINGS
+= AJUSTES DE UNIDAD
+SPAWN SETTINGS
+= AJUSTES DE APARICION
+%d, KEEP %d
+= %d, MANTENER %d
+%d AT START
+= %d AL INICIO
+GOAL SETTINGS
+= AJUSTES DE META
+GOAL:
+= META:
+ROUTE:
+= RUTA:
+PATROL VOLUME:
+= VOLUMEN DE PATRULLA:
+ (MISSING)
+=  (NO EXISTE)
+PLAYER:
+= JUGADOR:
+SPEED:
+= VELOCIDAD:
+RUN
+= CORRER
+WALK
+= CAMINAR
+RANGE:
+= ALCANCE:
+ANYWHERE
+= EN TODO EL MAPA
+STOP DISTANCE:
+= DISTANCIA DE PARADA:
+ALERT TIME:
+= TIEMPO DE ALERTA:
+< BACK
+= < VOLVER
+Run: they go at full speed out of a fight too
+= Correr: van a toda velocidad tambien fuera de combate
+Walk: they go at an easy, alert pace out of a fight
+= Caminar: fuera de combate van a paso tranquilo y alerta
+They go to the nearest player this near them, seen or not (0: anywhere on the map)
+= Van al jugador mas cercano a esta distancia, lo vean o no (0: en todo el mapa)
+They stop this far from their player
+= Se detienen a esta distancia de su jugador
+Once one of them fights, is hurt or dies, all stay alert %d seconds after
+= Si uno pelea, recibe dano o muere, todos quedan alerta %d segundos
+AI SPAWN
+= APARICION DE IA
+AI UNIT SETTINGS
+= AJUSTES DE UNIDAD DE IA
+AI SPAWN SETTINGS
+= AJUSTES DE APARICION DE IA
+AI GOAL SETTINGS
+= AJUSTES DE META DE IA
+
+## port/forge/src/forge_volumes.c
+AI PATROL
+= PATRULLA DE IA
+AI PATROL #%d %s (PURSUIT +%.0f)%s
+= PATRULLA DE IA #%d %s (PERSECUCION +%.0f)%s
+MAP VOLUME EFFECT
+= EFECTO DEL VOLUMEN DEL MAPA
+VOLUME EFFECT
+= EFECTO DEL VOLUMEN
+MAP VOLUME SIZE
+= MEDIDAS DEL VOLUMEN DEL MAPA
+VOLUME SIZE
+= MEDIDAS DEL VOLUMEN
+MAP VOLUME
+= VOLUMEN DEL MAPA
+AI PATROL #%d
+= PATRULLA DE IA #%d
+PURSUIT RANGE:
+= ALCANCE DE PERSECUCION:
++%.0f UNITS
+= +%.0f UNIDADES
+EFFECT
+= EFECTO
+SIZE
+= MEDIDAS
+KEEP RATIO:
+= MANTENER PROPORCION:
+< BACK
+= < VOLVER
+Keep ratio off: each size on its own
+= Mantener proporcion NO: cada medida por separado
+Keep ratio on: FACTOR scales all three sizes together
+= Mantener proporcion SI: FACTOR cambia las tres medidas juntas
+A size would go past %s
+= Una medida pasaria %s
+its least
+= su minimo
+its most
+= su maximo
+No Free AI Patrol Numbers (%d in this map)
+= No quedan numeros de patrulla de IA libres (%d en este mapa)
+AI linked to it chase whoever they fight up to %.0f units past its sides
+= La IA unida a el persigue a quien pelea hasta %.0f unidades fuera de sus lados
+Only APPLY DAMAGE, CONSTANT DAMAGE, GRAVITY and AI PATROL have an amount
+= Solo DANO UNICO, DANO CONSTANTE, GRAVEDAD y PATRULLA DE IA tienen cantidad
+Keep ratio is on: FACTOR sizes it
+= Mantener proporcion esta en SI: FACTOR cambia sus medidas
+
+## port/forge/src/forge_runtime_tags.c
+[AI] AI Route
+= [IA] Ruta de IA
+
+## port/linux/game/menu_functions.c
+WAVE %s, ROUND %s
+= OLEADA %s, RONDA %s
+Leave your game first, then press JOIN again
+= Sal primero de tu partida y luego pulsa UNIRSE otra vez
+That invite could not be joined: internet play (network.online) is off, or it is old
+= No se pudo entrar con esa invitacion: el juego por internet (network.online) esta apagado, o es vieja
+The join screen could not be opened.
+= No se pudo abrir la pantalla para unirse.
+%ld%%, %d OF %d ON
+= %ld%%, %d DE %d ACTIVOS
+%ld%%, %d ON, %d NOT ON THIS MAP
+= %ld%%, %d ACTIVOS, %d NO EN ESTE MAPA
+
+## port/linux/game/social.c
+Only the game's host can invite players to it
+= Solo el anfitrion de la partida puede invitar jugadores
+Host an internet game first: /invite asks players into the game you host
+= Primero crea una partida por internet: /invite invita jugadores a la partida que creas
+Your game is not on the internet (a LAN game): it cannot be joined by invite
+= Tu partida no es por internet (es LAN): no se puede entrar con invitacion
+Your game's invite could not be made: try again
+= No se pudo crear la invitacion de tu partida: intenta otra vez
+
+## port/linux/game/social_chat.c
+Write the player's name: /%s NAME
+= Escribe el nombre del jugador: /%s NOMBRE
+Muted %s in this match
+= %s silenciado en esta partida
+%s is no longer muted in this match
+= %s ya no esta silenciado en esta partida
+The fork's chat is offline: that needs the community server
+= El chat esta sin conexion: eso necesita el servidor de la comunidad
+Several players are called %s: write more of the name
+= Hay varios jugadores llamados %s: escribe mas del nombre
+Muted %s in this match (they are not on the fork's chat)
+= %s silenciado en esta partida (no esta en el chat)
+No player called %s is in the chat or your %s
+= Ningun jugador llamado %s esta en el chat ni en tu %s
+blocked and muted list
+= lista de bloqueados y silenciados
+%s on %s (%s)
+= %s en %s (%s)
+a game
+= una partida
+, password
+= , con clave
+The fork's chat is offline: invites go through the community server
+= El chat esta sin conexion: las invitaciones pasan por el servidor de la comunidad
+No player called %s is in the chat or your friends
+= Ningun jugador llamado %s esta en el chat ni en tus amigos
+Join my game: %s
+= Unete a mi partida: %s
+Invited %s to your game
+= Invitaste a %s a tu partida
+Invited everyone online to your game (GLOBAL)
+= Invitaste a todos los conectados a tu partida (GLOBAL)
+No command /%s
+= No existe el comando /%s
+Commands: /invite [NAME] (the host), /add, /mute, /unmute, /block, /unblock, /report NAME, /clear
+= Comandos: /invite [NOMBRE] (el anfitrion), /add, /mute, /unmute, /block, /unblock, /report NOMBRE, /clear
+Leave your game first, then press JOIN again
+= Sal primero de tu partida y luego pulsa UNIRSE otra vez
+(invite sent) %s
+= (invitacion enviada) %s
+[ JOIN ] %s
+= [ UNIRSE ] %s
+JOIN THEIR GAME
+= UNIRSE A SU PARTIDA
+
+## port/linux/game/social_menu.c
+that player
+= ese jugador

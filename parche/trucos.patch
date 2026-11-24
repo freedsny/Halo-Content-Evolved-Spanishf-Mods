@@ -567,7 +567,7 @@
 +}
 --- a/port/linux/game/menu_functions.c
 +++ b/port/linux/game/menu_functions.c
-@@ -20577,8 +20577,11 @@
+@@ -20666,8 +20666,11 @@
  	struct widget_instance *widget;
  
  	list->horizontal_offset = shift;
@@ -582,7 +582,7 @@
  	if ((widget = named(screen, "y_butn_social", 0)) != NULL)
 --- a/port/linux/src/port_config.c
 +++ b/port/linux/src/port_config.c
-@@ -1221,6 +1221,188 @@
+@@ -1307,6 +1307,188 @@
  		"profile starts at The Pillar of Autumn and opens each level as the one\n"
  		"before it is finished, as on the Xbox. Profiles already made keep their\n"
  		"progress; the console's profile_reset_campaign starts one over." },

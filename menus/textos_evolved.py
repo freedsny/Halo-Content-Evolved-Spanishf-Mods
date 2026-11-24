@@ -1424,3 +1424,101 @@ TEXTOS.update({
     "FAVORITE": "FAVORITO",
 })
 VALORES.update({"CAMPAIGN": "CAMPANA"})
+
+# Los objetivos del Tiroteo y el aturdimiento por plasma (Content Evolved build-145)
+TEXTOS.update({
+    "OBJECTIVE SETTINGS:": "AJUSTES DE OBJETIVOS:",
+    "WAVE OBJECTIVES:": "OBJETIVOS DE OLEADA:",
+    "ROUND OBJECTIVES:": "OBJETIVOS DE RONDA:",
+    "CHANCE:": "PROBABILIDAD:",
+    "KILLS:": "BAJAS:",
+    "NO DEATHS:": "SIN MUERTES:",
+    "SHIELDS INTACT:": "ESCUDOS INTACTOS:",
+    "KILL MARKED FIRST:": "MATA AL MARCADO:",
+    "DON'T USE:": "NO USAR:",
+    "VEHICLE KILLS:": "BAJAS EN VEHICULO:",
+    "TRAVEL:": "LLEGAR AL PUNTO:",
+    "USE ONLY:": "USAR SOLO:",
+    "HIGH VALUE TARGET:": "OBJETIVO VALIOSO:",
+    "ENEMY GENERATOR:": "GENERADOR ENEMIGO:",
+    "CLEAR ENEMY BASE:": "LIMPIAR BASE ENEMIGA:",
+    "DATA LINK:": "ENLACE DE DATOS:",
+    "FLAG:": "BANDERA:",
+    "RESCUE:": "RESCATE:",
+    "ODDBALL:": "CALAVERA:",
+    "COLLECT:": "RECOLECTAR:",
+    "BOMB:": "BOMBA:",
+    "PLASMA FLINCH:": "ATURDIDO POR PLASMA:",
+    "Optional challenges beside the waves: a wave's, and\\na round's set pieces.":
+        "Retos opcionales ademas de las oleadas: los de\\ncada oleada y los montajes de cada ronda.",
+    "Optional challenges for a wave, beside the fight.\\nKept for every map.":
+        "Retos opcionales de cada oleada, ademas de pelear.\\nSe guardan para todos los mapas.",
+    "Optional set pieces on the map for a round: a\\ncamp, a hill, a flag. Kept for every map.":
+        "Montajes opcionales en el mapa para cada ronda:\\ncampamento, colina, bandera. Para todos los mapas.",
+    "A wave can have an objective of those on below,\\ndone before it is cleared.":
+        "Una oleada puede tener uno de los objetivos\\nactivos de abajo, a cumplir antes de terminarla.",
+    "A round can have an objective of those on below,\\nfrom its 1st or 2nd wave to its end.":
+        "Una ronda puede tener uno de los objetivos activos\\nde abajo, desde su 1a o 2a oleada hasta el final.",
+    "No wave objectives: Firefight as it is.": "Sin objetivos de oleada: el Tiroteo de siempre.",
+    "No round objectives: Firefight as it is.": "Sin objetivos de ronda: el Tiroteo de siempre.",
+    "How likely each wave is to have an objective.": "Que tan probable es que cada oleada tenga objetivo.",
+    "How likely each round is to have an objective.": "Que tan probable es que cada ronda tenga objetivo.",
+    "Never this objective.": "Nunca este objetivo.",
+    "So many kills of a kind: headshots, melee,\\ngrenades, splatters or a weapon class.":
+        "Cierto numero de bajas de un tipo: a la cabeza,\\ncuerpo a cuerpo, granada, atropello o tipo de arma.",
+    "The wave finished with no player dying. Anyone's\\ndeath fails it for everyone.":
+        "Terminar la oleada sin que muera nadie. La muerte\\nde cualquiera lo falla para todos.",
+    "No more than half the players' shields broken: a\\nfall, your own blast, friendly fire count.":
+        "Que no se rompan los escudos de mas de la mitad:\\ncuentan caidas, tus explosiones y fuego amigo.",
+    "An enemy of the wave is marked: kill it before\\nany other.":
+        "Se marca un enemigo de la oleada: matalo antes\\nque a cualquier otro.",
+    "A weapon class or grenade most of you carry: one\\nshot or throw fails it for everyone.":
+        "Un tipo de arma o granada que casi todos llevan:\\nun disparo o lanzamiento lo falla para todos.",
+    "So many kills from a vehicle of a kind, one given\\nyou if the map has none of it there.":
+        "Cierto numero de bajas desde un tipo de vehiculo;\\nte dan uno si el mapa no lo tiene ahi.",
+    "Reach a marked point of the map, far from you,\\nbefore the wave is cleared.":
+        "Llega a un punto marcado del mapa, lejos de ti,\\nantes de terminar la oleada.",
+    "A weapon is dropped to each of you: once it lands,\\nfiring any other fails it.":
+        "A cada uno le cae un arma: cuando llegue al suelo,\\ndisparar cualquier otra lo falla.",
+    "An enemy camp round a map objective: kill its VIP\\nbefore they teleport out.":
+        "Un campamento enemigo en un punto del mapa: mata\\na su VIP antes de que se teletransporte.",
+    "An enemy camp round a map objective: destroy its\\ngenerator before time runs out.":
+        "Un campamento enemigo en un punto del mapa: destruye\\nsu generador antes de que se acabe el tiempo.",
+    "An enemy camp round a map objective: kill every\\none of them before the round ends.":
+        "Un campamento enemigo en un punto del mapa: mata\\na todos antes de que termine la ronda.",
+    "A hill turns on: hold it with no enemy in it.\\nNeeds King of the Hill hills.":
+        "Se activa una colina: mantenla sin enemigos dentro.\\nNecesita colinas de Rey de la Colina.",
+    "A flag turns on: carry it to the other base. Every\\nenemy hunts its carrier. Needs 2 flags.":
+        "Aparece una bandera: llevala a la otra base. Todos\\ncazan a quien la lleva. Necesita 2 banderas.",
+    "Marines under attack: reach them in time, clear\\nthe attackers, and they follow you.":
+        "Marines bajo ataque: llega a tiempo, acaba con los\\natacantes y te seguiran.",
+    "A boss drops a skull: hold it while every enemy\\nhunts you. Needs an oddball spawn.":
+        "Un jefe suelta una calavera: aguantala mientras\\ntodos te cazan. Necesita aparicion de calavera.",
+    "Kills drop skulls: carry them to a hill or a flag\\nbase. Die and you drop all you carry.":
+        "Cada baja suelta calaveras: llevalas a una colina o\\nbase de bandera. Si mueres, sueltas todas.",
+    "Carry the bomb to a far target and plant it, then\\ndefend it so it isn't disarmed.":
+        "Lleva la bomba a un objetivo lejano y ponla, luego\\ndefiendela para que no la desactiven.",
+    "NOT ON THIS MAP: it has fewer than 2 flags. Kept\\non for other maps.":
+        "NO EN ESTE MAPA: tiene menos de 2 banderas. Sigue\\nactivo para otros mapas.",
+    "NOT ON THIS MAP: it has no King of the Hill hills.\\nKept on for other maps.":
+        "NO EN ESTE MAPA: no tiene colinas de Rey de la\\nColina. Sigue activo para otros mapas.",
+    "NOT ON THIS MAP: it has no flag, hill or oddball\\nspawn for a camp. Kept on for other maps.":
+        "NO EN ESTE MAPA: sin bandera, colina ni calavera\\npara un campamento. Sigue activo para otros mapas.",
+    "NOT ON THIS MAP: it has no hill or flag base to\\nbank at. Kept on for other maps.":
+        "NO EN ESTE MAPA: sin colina ni base de bandera\\npara depositar. Sigue activo para otros mapas.",
+    "NOT ON THIS MAP: it has no oddball spawn. Kept on\\nfor other maps.":
+        "NO EN ESTE MAPA: sin aparicion de calavera. Sigue\\nactivo para otros mapas.",
+    "NOT ON THIS MAP: it needs 2 objective points and\\nan oddball. Kept on for other maps.":
+        "NO EN ESTE MAPA: necesita 2 puntos de objetivo y\\nuna calavera. Sigue activo para otros mapas.",
+    "NOT ON THIS MAP: no marines or no spot for them.\\nKept on for other maps.":
+        "NO EN ESTE MAPA: no hay marines o lugar para ellos.\\nSigue activo para otros mapas.",
+    "Plasma hits slow and stun you as in multiplayer.": "El plasma te frena y te aturde como en multijugador.",
+    "Plasma hits stun you three quarters as much as\\nin multiplayer.":
+        "El plasma te aturde tres cuartas partes de lo\\nque te aturde en multijugador.",
+    "Plasma hits stun you half as much as in\\nmultiplayer.":
+        "El plasma te aturde la mitad de lo que te\\naturde en multijugador.",
+    "Plasma hits stun you a quarter as much as in\\nmultiplayer.":
+        "El plasma te aturde una cuarta parte de lo que\\nte aturde en multijugador.",
+    "Plasma hits never slow or stun you, as in the\\ncampaign.":
+        "El plasma nunca te frena ni te aturde, como en\\nla campana.",
+})
