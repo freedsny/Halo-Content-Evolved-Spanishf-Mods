@@ -12,8 +12,13 @@ Halo Content Evolved es un Halo CE hecho sobre [OpenCE](https://github.com/OpenC
 
 - **Los menús en español** (sin tildes: la fuente del juego no las tiene).
 - **TRUCOS**, en **AJUSTES > tu perfil > JUEGO > TRUCOS** (en partida: **pausa > AJUSTES > JUEGO > TRUCOS**): munición infinita, modo dios, súper salto, armas y vehículos a elección, sobrescudo infinito, camuflaje, linterna, teletransporte, forzar punto de control, sin daño por caída, no caer del vehículo y más.
-- **La flecha guía** (TRUCOS > GUIA) hacia el objetivo de la misión, un aliado o un enemigo.
-- **El HUD movible**, el **HUD moderno** y el **radar redondo** (TRUCOS > HUD).
+- **La flecha guía** (TRUCOS > GUIA) hacia el objetivo de la misión, un aliado o un enemigo, con el modo **AUTO**, que elige solo:
+  - si el arma que tienes en la mano se queda sin balas, una **flecha verde** te lleva al arma con balas más cercana (**SIN BALAS: TOMA ESTA ARMA**);
+  - si la misión espera que elimines a ciertos enemigos, una **flecha roja** apunta al más cercano y dice cuántos faltan (**QUEDAN 3**, **QUEDAN 2**...);
+  - si no, la **flecha naranja** va al objetivo de la misión, y si no hay objetivo, al enemigo más cercano.
+
+  Debajo de los metros avisa **SUBE** o **BAJA** cuando el objetivo está en otro piso, y en un recuadro a la izquierda sale el **OBJETIVO** de esa parte de la misión: unos 8 segundos cuando cambia o cuando vuelves al juego, y luego 6 segundos cada 2 minutos, para que no estorbe. Todo está explicado en el [README de Halo C.E con trucos](https://github.com/freedsny/Halo-CE-Android-Trucos-Mods-OpenCE#flecha-guía).
+- **El HUD movible**, el **HUD moderno** (viene encendido; en TRUCOS > HUD: ESTILO lo apagas para volver al HUD original) y el **radar redondo** (TRUCOS > HUD).
 - **El menú de los tres dedos en español.** Toca la pantalla con tres dedos a la vez y sale un panel a la izquierda con **Trucos**, **Bots**, **Velocidad del juego**, **HUD**, **Cámara** y **Sistema**. Sus trucos son los mismos de TRUCOS: lo que prendes o apagas en uno se ve igual en el otro, y en su carpeta Trucos también están el sobrescudo, el camuflaje, la luz infinita, la linterna amplia y el teletransporte.
 
 Y trae todo lo de Content Evolved:
@@ -36,7 +41,7 @@ Pon **JETPACK** en ON (en TRUCOS o en el menú de los tres dedos). Luego **mant�
 ## Cómo conseguir el APK
 
 1. Entra a **Releases** de este repositorio.
-2. Descarga el APK de la versión más reciente ("Latest"). Su nombre lleva la versión de Content Evolved y el número de la versión, por ejemplo `HaloCE-Evolved-trucos-build-143-n13.apk`.
+2. Descarga el APK de la versión más reciente ("Latest"). Su nombre lleva la versión de Content Evolved y el número de la versión, por ejemplo `HaloCE-Evolved-trucos-build-147-n28.apk`.
 3. Instálalo. Se llama **Halo C.E Evolved** y es **otra app**: se instala al lado de Halo C.E sin reemplazarla, con su propia carpeta y sus propias partidas.
 
 > **Desde la versión con Content Evolved build-143** la app usa el nombre interno nuevo de Content Evolved (`com.halo.contentevolved.trucos`; antes `com.halo.decomp.evolved`). Es una app nueva: **desinstala la Halo C.E Evolved anterior** e instala esta. La primera vez vuelve a sacar los mapas de la ISO, y las partidas y perfiles de la anterior no pasan.
