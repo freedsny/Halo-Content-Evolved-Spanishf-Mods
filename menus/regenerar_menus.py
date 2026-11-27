@@ -85,7 +85,7 @@ mj.write_text(json.dumps(datos, indent=1, ensure_ascii=False) + ("\n" if crudo.e
 # textos de la app (en espanol), nunca los del loc.map de Custom Edition
 config_c = pathlib.Path("port/linux/src/port_config.c")
 fuente_c = config_c.read_text(encoding="utf-8")
-palabras = '\t{ "guide.mode", { "off", "objective", "ally", "enemy", NULL }, NULL },\n'
+palabras = '\t{ "guide.mode", { "off", "auto", "objective", "ally", "enemy", NULL }, NULL },\n'
 if '"guide.mode", {' not in fuente_c:
     for punto in ('\t{ "display.hud_button_style", {', "config_words[] =\n{\n"):
         i = fuente_c.find(punto)
